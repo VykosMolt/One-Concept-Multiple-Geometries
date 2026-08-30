@@ -1,0 +1,19 @@
+/home/moloch/Documents/Research/pitch_fourier/synthetic/measure.py:21: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return {"rsa_circle": float(spearmanr(d, SEM_CIRC[iu]).correlation), "rsa_line": float(spearmanr(d, SEM_LINE[iu]).correlation), "rsa_code": float(spearmanr(d, code_hamming[iu]).correlation),
+[line/aligned/s1] step     0 val 3.3224 KL 2.4653 rsa_oracle -0.14 c|l +0.19 l|c -0.10 twinJS 0.007 tgtAsym 4.241 | Q-hidden last layer: c|l +0.09 l|c +0.12 code +0.10 eci 0.64
+[line/aligned/s1] step    50 val 0.3725 KL 0.3969 rsa_oracle +0.72 c|l -0.12 l|c +0.19 twinJS 0.062 tgtAsym 0.715 | Q-hidden last layer: c|l -0.04 l|c +0.18 code +0.70 eci 0.89
+[line/aligned/s1] step   100 val 0.2850 KL 0.0484 rsa_oracle +0.98 c|l +0.01 l|c +0.72 twinJS 0.586 tgtAsym 4.185 | Q-hidden last layer: c|l -0.06 l|c +0.48 code +0.97 eci 0.96
+[line/aligned/s1] step   150 val 0.2765 KL 0.0253 rsa_oracle +0.98 c|l +0.03 l|c +0.66 twinJS 0.535 tgtAsym 3.465 | Q-hidden last layer: c|l -0.07 l|c +0.44 code +0.96 eci 0.95
+[line/aligned/s1] step   200 val 0.2799 KL 0.0707 rsa_oracle +0.92 c|l -0.01 l|c +0.55 twinJS 0.558 tgtAsym 3.456 | Q-hidden last layer: c|l -0.06 l|c +0.51 code +0.97 eci 0.97
+[line/aligned/s1] step   300 val 0.2769 KL 0.0585 rsa_oracle +0.96 c|l +0.04 l|c +0.56 twinJS 0.593 tgtAsym 3.943 | Q-hidden last layer: c|l -0.06 l|c +0.44 code +0.96 eci 0.96
+[line/aligned/s1] step   400 val 0.2702 KL 0.0083 rsa_oracle +0.99 c|l -0.01 l|c +0.78 twinJS 0.571 tgtAsym 3.536 | Q-hidden last layer: c|l -0.03 l|c +0.47 code +0.97 eci 0.95
+[line/aligned/s1] step   500 val 0.2733 KL 0.0362 rsa_oracle +0.96 c|l -0.07 l|c +0.59 twinJS 0.580 tgtAsym 3.377 | Q-hidden last layer: c|l -0.04 l|c +0.46 code +0.96 eci 0.96
+[line/aligned/s1] step   750 val 0.2697 KL 0.0095 rsa_oracle +0.99 c|l -0.01 l|c +0.77 twinJS 0.564 tgtAsym 3.202 | Q-hidden last layer: c|l +0.01 l|c +0.40 code +0.96 eci 0.94
+[line/aligned/s1] step  1000 val 0.2694 KL 0.0092 rsa_oracle +0.99 c|l -0.01 l|c +0.76 twinJS 0.536 tgtAsym 3.045 | Q-hidden last layer: c|l -0.03 l|c +0.42 code +0.96 eci 0.95
+[line/aligned/s1] step  1500 val 0.2698 KL 0.0113 rsa_oracle +0.99 c|l -0.03 l|c +0.71 twinJS 0.554 tgtAsym 3.162 | Q-hidden last layer: c|l +0.03 l|c +0.38 code +0.95 eci 0.94
+[line/aligned/s1] step  2000 val 0.2704 KL 0.0176 rsa_oracle +0.98 c|l -0.02 l|c +0.68 twinJS 0.541 tgtAsym 2.970 | Q-hidden last layer: c|l +0.05 l|c +0.37 code +0.94 eci 0.94
+[line/aligned/s1] step  3000 val 0.2696 KL 0.0119 rsa_oracle +0.99 c|l -0.01 l|c +0.75 twinJS 0.580 tgtAsym 3.341 | Q-hidden last layer: c|l +0.10 l|c +0.35 code +0.94 eci 0.92
+[line/aligned/s1] step  4000 val 0.2684 KL 0.0028 rsa_oracle +0.99 c|l -0.00 l|c +0.79 twinJS 0.557 tgtAsym 3.121 | Q-hidden last layer: c|l +0.09 l|c +0.39 code +0.95 eci 0.93
+[line/aligned/s1] step  5000 val 0.2683 KL 0.0016 rsa_oracle +1.00 c|l +0.00 l|c +0.79 twinJS 0.574 tgtAsym 3.344 | Q-hidden last layer: c|l +0.09 l|c +0.38 code +0.95 eci 0.93
+[line/aligned/s1] step  6000 val 0.2681 KL 0.0004 rsa_oracle +1.00 c|l -0.00 l|c +0.79 twinJS 0.563 tgtAsym 3.199 | Q-hidden last layer: c|l +0.08 l|c +0.36 code +0.94 eci 0.93
+done results/phase3/runs/main/line_aligned_s1

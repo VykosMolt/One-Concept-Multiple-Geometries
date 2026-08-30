@@ -1,0 +1,40 @@
+## olmo2_1b few-shot CALIBRATED (score = logP(cont|prompt) - logP(cont|'The key is')); 3 demos, disjoint keys; chance 1/12
+  dominant(+7)         acc_cal=0.25 (raw 0.08; multi-token targets 0.50 n=2)  C->F#(x) Db->Ab D->Ab(x) Eb->F#(x) E->B F->F#(x) F#->Ab(x) G->F#(x) Ab->F#(x) A->Db(x) Bb->Ab(x) B->F#
+  subdominant(+5)      acc_cal=0.00 (raw 0.17; multi-token targets 0.00 n=2)  C->F#(x) Db->Ab(x) D->Ab(x) Eb->F#(x) E->F#(x) F->Ab(x) F#->Ab(x) G->Ab(x) Ab->F#(x) A->F#(x) Bb->F#(x) B->F#(x)
+  relative_minor(+9)   acc_cal=0.00 (raw 0.08; multi-token targets 0.00 n=4)  C->G#(x) Db->F#(x) D->F#(x) Eb->F#(x) E->F#(x) F->C#(x) F#->C#(x) G->F#(x) Ab->F#(x) A->C#(x) Bb->F#(x) B->F#(x)
+  relative_major(+3)   acc_cal=0.08 (raw 0.08; multi-token targets 0.00 n=2)  C->F#(x) C#->F#(x) D->F#(x) Eb->Ab(x) E->F#(x) F->Ab F#->Ab(x) G->F#(x) G#->F#(x) A->F#(x) Bb->Ab(x) B->F#(x)
+  semitone_up(+1)      acc_cal=0.08 (raw 0.17; multi-token targets 0.50 n=2)  C->G(x) Db->Ab(x) D->F#(x) Eb->B(x) E->F#(x) F->F# F#->F#(x) G->F#(x) Ab->Ab(x) A->F#(x) Bb->F#(x) B->F#(x)
+  whole_tone_up(+2)    acc_cal=0.17 (raw 0.00; multi-token targets 0.50 n=2)  C->B(x) Db->Ab(x) D->F#(x) Eb->Db(x) E->F# F->F#(x) F#->Ab G->F#(x) Ab->B(x) A->Db(x) Bb->Ab(x) B->F#(x)
+  fifth_up(+7)         acc_cal=0.08 (raw 0.08; multi-token targets 0.00 n=2)  C->Db(x) Db->Ab D->B(x) Eb->G(x) E->F#(x) F->F#(x) F#->Ab(x) G->F#(x) Ab->F#(x) A->Db(x) Bb->F#(x) B->Ab(x)
+  minor_third_up(+3)   acc_cal=0.17 (raw 0.00; multi-token targets 0.50 n=2)  C->F#(x) Db->Ab(x) D->F#(x) Eb->F# E->F#(x) F->Ab F#->Ab(x) G->Ab(x) Ab->F#(x) A->F#(x) Bb->Ab(x) B->Db(x)
+  tritone(+6)          acc_cal=0.17 (raw 0.08; multi-token targets 0.50 n=2)  C->F# Db->Ab(x) D->Ab Eb->Ab(x) E->B(x) F->Ab(x) F#->B(x) G->F#(x) Ab->F#(x) A->F#(x) Bb->F#(x) B->F#(x)
+## gemma2_2b few-shot CALIBRATED (score = logP(cont|prompt) - logP(cont|'The key is')); 3 demos, disjoint keys; chance 1/12
+  dominant(+7)         acc_cal=0.08 (raw 0.33; multi-token targets 0.00 n=1)  C->Ab(x) Db->Ab D->Ab(x) Eb->Ab(x) E->Ab(x) F->Ab(x) F#->Ab(x) G->Ab(x) Ab->Ab(x) A->Ab(x) Bb->Ab(x) B->Ab(x)
+  subdominant(+5)      acc_cal=0.08 (raw 0.33; multi-token targets 0.00 n=1)  C->Ab(x) Db->Ab(x) D->Ab(x) Eb->Ab E->Ab(x) F->Ab(x) F#->Ab(x) G->Ab(x) Ab->Ab(x) A->Ab(x) Bb->Ab(x) B->Ab(x)
+  relative_minor(+9)   acc_cal=0.08 (raw 0.08; multi-token targets 0.33 n=3)  C->C#(x) Db->C#(x) D->C#(x) Eb->C#(x) E->C# F->C#(x) F#->C#(x) G->C#(x) Ab->C#(x) A->C#(x) Bb->C#(x) B->C#(x)
+  relative_major(+3)   acc_cal=0.08 (raw 0.17; multi-token targets 0.00 n=1)  C->Ab(x) C#->Ab(x) D->Ab(x) Eb->Ab(x) E->Ab(x) F->Ab F#->Ab(x) G->Ab(x) G#->Ab(x) A->Ab(x) Bb->Ab(x) B->Ab(x)
+  semitone_up(+1)      acc_cal=0.08 (raw 0.25; multi-token targets 0.00 n=1)  C->Ab(x) Db->Ab(x) D->Ab(x) Eb->Ab(x) E->Ab(x) F->Ab(x) F#->Ab(x) G->Ab Ab->Ab(x) A->Ab(x) Bb->Ab(x) B->Ab(x)
+  whole_tone_up(+2)    acc_cal=0.08 (raw 0.08; multi-token targets 0.00 n=1)  C->Ab(x) Db->Ab(x) D->Ab(x) Eb->Ab(x) E->Ab(x) F->Ab(x) F#->Ab G->Ab(x) Ab->Ab(x) A->Ab(x) Bb->Ab(x) B->Ab(x)
+  fifth_up(+7)         acc_cal=0.08 (raw 0.33; multi-token targets 0.00 n=1)  C->Ab(x) Db->Ab D->Ab(x) Eb->Ab(x) E->Ab(x) F->Ab(x) F#->Ab(x) G->Ab(x) Ab->Ab(x) A->Ab(x) Bb->Ab(x) B->Ab(x)
+  minor_third_up(+3)   acc_cal=0.08 (raw 0.00; multi-token targets 0.00 n=1)  C->Ab(x) Db->Ab(x) D->Ab(x) Eb->Ab(x) E->Ab(x) F->Ab F#->Ab(x) G->Ab(x) Ab->Ab(x) A->Ab(x) Bb->Ab(x) B->Ab(x)
+  tritone(+6)          acc_cal=0.08 (raw 0.25; multi-token targets 0.00 n=1)  C->Ab(x) Db->Ab(x) D->Ab Eb->Ab(x) E->Ab(x) F->Ab(x) F#->Ab(x) G->Ab(x) Ab->Ab(x) A->Ab(x) Bb->Ab(x) B->Ab(x)
+## qwen25_3b few-shot CALIBRATED (score = logP(cont|prompt) - logP(cont|'The key is')); 3 demos, disjoint keys; chance 1/12
+  dominant(+7)         acc_cal=0.42 (raw 0.75; multi-token targets 0.50 n=2)  C->E(x) Db->Ab D->Ab(x) Eb->Bb E->B F->C F#->E(x) G->E(x) Ab->E(x) A->E Bb->Ab(x) B->E(x)
+  subdominant(+5)      acc_cal=0.42 (raw 0.83; multi-token targets 0.50 n=2)  C->E(x) Db->Ab(x) D->Ab(x) Eb->Ab E->Ab(x) F->Bb F#->B G->C Ab->E(x) A->E(x) Bb->E(x) B->E
+  relative_minor(+9)   acc_cal=0.17 (raw 0.50; multi-token targets 0.25 n=4)  C->C#(x) Db->C#(x) D->C#(x) Eb->C#(x) E->C# F->C#(x) F#->C#(x) G->E Ab->E(x) A->C#(x) Bb->C#(x) B->A(x)
+  relative_major(+3)   acc_cal=0.25 (raw 0.33; multi-token targets 0.00 n=2)  C->E(x) C#->E D->E(x) Eb->Ab(x) E->Ab(x) F->Ab F#->Ab(x) G->B(x) G#->B A->B(x) Bb->E(x) B->E(x)
+  semitone_up(+1)      acc_cal=0.33 (raw 0.50; multi-token targets 0.50 n=2)  C->B(x) Db->E(x) D->E(x) Eb->E E->E(x) F->E(x) F#->E(x) G->Ab Ab->Bb(x) A->Bb Bb->B B->E(x)
+  whole_tone_up(+2)    acc_cal=0.42 (raw 0.67; multi-token targets 0.50 n=2)  C->D Db->E(x) D->E Eb->Ab(x) E->B(x) F->Ab(x) F#->Ab G->Ab(x) Ab->Bb A->B Bb->B(x) B->C(x)
+  fifth_up(+7)         acc_cal=0.33 (raw 0.83; multi-token targets 0.50 n=2)  C->E(x) Db->Bb(x) D->B(x) Eb->Bb E->B F->B(x) F#->B(x) G->D Ab->E(x) A->E Bb->E(x) B->E(x)
+  minor_third_up(+3)   acc_cal=0.17 (raw 0.25; multi-token targets 0.00 n=2)  C->E(x) Db->Ab(x) D->E(x) Eb->Ab(x) E->Ab(x) F->Ab F#->E(x) G->B(x) Ab->B A->B(x) Bb->E(x) B->E(x)
+  tritone(+6)          acc_cal=0.17 (raw 0.25; multi-token targets 0.00 n=2)  C->Ab(x) Db->Ab(x) D->Ab Eb->Ab(x) E->B(x) F->Bb(x) F#->B(x) G->B(x) Ab->E(x) A->E(x) Bb->E B->E(x)
+## olmo2_7b few-shot CALIBRATED (score = logP(cont|prompt) - logP(cont|'The key is')); 3 demos, disjoint keys; chance 1/12
+  dominant(+7)         acc_cal=0.17 (raw 0.92; multi-token targets 0.00 n=2)  C->G Db->Ab D->Ab(x) Eb->Ab(x) E->Ab(x) F->Ab(x) F#->Ab(x) G->Db(x) Ab->Db(x) A->Db(x) Bb->Ab(x) B->Db(x)
+  subdominant(+5)      acc_cal=0.17 (raw 0.75; multi-token targets 0.00 n=2)  C->Ab(x) Db->Ab(x) D->Ab(x) Eb->Ab E->Ab(x) F->Ab(x) F#->Ab(x) G->Db(x) Ab->Db A->Db(x) Bb->Ab(x) B->Eb(x)
+  relative_minor(+9)   acc_cal=0.58 (raw 0.83; multi-token targets 0.75 n=4)  C->A Db->C#(x) D->B Eb->C#(x) E->C# F->D F#->G#(x) G->Eb(x) Ab->Eb(x) A->F# Bb->G B->G#
+  relative_major(+3)   acc_cal=0.33 (raw 0.75; multi-token targets 0.00 n=2)  C->Eb C#->Ab(x) D->Ab(x) Eb->Ab(x) E->G F->Ab F#->Ab(x) G->Ab(x) G#->Ab(x) A->Db(x) Bb->Db B->Db(x)
+  semitone_up(+1)      acc_cal=0.25 (raw 0.75; multi-token targets 0.00 n=2)  C->Db Db->Db(x) D->Eb Eb->Eb(x) E->Ab(x) F->Ab(x) F#->Ab(x) G->Ab Ab->Ab(x) A->Ab(x) Bb->Ab(x) B->Ab(x)
+  whole_tone_up(+2)    acc_cal=0.17 (raw 0.50; multi-token targets 0.00 n=2)  C->Db(x) Db->Ab(x) D->Eb(x) Eb->Ab(x) E->Ab(x) F->Ab(x) F#->Ab G->Ab(x) Ab->Ab(x) A->Db(x) Bb->Db(x) B->Db
+  fifth_up(+7)         acc_cal=0.08 (raw 0.58; multi-token targets 0.00 n=2)  C->Ab(x) Db->Ab D->Ab(x) Eb->Ab(x) E->Ab(x) F->Ab(x) F#->Ab(x) G->Db(x) Ab->Db(x) A->Db(x) Bb->Db(x) B->Db(x)
+  minor_third_up(+3)   acc_cal=0.08 (raw 0.25; multi-token targets 0.00 n=2)  C->Ab(x) Db->Ab(x) D->Eb(x) Eb->Ab(x) E->Ab(x) F->Ab F#->Ab(x) G->Db(x) Ab->Db(x) A->Ab(x) Bb->Ab(x) B->Db(x)
+  tritone(+6)          acc_cal=0.17 (raw 0.50; multi-token targets 0.00 n=2)  C->Ab(x) Db->Ab(x) D->Ab Eb->Ab(x) E->Ab(x) F->Ab(x) F#->Db(x) G->Db Ab->Db(x) A->Db(x) Bb->Ab(x) B->Ab(x)

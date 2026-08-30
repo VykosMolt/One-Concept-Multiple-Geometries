@@ -1,0 +1,61 @@
+BAD data/olmo_mix/dclm/gs00_shard_00000001_processed.jsonl.zstd 15 vs 
+BAD data/olmo_mix/dclm/gs00_shard_00000002_processed.jsonl.zstd 15 vs 
+BAD data/olmo_mix/dclm/gs00_shard_00000003_processed.jsonl.zstd 15 vs 
+BAD data/olmo_mix/dclm/gs00_shard_00000004_processed.jsonl.zstd 15 vs 
+BAD data/olmo_mix/dclm/gs00_shard_00000005_processed.jsonl.zstd 15 vs 
+BAD data/olmo_mix/dclm/gs00_shard_00000006_processed.jsonl.zstd 15 vs 
+OK data/olmo_mix/dclm/gs01_shard_00000001_processed.jsonl.zstd 218055028
+OK data/olmo_mix/dclm/gs01_shard_00000002_processed.jsonl.zstd 234064161
+OK data/olmo_mix/dclm/gs01_shard_00000003_processed.jsonl.zstd 237981257
+OK data/olmo_mix/dclm/gs01_shard_00000004_processed.jsonl.zstd 213149705
+OK data/olmo_mix/dclm/gs01_shard_00000005_processed.jsonl.zstd 195564488
+OK data/olmo_mix/dclm/gs01_shard_00000006_processed.jsonl.zstd 218087763
+OK data/olmo_mix/dclm/gs02_shard_00000001_processed.jsonl.zstd 150026324
+OK data/olmo_mix/dclm/gs02_shard_00000002_processed.jsonl.zstd 177616988
+OK data/olmo_mix/dclm/gs02_shard_00000003_processed.jsonl.zstd 189967203
+OK data/olmo_mix/dclm/gs02_shard_00000004_processed.jsonl.zstd 196924991
+OK data/olmo_mix/dclm/gs02_shard_00000005_processed.jsonl.zstd 191650190
+OK data/olmo_mix/dclm/gs02_shard_00000006_processed.jsonl.zstd 222827970
+OK data/olmo_mix/dclm/gs03_shard_00000001_processed.jsonl.zstd 205744359
+OK data/olmo_mix/dclm/gs03_shard_00000002_processed.jsonl.zstd 209767765
+OK data/olmo_mix/dclm/gs03_shard_00000003_processed.jsonl.zstd 259768225
+OK data/olmo_mix/dclm/gs03_shard_00000004_processed.jsonl.zstd 249702073
+OK data/olmo_mix/dclm/gs03_shard_00000005_processed.jsonl.zstd 190691259
+OK data/olmo_mix/dclm/gs03_shard_00000006_processed.jsonl.zstd 188955656
+OK data/olmo_mix/dclm/gs04_shard_00000001_processed.jsonl.zstd 124938459
+OK data/olmo_mix/dclm/gs04_shard_00000002_processed.jsonl.zstd 94584662
+OK data/olmo_mix/dclm/gs04_shard_00000003_processed.jsonl.zstd 199875812
+OK data/olmo_mix/dclm/gs04_shard_00000004_processed.jsonl.zstd 209757387
+OK data/olmo_mix/dclm/gs04_shard_00000005_processed.jsonl.zstd 196320295
+OK data/olmo_mix/dclm/gs04_shard_00000006_processed.jsonl.zstd 205845069
+OK data/olmo_mix/dclm/gs05_shard_00000001_processed.jsonl.zstd 156974233
+OK data/olmo_mix/dclm/gs05_shard_00000002_processed.jsonl.zstd 211964793
+OK data/olmo_mix/dclm/gs05_shard_00000003_processed.jsonl.zstd 230045221
+OK data/olmo_mix/dclm/gs05_shard_00000004_processed.jsonl.zstd 135004730
+OK data/olmo_mix/dclm/gs05_shard_00000005_processed.jsonl.zstd 182761163
+OK data/olmo_mix/dclm/gs05_shard_00000006_processed.jsonl.zstd 201577789
+OK data/olmo_mix/dclm/gs06_shard_00000001_processed.jsonl.zstd 194276277
+OK data/olmo_mix/dclm/gs06_shard_00000002_processed.jsonl.zstd 197610843
+OK data/olmo_mix/dclm/gs06_shard_00000003_processed.jsonl.zstd 247003110
+OK data/olmo_mix/dclm/gs06_shard_00000004_processed.jsonl.zstd 142728841
+OK data/olmo_mix/dclm/gs06_shard_00000005_processed.jsonl.zstd 212474997
+OK data/olmo_mix/dclm/gs06_shard_00000006_processed.jsonl.zstd 256873790
+OK data/olmo_mix/dclm/gs07_shard_00000001_processed.jsonl.zstd 137818677
+OK data/olmo_mix/dclm/gs07_shard_00000002_processed.jsonl.zstd 211290270
+OK data/olmo_mix/dclm/gs07_shard_00000003_processed.jsonl.zstd 203310701
+OK data/olmo_mix/dclm/gs07_shard_00000004_processed.jsonl.zstd 210350415
+OK data/olmo_mix/dclm/gs07_shard_00000005_processed.jsonl.zstd 264099345
+OK data/olmo_mix/dclm/gs07_shard_00000006_processed.jsonl.zstd 196714703
+OK data/olmo_mix/dclm/gs08_shard_00000001_processed.jsonl.zstd 137985489
+OK data/olmo_mix/dclm/gs08_shard_00000002_processed.jsonl.zstd 193062273
+OK data/olmo_mix/dclm/gs08_shard_00000003_processed.jsonl.zstd 225353286
+OK data/olmo_mix/dclm/gs08_shard_00000004_processed.jsonl.zstd 203582874
+OK data/olmo_mix/dclm/gs08_shard_00000005_processed.jsonl.zstd 242653772
+OK data/olmo_mix/dclm/gs08_shard_00000006_processed.jsonl.zstd 193924799
+OK data/olmo_mix/dclm/gs09_shard_00000001_processed.jsonl.zstd 197529246
+OK data/olmo_mix/dclm/gs09_shard_00000002_processed.jsonl.zstd 216889757
+OK data/olmo_mix/dclm/gs09_shard_00000003_processed.jsonl.zstd 197753451
+OK data/olmo_mix/dclm/gs09_shard_00000004_processed.jsonl.zstd 203650608
+OK data/olmo_mix/dclm/gs09_shard_00000005_processed.jsonl.zstd 207539806
+OK data/olmo_mix/dclm/gs09_shard_00000006_processed.jsonl.zstd 179812315
+DCLM_MORE_DONE

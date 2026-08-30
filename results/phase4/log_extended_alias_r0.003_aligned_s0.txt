@@ -1,0 +1,36 @@
+/home/moloch/Documents/Research/pitch_fourier/synthetic/measure.py:21: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return {"rsa_circle": float(spearmanr(d, SEM_CIRC[iu]).correlation), "rsa_line": float(spearmanr(d, SEM_LINE[iu]).correlation), "rsa_code": float(spearmanr(d, code_hamming[iu]).correlation),
+/home/moloch/Documents/Research/pitch_fourier/synthetic/phase4.py:75: RuntimeWarning: invalid value encountered in scalar divide
+  g = geometry_stats(D, H); out.append({"twin_dist_rel": float(np.mean([D[a, b] for a, b in TWIN_PAIRS]) / nontwin), "twin_cos": float(np.mean(cos)), "eci": g["eci"], "circle_given_line": g["circle_given_line"], "line_given_circle": g["line_given_circle"], "rsa_code": g["rsa_code"],
+/home/moloch/Documents/Research/pitch_fourier/synthetic/phase4.py:76: RuntimeWarning: invalid value encountered in scalar divide
+  "unique_ctrl_dist_rel": float(np.mean([D[UNIQUE_CTRL, j] for j in range(N_STATES) if j != UNIQUE_CTRL]) / nontwin)})
+[extended alias r=0.003 aligned s0] step      0 expo       0 | KL global 3.3085 common 3.0048 rare 2.9823 uniq 3.5725 | twin JSz 0.0034 JS15 0.0034 | Q twin dist_rel 0.92 cos -0.00 eci 0.30 l|c +0.02
+[extended alias r=0.003 aligned s0] step     25 expo       6 | KL global 2.2568 common 3.6940 rare 3.5396 uniq 0.1272 | twin JSz 0.0011 JS15 0.0011 | Q twin dist_rel 0.96 cos -0.05 eci 0.41 l|c +0.05
+[extended alias r=0.003 aligned s0] step     33 expo       8 | KL global 0.8754 common 1.2799 rare 1.1993 uniq 0.2799 | twin JSz 0.0019 JS15 0.0022 | Q twin dist_rel 0.99 cos -0.07 eci 0.49 l|c +0.08
+[extended alias r=0.003 aligned s0] step     43 expo      10 | KL global 0.5451 common 0.6367 rare 0.6057 uniq 0.5671 | twin JSz 0.0026 JS15 0.0038 | Q twin dist_rel 1.00 cos -0.10 eci 0.52 l|c +0.12
+[extended alias r=0.003 aligned s0] step     57 expo      13 | KL global 0.3772 common 0.4282 rare 0.4834 uniq 0.4144 | twin JSz 0.0081 JS15 0.0126 | Q twin dist_rel 0.89 cos -0.07 eci 0.35 l|c +0.05
+[extended alias r=0.003 aligned s0] step     76 expo      16 | KL global 0.3160 common 0.2484 rare 0.5626 uniq 0.2105 | twin JSz 0.0902 JS15 0.0939 | Q twin dist_rel 0.71 cos 0.08 eci 0.20 l|c -0.18
+[extended alias r=0.003 aligned s0] step    101 expo      19 | KL global 0.1348 common 0.0474 rare 0.3752 uniq 0.0520 | twin JSz 0.0820 JS15 0.0881 | Q twin dist_rel 0.68 cos 0.11 eci 0.17 l|c -0.20
+[extended alias r=0.003 aligned s0] step    134 expo      25 | KL global 0.3534 common 0.3557 rare 0.7352 uniq 0.1218 | twin JSz 0.0699 JS15 0.0934 | Q twin dist_rel 0.69 cos 0.02 eci 0.19 l|c -0.15
+[extended alias r=0.003 aligned s0] step    177 expo      35 | KL global 0.1031 common 0.0467 rare 0.3659 uniq 0.0269 | twin JSz 0.0800 JS15 0.0832 | Q twin dist_rel 0.65 cos 0.05 eci 0.17 l|c -0.17
+[extended alias r=0.003 aligned s0] step    234 expo      44 | KL global 0.1005 common 0.0398 rare 0.3392 uniq 0.0579 | twin JSz 0.0648 JS15 0.0671 | Q twin dist_rel 0.61 cos 0.15 eci 0.12 l|c -0.18
+[extended alias r=0.003 aligned s0] step    310 expo      64 | KL global 0.0889 common 0.0397 rare 0.2724 uniq 0.0458 | twin JSz 0.0519 JS15 0.0534 | Q twin dist_rel 0.54 cos 0.32 eci 0.10 l|c -0.12
+[extended alias r=0.003 aligned s0] step    411 expo      91 | KL global 0.0462 common 0.0185 rare 0.1313 uniq 0.0251 | twin JSz 0.0327 JS15 0.0344 | Q twin dist_rel 0.50 cos 0.44 eci 0.08 l|c -0.15
+[extended alias r=0.003 aligned s0] step    543 expo     109 | KL global 0.0389 common 0.0239 rare 0.0961 uniq 0.0110 | twin JSz 0.0237 JS15 0.0246 | Q twin dist_rel 0.44 cos 0.48 eci 0.08 l|c -0.15
+[extended alias r=0.003 aligned s0] step    719 expo     142 | KL global 0.0308 common 0.0217 rare 0.0778 uniq 0.0344 | twin JSz 0.0183 JS15 0.0184 | Q twin dist_rel 0.41 cos 0.56 eci 0.07 l|c -0.15
+[extended alias r=0.003 aligned s0] step    952 expo     186 | KL global 0.0238 common 0.0095 rare 0.0612 uniq 0.0114 | twin JSz 0.0177 JS15 0.0185 | Q twin dist_rel 0.40 cos 0.56 eci 0.06 l|c -0.20
+[extended alias r=0.003 aligned s0] step   1260 expo     242 | KL global 0.0243 common 0.0149 rare 0.0785 uniq 0.0060 | twin JSz 0.0173 JS15 0.0177 | Q twin dist_rel 0.38 cos 0.60 eci 0.08 l|c -0.17
+[extended alias r=0.003 aligned s0] step   1667 expo     327 | KL global 0.0177 common 0.0113 rare 0.0440 uniq 0.0111 | twin JSz 0.0063 JS15 0.0066 | Q twin dist_rel 0.30 cos 0.74 eci 0.04 l|c -0.19
+[extended alias r=0.003 aligned s0] step   2205 expo     425 | KL global 0.0243 common 0.0156 rare 0.0514 uniq 0.0170 | twin JSz 0.0081 JS15 0.0085 | Q twin dist_rel 0.30 cos 0.73 eci 0.05 l|c -0.21
+[extended alias r=0.003 aligned s0] step   2918 expo     550 | KL global 0.0150 common 0.0090 rare 0.0385 uniq 0.0090 | twin JSz 0.0064 JS15 0.0070 | Q twin dist_rel 0.27 cos 0.81 eci 0.05 l|c -0.21
+[extended alias r=0.003 aligned s0] step   3861 expo     747 | KL global 0.0267 common 0.0167 rare 0.0643 uniq 0.0220 | twin JSz 0.0038 JS15 0.0067 | Q twin dist_rel 0.21 cos 0.86 eci 0.04 l|c -0.18
+[extended alias r=0.003 aligned s0] step   5109 expo     975 | KL global 0.0096 common 0.0064 rare 0.0174 uniq 0.0094 | twin JSz 0.0043 JS15 0.0057 | Q twin dist_rel 0.34 cos 0.70 eci 0.05 l|c -0.19
+[extended alias r=0.003 aligned s0] step   6761 expo    1278 | KL global 0.0142 common 0.0083 rare 0.0388 uniq 0.0019 | twin JSz 0.0069 JS15 0.0086 | Q twin dist_rel 0.30 cos 0.71 eci 0.06 l|c -0.24
+[extended alias r=0.003 aligned s0] step   8945 expo    1689 | KL global 0.0111 common 0.0119 rare 0.0149 uniq 0.0172 | twin JSz 0.0025 JS15 0.0033 | Q twin dist_rel 0.36 cos 0.70 eci 0.09 l|c -0.16
+[extended alias r=0.003 aligned s0] step  11836 expo    2231 | KL global 0.0064 common 0.0056 rare 0.0127 uniq 0.0013 | twin JSz 0.0022 JS15 0.0027 | Q twin dist_rel 0.27 cos 0.82 eci 0.03 l|c -0.15
+[extended alias r=0.003 aligned s0] step  15661 expo    3001 | KL global 0.0060 common 0.0066 rare 0.0137 uniq 0.0038 | twin JSz 0.0015 JS15 0.0024 | Q twin dist_rel 0.31 cos 0.70 eci 0.06 l|c -0.18
+[extended alias r=0.003 aligned s0] step  20721 expo    3957 | KL global 0.0066 common 0.0021 rare 0.0238 uniq 0.0012 | twin JSz 0.0017 JS15 0.0050 | Q twin dist_rel 0.25 cos 0.87 eci 0.04 l|c -0.04
+[extended alias r=0.003 aligned s0] step  27417 expo    5299 | KL global 0.0044 common 0.0015 rare 0.0105 uniq 0.0080 | twin JSz 0.0010 JS15 0.0014 | Q twin dist_rel 0.23 cos 0.79 eci 0.04 l|c -0.19
+[extended alias r=0.003 aligned s0] step  36277 expo    6980 | KL global 0.0029 common 0.0024 rare 0.0081 uniq 0.0024 | twin JSz 0.0007 JS15 0.0008 | Q twin dist_rel 0.15 cos 0.96 eci 0.02 l|c -0.07
+[extended alias r=0.003 aligned s0] step  48000 expo    9228 | KL global 0.0013 common 0.0010 rare 0.0040 uniq 0.0005 | twin JSz 0.0003 JS15 0.0005 | Q twin dist_rel 0.14 cos 0.96 eci 0.02 l|c -0.07
+done results/phase4/runs/extended/alias_r0.003_aligned_s0

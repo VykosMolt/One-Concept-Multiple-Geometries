@@ -1,0 +1,19 @@
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:  17%|█▋        | 75/434 [00:00<00:00, 715.95it/s]Loading weights:  38%|███▊      | 166/434 [00:00<00:00, 785.86it/s]Loading weights:  59%|█████▉    | 256/434 [00:00<00:00, 804.32it/s]Loading weights:  81%|████████  | 351/434 [00:00<00:00, 818.01it/s]Loading weights: 100%|██████████| 434/434 [00:00<00:00, 843.28it/s]
+qwen25_3b codebook 0: identity accuracy 1.00
+[W829 10:11:03.850198138 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 994050048 bytes (free: 463273984, total: 12386893824).
+qwen25_3b codebook 0 dominant: top-1 (non-self) Cb->Gb Gb->Cb Db->Gb Ab->Gb Eb->Bb Bb->C# F->F# C->C# G->Gb D->G A->C# E->B B->C# F#->C# C#->F#
+[W829 10:11:07.287211353 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 1012924416 bytes (free: 771555328, total: 12386893824).
+qwen25_3b codebook 0 modulation: top-1 (non-self) Cb->A Gb->Cb Db->Cb Ab->Cb Eb->Cb Bb->Cb F->Cb C->Cb G->Cb D->Cb A->Cb E->Cb B->Cb F#->Cb C#->Cb
+[W829 10:11:10.774019814 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 1048576000 bytes (free: 664600576, total: 12386893824).
+qwen25_3b codebook 0 chord: top-1 (non-self) Cb->Gb Gb->Cb Db->Gb Ab->Bb Eb->Bb Bb->Eb F->Bb C->Cb G->Gb D->Bb A->E E->Bb B->E F#->Bb C#->Bb
+qwen25_3b codebook 0 enharmonic: top-1 (non-self) Cb->Gb Gb->Cb Db->Gb Ab->Cb Eb->E Bb->C# F->Cb C->Cb G->C# D->A A->E E->B B->C# F#->C# C#->F#
+qwen25_3b codebook 1: identity accuracy 0.87
+qwen25_3b codebook 1 dominant: top-1 (non-self) Cb->Gb Gb->G Db->Gb Ab->Gb Eb->Ab Bb->Eb F->F# C->G G->Gb D->G A->D E->D B->E F#->B C#->F#
+qwen25_3b codebook 1 modulation: top-1 (non-self) Cb->Gb Gb->C Db->F# Ab->F# Eb->F# Bb->F# F->Gb C->Gb G->Cb D->Gb A->Gb E->Cb B->Cb F#->Gb C#->Gb
+qwen25_3b codebook 1 chord: top-1 (non-self) Cb->Gb Gb->Cb Db->Gb Ab->Db Eb->Db Bb->Eb F->Bb C->Eb G->Gb D->Db A->Ab E->Eb B->Eb F#->Bb C#->Bb
+qwen25_3b codebook 1 enharmonic: top-1 (non-self) Cb->Gb Gb->Ab Db->Gb Ab->Eb Eb->E Bb->Eb F->F# C->F G->D D->G A->E E->Eb B->E F#->F C#->F#
+qwen25_3b codebook 2: identity accuracy 0.73
+qwen25_3b codebook 2 dominant: top-1 (non-self) Cb->Gb Gb->Cb Db->Cb Ab->Cb Eb->Cb Bb->Cb F->F# C->F# G->C# D->Db A->B E->B B->C# F#->C# C#->F#
+qwen25_3b codebook 2 modulation: top-1 (non-self) Cb->Bb Gb->Cb Db->Bb Ab->Bb Eb->Bb Bb->Cb F->Cb C->Cb G->Cb D->Cb A->Cb E->Cb B->Cb F#->Cb C#->Cb
+qwen25_3b codebook 2 chord: top-1 (non-self) Cb->Gb Gb->Cb Db->Cb Ab->Db Eb->Db Bb->Eb F->F# C->Cb G->Cb D->Db A->Cb E->Eb B->Eb F#->B C#->Cb
+qwen25_3b codebook 2 enharmonic: top-1 (non-self) Cb->Ab Gb->Cb Db->Cb Ab->Cb Eb->Cb Bb->B F->F# C->F# G->C# D->Cb A->E E->B B->Bb F#->Cb C#->F#

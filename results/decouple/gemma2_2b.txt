@@ -1,0 +1,14 @@
+## gemma2_2b canonical set ['C', 'Db', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B']: glyph indicator [0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0]
+   L 2: RSA(Gram, black-key block) = +0.83   RSA(Gram, accidental-glyph block) = +0.83
+   L 6: RSA(Gram, black-key block) = +0.77   RSA(Gram, accidental-glyph block) = +0.77
+   L13: RSA(Gram, black-key block) = +0.80   RSA(Gram, accidental-glyph block) = +0.80
+   L20: RSA(Gram, black-key block) = +0.75   RSA(Gram, accidental-glyph block) = +0.75
+   L24: RSA(Gram, black-key block) = +0.84   RSA(Gram, accidental-glyph block) = +0.84
+   L26: RSA(Gram, black-key block) = +0.68   RSA(Gram, accidental-glyph block) = +0.68
+## gemma2_2b decoupled set ['B#', 'Db', 'D', 'Eb', 'Fb', 'E#', 'F#', 'G', 'Ab', 'A', 'Bb', 'Cb']: glyph indicator [1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1]
+   L 2: RSA(Gram, black-key block) = +0.07   RSA(Gram, accidental-glyph block) = +0.03
+   L 6: RSA(Gram, black-key block) = -0.02   RSA(Gram, accidental-glyph block) = +0.08
+   L13: RSA(Gram, black-key block) = -0.08   RSA(Gram, accidental-glyph block) = +0.15
+   L20: RSA(Gram, black-key block) = -0.00   RSA(Gram, accidental-glyph block) = +0.15
+   L24: RSA(Gram, black-key block) = +0.03   RSA(Gram, accidental-glyph block) = +0.34
+   L26: RSA(Gram, black-key block) = -0.03   RSA(Gram, accidental-glyph block) = +0.43

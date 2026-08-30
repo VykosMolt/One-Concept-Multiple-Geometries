@@ -1,0 +1,36 @@
+/home/moloch/Documents/Research/pitch_fourier/synthetic/measure.py:21: ConstantInputWarning: An input array is constant; the correlation coefficient is not defined.
+  return {"rsa_circle": float(spearmanr(d, SEM_CIRC[iu]).correlation), "rsa_line": float(spearmanr(d, SEM_LINE[iu]).correlation), "rsa_code": float(spearmanr(d, code_hamming[iu]).correlation),
+/home/moloch/Documents/Research/pitch_fourier/synthetic/phase4.py:75: RuntimeWarning: invalid value encountered in scalar divide
+  g = geometry_stats(D, H); out.append({"twin_dist_rel": float(np.mean([D[a, b] for a, b in TWIN_PAIRS]) / nontwin), "twin_cos": float(np.mean(cos)), "eci": g["eci"], "circle_given_line": g["circle_given_line"], "line_given_circle": g["line_given_circle"], "rsa_code": g["rsa_code"],
+/home/moloch/Documents/Research/pitch_fourier/synthetic/phase4.py:76: RuntimeWarning: invalid value encountered in scalar divide
+  "unique_ctrl_dist_rel": float(np.mean([D[UNIQUE_CTRL, j] for j in range(N_STATES) if j != UNIQUE_CTRL]) / nontwin)})
+[primary alias r=0.01 permuted s2] step      0 expo       0 | KL global 0.9654 common 0.7681 rare 0.6689 uniq 1.5451 | twin JSz 0.0051 JS15 0.0056 | Q twin dist_rel 1.04 cos -0.11 eci 0.62 l|c +0.12
+[primary alias r=0.01 permuted s2] step     25 expo      16 | KL global 0.8016 common 0.6480 rare 0.6486 uniq 1.0868 | twin JSz 0.0052 JS15 0.0057 | Q twin dist_rel 1.02 cos -0.07 eci 0.55 l|c +0.07
+[primary alias r=0.01 permuted s2] step     31 expo      21 | KL global 0.8043 common 0.7074 rare 0.7215 uniq 0.8782 | twin JSz 0.0032 JS15 0.0036 | Q twin dist_rel 1.01 cos -0.07 eci 0.55 l|c +0.06
+[primary alias r=0.01 permuted s2] step     39 expo      30 | KL global 0.5998 common 0.5829 rare 0.6078 uniq 0.5101 | twin JSz 0.0015 JS15 0.0016 | Q twin dist_rel 1.00 cos -0.07 eci 0.51 l|c +0.02
+[primary alias r=0.01 permuted s2] step     49 expo      34 | KL global 0.5936 common 0.6515 rare 0.7549 uniq 0.3659 | twin JSz 0.0034 JS15 0.0035 | Q twin dist_rel 0.97 cos -0.08 eci 0.44 l|c -0.01
+[primary alias r=0.01 permuted s2] step     62 expo      41 | KL global 0.5861 common 0.5898 rare 0.9369 uniq 0.3124 | twin JSz 0.0234 JS15 0.0262 | Q twin dist_rel 0.97 cos -0.12 eci 0.51 l|c +0.15
+[primary alias r=0.01 permuted s2] step     78 expo      51 | KL global 0.3823 common 0.3530 rare 0.6328 uniq 0.2572 | twin JSz 0.0761 JS15 0.0817 | Q twin dist_rel 0.99 cos -0.10 eci 0.51 l|c +0.27
+[primary alias r=0.01 permuted s2] step     98 expo      64 | KL global 0.4005 common 0.2140 rare 0.8611 uniq 0.5654 | twin JSz 0.1055 JS15 0.1129 | Q twin dist_rel 1.01 cos -0.01 eci 0.60 l|c +0.26
+[primary alias r=0.01 permuted s2] step    123 expo      77 | KL global 0.2072 common 0.1059 rare 0.6791 uniq 0.0331 | twin JSz 0.1106 JS15 0.1190 | Q twin dist_rel 0.82 cos 0.18 eci 0.34 l|c +0.04
+[primary alias r=0.01 permuted s2] step    155 expo      96 | KL global 0.1191 common 0.0628 rare 0.4133 uniq 0.0223 | twin JSz 0.0764 JS15 0.0889 | Q twin dist_rel 0.79 cos 0.24 eci 0.33 l|c +0.03
+[primary alias r=0.01 permuted s2] step    195 expo     120 | KL global 0.0972 common 0.0224 rare 0.3880 uniq 0.0136 | twin JSz 0.0728 JS15 0.0844 | Q twin dist_rel 0.74 cos 0.27 eci 0.22 l|c -0.08
+[primary alias r=0.01 permuted s2] step    246 expo     151 | KL global 0.0915 common 0.0549 rare 0.2735 uniq 0.0843 | twin JSz 0.0716 JS15 0.0774 | Q twin dist_rel 0.66 cos 0.33 eci 0.16 l|c -0.17
+[primary alias r=0.01 permuted s2] step    309 expo     187 | KL global 0.1188 common 0.0957 rare 0.3112 uniq 0.0557 | twin JSz 0.0396 JS15 0.0422 | Q twin dist_rel 0.56 cos 0.54 eci 0.14 l|c -0.19
+[primary alias r=0.01 permuted s2] step    388 expo     225 | KL global 0.0775 common 0.0359 rare 0.2164 uniq 0.0502 | twin JSz 0.0314 JS15 0.0337 | Q twin dist_rel 0.52 cos 0.55 eci 0.11 l|c -0.21
+[primary alias r=0.01 permuted s2] step    488 expo     284 | KL global 0.0361 common 0.0240 rare 0.0832 uniq 0.0133 | twin JSz 0.0186 JS15 0.0208 | Q twin dist_rel 0.50 cos 0.57 eci 0.11 l|c -0.23
+[primary alias r=0.01 permuted s2] step    614 expo     372 | KL global 0.0470 common 0.0226 rare 0.1429 uniq 0.0276 | twin JSz 0.0183 JS15 0.0196 | Q twin dist_rel 0.48 cos 0.61 eci 0.12 l|c -0.22
+[primary alias r=0.01 permuted s2] step    771 expo     462 | KL global 0.0247 common 0.0071 rare 0.0532 uniq 0.0176 | twin JSz 0.0120 JS15 0.0138 | Q twin dist_rel 0.44 cos 0.68 eci 0.11 l|c -0.20
+[primary alias r=0.01 permuted s2] step    970 expo     573 | KL global 0.0257 common 0.0205 rare 0.0593 uniq 0.0194 | twin JSz 0.0081 JS15 0.0091 | Q twin dist_rel 0.41 cos 0.72 eci 0.10 l|c -0.24
+[primary alias r=0.01 permuted s2] step   1219 expo     729 | KL global 0.0265 common 0.0199 rare 0.0576 uniq 0.0195 | twin JSz 0.0123 JS15 0.0129 | Q twin dist_rel 0.38 cos 0.72 eci 0.10 l|c -0.24
+[primary alias r=0.01 permuted s2] step   1532 expo     945 | KL global 0.0433 common 0.0281 rare 0.0877 uniq 0.0475 | twin JSz 0.0123 JS15 0.0134 | Q twin dist_rel 0.38 cos 0.75 eci 0.11 l|c -0.22
+[primary alias r=0.01 permuted s2] step   1926 expo    1200 | KL global 0.0206 common 0.0158 rare 0.0433 uniq 0.0058 | twin JSz 0.0083 JS15 0.0088 | Q twin dist_rel 0.33 cos 0.82 eci 0.09 l|c -0.25
+[primary alias r=0.01 permuted s2] step   2421 expo    1520 | KL global 0.0122 common 0.0078 rare 0.0352 uniq 0.0111 | twin JSz 0.0054 JS15 0.0059 | Q twin dist_rel 0.32 cos 0.84 eci 0.09 l|c -0.25
+[primary alias r=0.01 permuted s2] step   3043 expo    1899 | KL global 0.0163 common 0.0167 rare 0.0282 uniq 0.0104 | twin JSz 0.0039 JS15 0.0048 | Q twin dist_rel 0.30 cos 0.84 eci 0.10 l|c -0.27
+[primary alias r=0.01 permuted s2] step   3825 expo    2415 | KL global 0.0123 common 0.0101 rare 0.0255 uniq 0.0071 | twin JSz 0.0029 JS15 0.0038 | Q twin dist_rel 0.28 cos 0.86 eci 0.06 l|c -0.27
+[primary alias r=0.01 permuted s2] step   4807 expo    3062 | KL global 0.0087 common 0.0059 rare 0.0203 uniq 0.0049 | twin JSz 0.0047 JS15 0.0052 | Q twin dist_rel 0.30 cos 0.84 eci 0.09 l|c -0.24
+[primary alias r=0.01 permuted s2] step   6043 expo    3903 | KL global 0.0161 common 0.0147 rare 0.0352 uniq 0.0049 | twin JSz 0.0029 JS15 0.0033 | Q twin dist_rel 0.29 cos 0.87 eci 0.09 l|c -0.24
+[primary alias r=0.01 permuted s2] step   7595 expo    4898 | KL global 0.0051 common 0.0035 rare 0.0144 uniq 0.0028 | twin JSz 0.0021 JS15 0.0027 | Q twin dist_rel 0.23 cos 0.93 eci 0.06 l|c -0.28
+[primary alias r=0.01 permuted s2] step   9547 expo    6157 | KL global 0.0036 common 0.0021 rare 0.0100 uniq 0.0012 | twin JSz 0.0015 JS15 0.0021 | Q twin dist_rel 0.27 cos 0.91 eci 0.10 l|c -0.27
+[primary alias r=0.01 permuted s2] step  12000 expo    7698 | KL global 0.0029 common 0.0007 rare 0.0109 uniq 0.0007 | twin JSz 0.0018 JS15 0.0024 | Q twin dist_rel 0.24 cos 0.92 eci 0.06 l|c -0.28
+done results/phase4/runs/primary/alias_r0.01_permuted_s2

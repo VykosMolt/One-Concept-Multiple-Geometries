@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/moloch/Documents/Research/pitch_fourier/phase5/thin_wikipedia.py", line 9, in <module>
+    f = float(tgt[k].sum()) / W.sum(); out[k] = rng.binomial(W.astype(int), f).astype(float); print(f"{k}: wiki {int(W.sum())} → {int(out[k].sum())} (target {int(tgt[k].sum())})")
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'astype'
+uni: wiki 37811 → 65 (target 56)

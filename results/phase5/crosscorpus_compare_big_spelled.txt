@@ -1,0 +1,60 @@
+view: spelled; corpora: ['wikipedia_v3', 'olmomix_dclm_big', 'wikipedia_thin_olmomix_dclm_big']
+model      family        extract  |             wikipedia_v3 |         olmomix_dclm_big |       wikipedia_thin_olm
+                                   |       r     ΔKL(p)   ΔR² |       r     ΔKL(p)   ΔR² |       r     ΔKL(p)   ΔR²
+olmo2_1b   C_harmonic    A_win40  | +0.16 +0.0025(0.42) +0.04 | +0.23 +0.0004(0.60) +0.03 | +0.16 -0.0019(0.84) +0.01
+olmo2_1b   C_harmonic    B_any    | +0.14 +0.0035(0.33) +0.02 | +0.19 +0.0030(0.27) +0.03 | +0.06 +0.0004(0.51) -0.00
+olmo2_1b   C_harmonic    D_doc    | +0.19 -0.0092(0.98) +0.06 | +0.36 +0.0082(0.20) +0.09 | +0.19 -0.0153(0.99) +0.04
+olmo2_1b   D_chord       A_win40  | +0.12 +0.0045(0.34) +0.02 | +0.10 -0.0004(0.53) -0.01 | +0.15 +0.0045(0.30) +0.01
+olmo2_1b   D_chord       B_any    | +0.14 +0.0084(0.23) +0.01 | +0.08 -0.0012(0.56) -0.01 | +0.06 +0.0034(0.31) -0.00
+olmo2_1b   D_chord       D_doc    | +0.04 -0.0146(0.80) +0.02 | +0.07 +0.0047(0.36) +0.01 | +0.13 -0.0121(0.80) +0.02
+olmo2_1b   E_modulation  A_win40  | +0.28 +0.0056(0.01) +0.10 | +0.31 +0.0062(0.31) +0.07 | +0.26 +0.0028(0.06) +0.06
+olmo2_1b   E_modulation  B_any    | +0.20 +0.0039(0.02) +0.05 | +0.21 +0.0005(0.50) +0.03 | +0.09 +0.0001(0.28) +0.00
+olmo2_1b   E_modulation  D_doc    | +0.29 +0.0008(0.23) +0.14 | +0.41 +0.0215(0.09) +0.12 | +0.28 -0.0066(0.88) +0.13
+olmo2_7b   C_harmonic    A_win40  | +0.28 +0.0053(0.27) +0.07 | +0.28 +0.0038(0.32) +0.06 | +0.19 +0.0049(0.28) +0.03
+olmo2_7b   C_harmonic    B_any    | +0.26 +0.0028(0.31) +0.05 | +0.28 -0.0040(0.89) +0.05 | +0.20 -0.0015(0.65) +0.02
+olmo2_7b   C_harmonic    D_doc    | +0.34 -0.0057(0.90) +0.13 | +0.35 +0.0127(0.15) +0.11 | +0.24 -0.0056(0.88) +0.05
+olmo2_7b   D_chord       A_win40  | +0.30 +0.0139(0.10) +0.07 | +0.35 +0.0096(0.13) +0.09 | +0.29 +0.0142(0.08) +0.07
+olmo2_7b   D_chord       B_any    | +0.29 +0.0158(0.05) +0.07 | +0.28 +0.0021(0.26) +0.06 | +0.24 +0.0121(0.09) +0.05
+olmo2_7b   D_chord       D_doc    | +0.24 -0.0102(0.88) +0.08 | +0.32 +0.0102(0.11) +0.09 | +0.19 -0.0085(0.85) +0.06
+olmo2_7b   E_modulation  A_win40  | +0.38 +0.0074(0.00) +0.22 | +0.33 +0.0054(0.17) +0.15 | +0.40 +0.0039(0.03) +0.17
+olmo2_7b   E_modulation  B_any    | +0.31 +0.0053(0.00) +0.13 | +0.20 +0.0009(0.38) +0.05 | +0.22 +0.0035(0.02) +0.05
+olmo2_7b   E_modulation  D_doc    | +0.47 -0.0015(0.76) +0.30 | +0.52 +0.0178(0.03) +0.23 | +0.36 -0.0067(0.96) +0.19
+gemma2_2b  C_harmonic    A_win40  | -0.01 -0.0008(0.65) -0.01 | +0.16 -0.0016(0.80) +0.01 | +0.04 -0.0014(0.70) -0.01
+gemma2_2b  C_harmonic    B_any    | -0.01 +0.0001(0.51) -0.01 | +0.13 -0.0020(0.79) +0.01 | -0.01 -0.0014(0.72) -0.02
+gemma2_2b  C_harmonic    D_doc    | +0.03 -0.0099(0.97) -0.01 | +0.30 +0.0069(0.37) +0.04 | +0.03 -0.0136(0.99) +0.01
+gemma2_2b  D_chord       A_win40  | -0.10 +0.0000(0.34) -0.01 | +0.05 +0.0013(0.55) -0.01 | -0.07 -0.0007(0.51) -0.01
+gemma2_2b  D_chord       B_any    | -0.10 +0.0003(0.28) +0.00 | +0.07 -0.0019(0.88) -0.01 | -0.16 -0.0003(0.42) +0.02
+gemma2_2b  D_chord       D_doc    | +0.06 -0.0011(0.58) -0.02 | +0.26 +0.0190(0.11) +0.03 | +0.08 -0.0012(0.61) -0.02
+gemma2_2b  E_modulation  A_win40  | +0.11 +0.0039(0.10) +0.02 | +0.21 +0.0022(0.52) +0.03 | +0.12 +0.0017(0.19) +0.00
+gemma2_2b  E_modulation  B_any    | +0.08 +0.0015(0.20) -0.00 | +0.18 -0.0031(0.96) +0.03 | +0.06 -0.0012(0.73) -0.02
+gemma2_2b  E_modulation  D_doc    | +0.32 +0.0117(0.01) +0.12 | +0.41 +0.0298(0.06) +0.13 | +0.25 +0.0049(0.06) +0.08
+qwen25_3b  C_harmonic    A_win40  | +0.28 +0.0087(0.24) +0.11 | +0.28 +0.0016(0.54) +0.08 | +0.32 +0.0097(0.20) +0.11
+qwen25_3b  C_harmonic    B_any    | +0.25 +0.0064(0.25) +0.06 | +0.21 +0.0046(0.30) +0.04 | +0.14 +0.0029(0.35) +0.01
+qwen25_3b  C_harmonic    D_doc    | +0.27 -0.0068(0.93) +0.11 | +0.36 +0.0144(0.21) +0.12 | +0.21 -0.0223(1.00) +0.07
+qwen25_3b  D_chord       A_win40  | +0.22 +0.0057(0.28) +0.06 | +0.28 +0.0054(0.12) +0.08 | +0.18 +0.0039(0.30) +0.03
+qwen25_3b  D_chord       B_any    | +0.23 +0.0091(0.16) +0.05 | +0.20 +0.0035(0.11) +0.05 | +0.18 +0.0086(0.12) +0.03
+qwen25_3b  D_chord       D_doc    | +0.11 -0.0102(0.94) +0.02 | +0.31 +0.0081(0.08) +0.07 | +0.16 -0.0082(0.92) +0.04
+qwen25_3b  E_modulation  A_win40  | +0.20 -0.0012(0.71) +0.02 | +0.23 +0.0047(0.38) +0.04 | +0.19 -0.0022(0.78) -0.01
+qwen25_3b  E_modulation  B_any    | +0.16 -0.0004(0.56) -0.00 | +0.17 +0.0005(0.56) +0.01 | +0.06 -0.0004(0.50) -0.01
+qwen25_3b  E_modulation  D_doc    | +0.24 -0.0052(0.90) +0.05 | +0.38 +0.0206(0.10) +0.09 | +0.20 -0.0077(0.93) +0.04
+
+Paired over the 15 source rows: per-row ΔKL(corpus) − ΔKL(size-matched Wikipedia); mean (Wilcoxon p)
+== olmomix_dclm_big vs wikipedia_thin_olmomix_dclm_big
+  C_harmonic    A_win40  | olmo2_1b: +0.0023 (0.93)  olmo2_7b: -0.0011 (0.80)  gemma2_2b: -0.0002 (0.93)  qwen25_3b: -0.0082 (0.12)
+  C_harmonic    B_any    | olmo2_1b: +0.0025 (0.64)  olmo2_7b: -0.0025 (0.85)  gemma2_2b: -0.0006 (0.93)  qwen25_3b: +0.0017 (0.93)
+  C_harmonic    D_doc    | olmo2_1b: +0.0236 (0.03)  olmo2_7b: +0.0183 (0.06)  gemma2_2b: +0.0205 (0.02)  qwen25_3b: +0.0367 (0.01)
+  D_chord       A_win40  | olmo2_1b: -0.0049 (0.23)  olmo2_7b: -0.0046 (0.64)  gemma2_2b: +0.0020 (0.30)  qwen25_3b: +0.0015 (0.98)
+  D_chord       B_any    | olmo2_1b: -0.0046 (0.25)  olmo2_7b: -0.0100 (0.72)  gemma2_2b: -0.0016 (0.64)  qwen25_3b: -0.0051 (0.39)
+  D_chord       D_doc    | olmo2_1b: +0.0169 (0.07)  olmo2_7b: +0.0187 (0.09)  gemma2_2b: +0.0202 (0.00)  qwen25_3b: +0.0163 (0.04)
+  E_modulation  A_win40  | olmo2_1b: +0.0034 (0.72)  olmo2_7b: +0.0015 (0.85)  gemma2_2b: +0.0005 (0.89)  qwen25_3b: +0.0069 (0.39)
+  E_modulation  B_any    | olmo2_1b: +0.0004 (0.89)  olmo2_7b: -0.0026 (0.60)  gemma2_2b: -0.0019 (0.89)  qwen25_3b: +0.0008 (0.85)
+  E_modulation  D_doc    | olmo2_1b: +0.0281 (0.06)  olmo2_7b: +0.0245 (0.05)  gemma2_2b: +0.0249 (0.05)  qwen25_3b: +0.0283 (0.01)
+  DiD C_harmonic    A_win40 : OLMo − others = +0.0048 nats/row (Wilcoxon over rows p 0.36)
+  DiD C_harmonic    B_any   : OLMo − others = -0.0005 nats/row (Wilcoxon over rows p 0.80)
+  DiD C_harmonic    D_doc   : OLMo − others = -0.0076 nats/row (Wilcoxon over rows p 0.33)
+  DiD D_chord       A_win40 : OLMo − others = -0.0065 nats/row (Wilcoxon over rows p 0.64)
+  DiD D_chord       B_any   : OLMo − others = -0.0039 nats/row (Wilcoxon over rows p 0.93)
+  DiD D_chord       D_doc   : OLMo − others = -0.0005 nats/row (Wilcoxon over rows p 0.93)
+  DiD E_modulation  A_win40 : OLMo − others = -0.0013 nats/row (Wilcoxon over rows p 0.76)
+  DiD E_modulation  B_any   : OLMo − others = -0.0006 nats/row (Wilcoxon over rows p 0.98)
+  DiD E_modulation  D_doc   : OLMo − others = -0.0003 nats/row (Wilcoxon over rows p 0.60)

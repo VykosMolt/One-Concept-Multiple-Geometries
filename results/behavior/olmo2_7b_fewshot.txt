@@ -1,0 +1,10 @@
+## olmo2_7b few-shot (3 demos, disjoint keys): accuracy of argmax over 12 candidate completions; chance 1/12
+  dominant(+7)         acc=0.92  C->G Db->Ab D->A Eb->Bb E->B F->C F#->B(x) G->D Ab->Eb A->E Bb->F B->F#
+  subdominant(+5)      acc=0.75  C->F Db->Ab(x) D->G Eb->Ab E->B(x) F->Bb F#->B G->C Ab->Eb(x) A->D Bb->Eb B->E
+  relative_minor(+9)   acc=0.83  C->A Db->C#(x) D->B Eb->C E->C# F->D F#->E(x) G->E Ab->F A->F# Bb->G B->G#
+  relative_major(+3)   acc=0.75  C->Eb C#->E D->F Eb->G(x) E->G F->G(x) F#->A G->Bb G#->B A->C Bb->Eb(x) B->D
+  semitone_up(+1)      acc=0.75  C->Db Db->D D->Eb Eb->E E->F#(x) F->F# F#->F(x) G->A(x) Ab->A A->Bb Bb->B B->C
+  whole_tone_up(+2)    acc=0.50  C->D Db->Eb D->Eb(x) Eb->E(x) E->F# F->G F#->G(x) G->A Ab->G(x) A->C(x) Bb->C B->C(x)
+  fifth_up(+7)         acc=0.58  C->G Db->Bb(x) D->G(x) Eb->Bb E->B F->C F#->C(x) G->D Ab->Db(x) A->E Bb->Eb(x) B->F#
+  minor_third_up(+3)   acc=0.25  C->E(x) Db->E D->E(x) Eb->Bb(x) E->G F->A(x) F#->G(x) G->C(x) Ab->Bb(x) A->B(x) Bb->F(x) B->D
+  tritone(+6)          acc=0.50  C->F# Db->F#(x) D->Eb(x) Eb->Bb(x) E->B(x) F->B F#->C G->Db Ab->D A->Eb Bb->F#(x) B->F#(x)

@@ -1,0 +1,50 @@
+Loading weights:   0%|          | 0/355 [00:00<?, ?it/s]Loading weights:   0%|          | 1/355 [00:00<03:06,  1.90it/s]Loading weights:   6%|▌         | 20/355 [00:00<00:07, 42.04it/s]Loading weights:   9%|▉         | 32/355 [00:00<00:05, 57.10it/s]Loading weights:  12%|█▏        | 43/355 [00:00<00:04, 64.72it/s]Loading weights:  15%|█▍        | 53/355 [00:01<00:04, 69.04it/s]Loading weights:  18%|█▊        | 65/355 [00:01<00:03, 79.62it/s]Loading weights:  21%|██▏       | 76/355 [00:01<00:03, 86.03it/s]Loading weights:  24%|██▍       | 86/355 [00:01<00:03, 88.89it/s]Loading weights:  27%|██▋       | 96/355 [00:01<00:02, 88.75it/s]Loading weights:  30%|██▉       | 106/355 [00:01<00:02, 88.00it/s]Loading weights:  33%|███▎      | 116/355 [00:01<00:02, 85.29it/s]Loading weights:  35%|███▌      | 126/355 [00:01<00:02, 87.48it/s]Loading weights:  38%|███▊      | 135/355 [00:01<00:02, 87.33it/s]Loading weights:  41%|████      | 146/355 [00:02<00:02, 86.79it/s]Loading weights:  45%|████▍     | 158/355 [00:02<00:02, 91.44it/s]Loading weights:  47%|████▋     | 168/355 [00:02<00:02, 92.30it/s]Loading weights:  50%|█████     | 179/355 [00:02<00:01, 96.78it/s]Loading weights:  54%|█████▎    | 190/355 [00:02<00:01, 99.12it/s]Loading weights:  57%|█████▋    | 201/355 [00:02<00:01, 97.35it/s]Loading weights:  60%|█████▉    | 212/355 [00:02<00:01, 96.71it/s]Loading weights:  63%|██████▎   | 225/355 [00:02<00:01, 105.51it/s]Loading weights:  66%|██████▋   | 236/355 [00:02<00:01, 101.08it/s]Loading weights:  72%|███████▏  | 254/355 [00:03<00:00, 116.08it/s]Loading weights:  75%|███████▍  | 266/355 [00:04<00:03, 27.93it/s] Loading weights:  77%|███████▋  | 275/355 [00:05<00:03, 21.85it/s]Loading weights:  79%|███████▉  | 282/355 [00:05<00:03, 18.60it/s]Loading weights:  81%|████████  | 287/355 [00:05<00:03, 20.59it/s]Loading weights:  82%|████████▏ | 292/355 [00:06<00:04, 15.59it/s]Loading weights:  84%|████████▍ | 299/355 [00:06<00:02, 19.87it/s]Loading weights:  86%|████████▌ | 304/355 [00:06<00:02, 22.21it/s]Loading weights:  88%|████████▊ | 313/355 [00:06<00:01, 27.50it/s]Loading weights:  92%|█████████▏| 328/355 [00:06<00:00, 42.84it/s]Loading weights:  94%|█████████▍| 335/355 [00:07<00:00, 44.73it/s]Loading weights:  97%|█████████▋| 346/355 [00:07<00:00, 56.00it/s]Loading weights: 100%|██████████| 355/355 [00:07<00:00, 49.29it/s]
+Some parameters are on the meta device because they were offloaded to the cpu.
+[W829 10:19:12.130060553 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 614465536 bytes (free: 266141696, total: 12386893824).
+[W829 10:19:15.713967517 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 614465536 bytes (free: 249364480, total: 12386893824).
+[W829 10:19:18.287367569 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 608174080 bytes (free: 253558784, total: 12386893824).
+[W829 10:19:20.913229577 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 608174080 bytes (free: 261947392, total: 12386893824).
+[W829 10:19:23.509419867 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 608174080 bytes (free: 261947392, total: 12386893824).
+[W829 10:19:24.425206855 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 620756992 bytes (free: 335347712, total: 12386893824).
+olmo2_7b codebook 0: identity accuracy 0.80
+[W829 10:19:25.226665586 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 329252864 bytes (free: 316473344, total: 12386893824).
+[W829 10:19:25.226742616 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 329252864 bytes (free: 316473344, total: 12386893824).
+Traceback (most recent call last):
+  File "/home/moloch/Documents/Research/pitch_fourier/phase2/codebook.py", line 34, in <module>
+    pre = tok(header + tpl.replace("{x}", WORDS[k]))["input_ids"]; M[i] = logprobs(pre, cand)
+                                                                          ^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/phase2/codebook.py", line 23, in logprobs
+    ids = torch.tensor([s + [pad] * (L - len(s)) for s in seqs], device=dev); lp = torch.log_softmax(model(ids).logits.float(), -1)
+                                                                                                     ^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/accelerate/hooks.py", line 192, in new_forward
+    output = module._old_forward(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/transformers/utils/generic.py", line 939, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/transformers/models/olmo2/modeling_olmo2.py", line 479, in forward
+    logits = self.lm_head(hidden_states[:, slice_indices, :])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/accelerate/hooks.py", line 192, in new_forward
+    output = module._old_forward(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 314.00 MiB. GPU 0 has a total capacity of 11.54 GiB of which 301.81 MiB is free. Process 2749 has 10.99 MiB memory in use. Including non-PyTorch memory, this process has 11.18 GiB memory in use. Of the allocated memory 10.67 GiB is allocated by PyTorch, and 325.03 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+STAGE2_DONE

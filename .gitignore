@@ -1,0 +1,11 @@
+data/
+models/
+.venv/
+.venv-cpu/
+.git_old_bloated/
+results/multictx/*/*.npz
+results/corpus_merged/*.npz
+__pycache__/
+*.pyc
+nohup.out
+results/predict_position/*_H.npz

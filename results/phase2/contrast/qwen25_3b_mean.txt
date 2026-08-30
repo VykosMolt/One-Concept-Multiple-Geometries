@@ -1,0 +1,3 @@
+qwen25_3b [mean] cl  band L9-27: relational(B,C,D,E) − (A,F) = +0.009 (template-shuffle p = 0.213) | per family: A=+0.05(p0.48) B=+0.06(p0.29) C=+0.06(p0.19) D=+0.06(p0.30) E=+0.04(p0.83) F=+0.04(p0.83)
+qwen25_3b [mean] lc  band L9-27: relational(B,C,D,E) − (A,F) = +0.026 (template-shuffle p = 0.024) | per family: A=-0.13(p0.92) B=-0.09(p0.17) C=-0.10(p0.22) D=-0.11(p0.56) E=-0.10(p0.18) F=-0.12(p0.84)
+qwen25_3b [mean] eci band L9-27: relational(B,C,D,E) − (A,F) = -0.023 (template-shuffle p = 0.113) | per family: A=+0.49(p0.63) B=+0.44(p0.01) C=+0.48(p0.37) D=+0.51(p0.91) E=+0.47(p0.30) F=+0.51(p0.88)

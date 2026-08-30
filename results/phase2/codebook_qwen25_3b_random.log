@@ -1,0 +1,19 @@
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:00<01:04,  6.73it/s]Loading weights:   6%|▌         | 27/434 [00:00<00:03, 125.74it/s]Loading weights:  12%|█▏        | 52/434 [00:00<00:02, 163.45it/s]Loading weights:  20%|██        | 87/434 [00:00<00:01, 223.77it/s]Loading weights:  26%|██▌       | 111/434 [00:00<00:01, 204.09it/s]Loading weights:  31%|███       | 133/434 [00:00<00:01, 157.80it/s]Loading weights:  35%|███▍      | 151/434 [00:00<00:02, 140.75it/s]Loading weights:  39%|███▉      | 171/434 [00:01<00:01, 147.28it/s]Loading weights:  45%|████▌     | 196/434 [00:01<00:01, 164.58it/s]Loading weights:  51%|█████     | 220/434 [00:01<00:01, 182.91it/s]Loading weights:  56%|█████▌    | 243/434 [00:01<00:01, 183.33it/s]Loading weights:  61%|██████▏   | 266/434 [00:01<00:00, 185.02it/s]Loading weights:  66%|██████▌   | 286/434 [00:01<00:00, 175.98it/s]Loading weights:  70%|███████   | 305/434 [00:01<00:00, 161.54it/s]Loading weights:  75%|███████▌  | 327/434 [00:01<00:00, 170.69it/s]Loading weights:  81%|████████▏ | 353/434 [00:02<00:00, 190.21it/s]Loading weights:  89%|████████▉ | 387/434 [00:02<00:00, 223.42it/s]Loading weights:  95%|█████████▍| 412/434 [00:02<00:00, 226.76it/s]Loading weights: 100%|██████████| 434/434 [00:02<00:00, 183.87it/s]
+qwen25_3b codebook 0: identity accuracy 0.93
+[W829 10:19:57.960419846 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 994050048 bytes (free: 463273984, total: 12386893824).
+qwen25_3b codebook 0 dominant: top-1 (non-self) Cb->Gb Gb->C# Db->Gb Ab->Eb Eb->F Bb->Gb F->Eb C->F G->Gb D->Eb A->C# E->Gb B->C# F#->C# C#->B
+[W829 10:20:01.375607187 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 1012924416 bytes (free: 771555328, total: 12386893824).
+qwen25_3b codebook 0 modulation: top-1 (non-self) Cb->A Gb->A Db->A Ab->A Eb->A Bb->A F->A C->Eb G->A D->A A->Eb E->A B->A F#->A C#->A
+[W829 10:20:04.867440469 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 1048576000 bytes (free: 664600576, total: 12386893824).
+qwen25_3b codebook 0 chord: top-1 (non-self) Cb->E Gb->C# Db->Eb Ab->Eb Eb->Bb Bb->E F->Eb C->E G->C# D->Eb A->E E->Eb B->Bb F#->Bb C#->Bb
+qwen25_3b codebook 0 enharmonic: top-1 (non-self) Cb->C# Gb->G Db->Eb Ab->A Eb->F Bb->B F->Eb C->Eb G->Gb D->Eb A->C# E->C# B->C# F#->C# C#->Cb
+qwen25_3b codebook 1: identity accuracy 1.00
+qwen25_3b codebook 1 dominant: top-1 (non-self) Cb->Gb Gb->Cb Db->Cb Ab->Db Eb->Db Bb->Db F->G C->Cb G->D D->G A->G E->Db B->Gb F#->G C#->G
+qwen25_3b codebook 1 modulation: top-1 (non-self) Cb->F Gb->F Db->F Ab->F Eb->F Bb->A F->Eb C->F G->F D->F A->F E->Bb B->F F#->Eb C#->F
+qwen25_3b codebook 1 chord: top-1 (non-self) Cb->G Gb->G Db->Eb Ab->A Eb->Db Bb->Db F->C# C->C# G->C# D->G A->G E->Bb B->C# F#->G C#->G
+qwen25_3b codebook 1 enharmonic: top-1 (non-self) Cb->C Gb->G Db->D Ab->A Eb->Db Bb->Db F->A C->Cb G->C D->C A->Ab E->A B->Eb F#->A C#->Cb
+qwen25_3b codebook 2: identity accuracy 0.87
+qwen25_3b codebook 2 dominant: top-1 (non-self) Cb->Ab Gb->Db Db->D Ab->Cb Eb->Ab Bb->B F->C C->Cb G->Cb D->Db A->Ab E->Db B->Ab F#->B C#->Cb
+qwen25_3b codebook 2 modulation: top-1 (non-self) Cb->Db Gb->Db Db->D Ab->Db Eb->Db Bb->Db F->Db C->Db G->Db D->Db A->Db E->Db B->Db F#->Db C#->Db
+qwen25_3b codebook 2 chord: top-1 (non-self) Cb->Db Gb->Db Db->D Ab->Db Eb->Db Bb->Db F->Db C->Db G->Db D->Db A->Db E->Db B->Db F#->Db C#->Db
+qwen25_3b codebook 2 enharmonic: top-1 (non-self) Cb->Db Gb->Db Db->D Ab->A Eb->Ab Bb->Ab F->Cb C->Cb G->Ab D->Db A->Ab E->A B->Ab F#->Cb C#->Cb

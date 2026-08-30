@@ -1,0 +1,15 @@
+accidental indicator in semitone labelling: paired shares P1..P5,E6 = [0.004 0.057 0.057 0.057 0.796 0.029]
+in fifths labelling: [0.796 0.057 0.057 0.057 0.004 0.029]
+all 4094 nontrivial binary partitions: max paired share mean 0.45, median 0.43; P(max share > 0.5) = 0.247 (exactly 0.5: 0.067; >= 0.5: 0.314), > 0.7: 0.066  [tie-aware; an earlier version printed 0.294 for '> 0.5' because 276 partitions sit exactly at 0.5 and float rounding split them]
+contiguous block (width w) on a 12-cycle: share in the fundamental pair:
+   w=1: fundamental share 0.182, max share 0.182 (pair 1)
+   w=2: fundamental share 0.373, max share 0.373 (pair 1)
+   w=3: fundamental share 0.553, max share 0.553 (pair 1)
+   w=4: fundamental share 0.700, max share 0.700 (pair 1)
+   w=5: fundamental share 0.796, max share 0.796 (pair 1)
+   w=6: fundamental share 0.829, max share 0.829 (pair 1)
+random 2-class partitions: max paired share median 0.43; P(>0.5) = 0.296, P(>0.7) = 0.066
+random 3-class partitions: max paired share median 0.34; P(>0.5) = 0.085, P(>0.7) = 0.005
+random 4-class partitions: max paired share median 0.31; P(>0.5) = 0.027, P(>0.7) = 0.000
+alternating labels (semitone): shares [0. 0. 0. 0. 0. 1.]
+root-letter identity (7 classes, semitone labelling): shares [0.339 0.279 0.197 0.115 0.055 0.016]

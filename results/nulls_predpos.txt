@@ -1,0 +1,81 @@
+olmo2_1b predpos then_key [last]              partial fifths best +0.328 @L13  p(layer, free)=0.034 p(layer, block)=0.013  p(max-over-layers, free)=0.058 p(max, block)=0.035  null-max mean=+0.08 | final L16 -0.047 p(free)=0.625 | white fifths-line best +0.34 @L15 p(exact 5040)=0.057 p(max-over-layers)=0.269
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+olmo2_1b predpos then_key [final]             partial fifths best +0.463 @L12  p(layer, free)=0.011 p(layer, block)=0.001  p(max-over-layers, free)=0.018 p(max, block)=0.004  null-max mean=+0.13 | final L16 +0.340 p(free)=0.027 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+olmo2_1b predpos modulates_to [last]          partial fifths best +0.191 @L13  p(layer, free)=0.087 p(layer, block)=0.066  p(max-over-layers, free)=0.167 p(max, block)=0.263  null-max mean=+0.08 | final L16 -0.037 p(free)=0.586 | white fifths-line best +0.48 @L15 p(exact 5040)=0.010 p(max-over-layers)=0.105
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+olmo2_1b predpos modulates_to [final]         partial fifths best +0.171 @L13  p(layer, free)=0.099 p(layer, block)=0.045  p(max-over-layers, free)=0.249 p(max, block)=0.266  null-max mean=+0.10 | final L16 +0.139 p(free)=0.138 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+olmo2_1b predpos related_key [last]           partial fifths best +0.150 @L12  p(layer, free)=0.132 p(layer, block)=0.123  p(max-over-layers, free)=0.247 p(max, block)=0.256  null-max mean=+0.08 | final L16 -0.137 p(free)=0.874 | white fifths-line best +0.14 @L3 p(exact 5040)=0.278 p(max-over-layers)=0.783
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+olmo2_1b predpos related_key [final]          partial fifths best +0.172 @L14  p(layer, free)=0.120 p(layer, block)=0.100  p(max-over-layers, free)=0.272 p(max, block)=0.292  null-max mean=+0.10 | final L16 +0.090 p(free)=0.229 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+olmo2_1b predpos next_song [last]             partial fifths best +0.200 @L12  p(layer, free)=0.089 p(layer, block)=0.058  p(max-over-layers, free)=0.168 p(max, block)=0.136  null-max mean=+0.09 | final L16 -0.126 p(free)=0.869 | white fifths-line best +0.24 @L16 p(exact 5040)=0.140 p(max-over-layers)=0.517
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+olmo2_1b predpos next_song [final]            partial fifths best +0.372 @L13  p(layer, free)=0.013 p(layer, block)=0.003  p(max-over-layers, free)=0.041 p(max, block)=0.028  null-max mean=+0.13 | final L16 +0.316 p(free)=0.036 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+olmo2_1b predpos ctrl_nonpredicting [last]    partial fifths best +0.191 @L13  p(layer, free)=0.087 p(layer, block)=0.066  p(max-over-layers, free)=0.167 p(max, block)=0.263  null-max mean=+0.08 | final L16 -0.037 p(free)=0.586 | white fifths-line best +0.48 @L15 p(exact 5040)=0.010 p(max-over-layers)=0.105
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+olmo2_1b predpos ctrl_nonpredicting [final]   partial fifths best -0.012 @L16  p(layer, free)=0.509 p(layer, block)=0.417  p(max-over-layers, free)=0.862 p(max, block)=0.802  null-max mean=+0.12 | final L16 -0.012 p(free)=0.509 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+gemma2_2b predpos then_key [last]             partial fifths best +0.420 @L23  p(layer, free)=0.011 p(layer, block)=0.002  p(max-over-layers, free)=0.031 p(max, block)=0.013  null-max mean=+0.10 | final L26 -0.018 p(free)=0.508 | white fifths-line best +0.72 @L24 p(exact 5040)=0.002 p(max-over-layers)=0.003
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+gemma2_2b predpos then_key [final]            partial fifths best +0.380 @L15  p(layer, free)=0.020 p(layer, block)=0.005  p(max-over-layers, free)=0.039 p(max, block)=0.029  null-max mean=+0.13 | final L26 +0.279 p(free)=0.043 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+gemma2_2b predpos modulates_to [last]         partial fifths best +0.289 @L22  p(layer, free)=0.037 p(layer, block)=0.005  p(max-over-layers, free)=0.098 p(max, block)=0.053  null-max mean=+0.09 | final L26 -0.129 p(free)=0.859 | white fifths-line best +0.65 @L24 p(exact 5040)=0.003 p(max-over-layers)=0.010
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+gemma2_2b predpos modulates_to [final]        partial fifths best +0.262 @L26  p(layer, free)=0.051 p(layer, block)=0.012  p(max-over-layers, free)=0.163 p(max, block)=0.119  null-max mean=+0.13 | final L26 +0.262 p(free)=0.051 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+gemma2_2b predpos related_key [last]          partial fifths best +0.154 @L20  p(layer, free)=0.125 p(layer, block)=0.151  p(max-over-layers, free)=0.272 p(max, block)=0.464  null-max mean=+0.09 | final L26 +0.022 p(free)=0.365 | white fifths-line best +0.21 @L22 p(exact 5040)=0.194 p(max-over-layers)=0.805
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+gemma2_2b predpos related_key [final]         partial fifths best +0.190 @L5  p(layer, free)=0.071 p(layer, block)=0.062  p(max-over-layers, free)=0.276 p(max, block)=0.182  null-max mean=+0.13 | final L26 +0.021 p(free)=0.368 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+gemma2_2b predpos next_song [last]            partial fifths best +0.121 @L22  p(layer, free)=0.184 p(layer, block)=0.107  p(max-over-layers, free)=0.397 p(max, block)=0.444  null-max mean=+0.10 | final L26 -0.154 p(free)=0.920 | white fifths-line best +0.51 @L24 p(exact 5040)=0.008 p(max-over-layers)=0.076
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+gemma2_2b predpos next_song [final]           partial fifths best +0.289 @L5  p(layer, free)=0.032 p(layer, block)=0.028  p(max-over-layers, free)=0.105 p(max, block)=0.119  null-max mean=+0.14 | final L26 +0.214 p(free)=0.077 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+gemma2_2b predpos ctrl_nonpredicting [last]   partial fifths best +0.289 @L22  p(layer, free)=0.037 p(layer, block)=0.005  p(max-over-layers, free)=0.098 p(max, block)=0.053  null-max mean=+0.09 | final L26 -0.129 p(free)=0.859 | white fifths-line best +0.65 @L24 p(exact 5040)=0.003 p(max-over-layers)=0.010
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+gemma2_2b predpos ctrl_nonpredicting [final]  partial fifths best +0.163 @L14  p(layer, free)=0.102 p(layer, block)=0.081  p(max-over-layers, free)=0.310 p(max, block)=0.242  null-max mean=+0.12 | final L26 +0.141 p(free)=0.137 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+qwen25_3b predpos then_key [last]             partial fifths best +0.361 @L32  p(layer, free)=0.022 p(layer, block)=0.002  p(max-over-layers, free)=0.043 p(max, block)=0.034  null-max mean=+0.08 | final L36 +0.027 p(free)=0.365 | white fifths-line best +0.45 @L14 p(exact 5040)=0.026 p(max-over-layers)=0.183
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+qwen25_3b predpos then_key [final]            partial fifths best +0.294 @L32  p(layer, free)=0.044 p(layer, block)=0.000  p(max-over-layers, free)=0.118 p(max, block)=0.081  null-max mean=+0.13 | final L36 +0.209 p(free)=0.081 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+qwen25_3b predpos modulates_to [last]         partial fifths best +0.372 @L14  p(layer, free)=0.017 p(layer, block)=0.000  p(max-over-layers, free)=0.039 p(max, block)=0.024  null-max mean=+0.08 | final L36 +0.028 p(free)=0.365 | white fifths-line best +0.47 @L35 p(exact 5040)=0.010 p(max-over-layers)=0.154
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+qwen25_3b predpos modulates_to [final]        partial fifths best +0.470 @L27  p(layer, free)=0.011 p(layer, block)=0.000  p(max-over-layers, free)=0.020 p(max, block)=0.005  null-max mean=+0.12 | final L36 +0.283 p(free)=0.046 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+qwen25_3b predpos related_key [last]          partial fifths best +0.231 @L35  p(layer, free)=0.064 p(layer, block)=0.053  p(max-over-layers, free)=0.147 p(max, block)=0.131  null-max mean=+0.09 | final L36 -0.134 p(free)=0.877 | white fifths-line best +0.19 @L26 p(exact 5040)=0.208 p(max-over-layers)=0.782
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+qwen25_3b predpos related_key [final]         partial fifths best +0.289 @L11  p(layer, free)=0.022 p(layer, block)=0.011  p(max-over-layers, free)=0.097 p(max, block)=0.084  null-max mean=+0.12 | final L36 +0.110 p(free)=0.192 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+qwen25_3b predpos next_song [last]            partial fifths best +0.381 @L14  p(layer, free)=0.013 p(layer, block)=0.002  p(max-over-layers, free)=0.033 p(max, block)=0.026  null-max mean=+0.09 | final L36 -0.127 p(free)=0.864 | white fifths-line best +0.50 @L34 p(exact 5040)=0.008 p(max-over-layers)=0.097
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+qwen25_3b predpos next_song [final]           partial fifths best +0.241 @L33  p(layer, free)=0.062 p(layer, block)=0.016  p(max-over-layers, free)=0.218 p(max, block)=0.205  null-max mean=+0.15 | final L36 +0.214 p(free)=0.083 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+qwen25_3b predpos ctrl_nonpredicting [last]   partial fifths best +0.372 @L14  p(layer, free)=0.017 p(layer, block)=0.000  p(max-over-layers, free)=0.039 p(max, block)=0.024  null-max mean=+0.08 | final L36 +0.028 p(free)=0.365 | white fifths-line best +0.47 @L35 p(exact 5040)=0.010 p(max-over-layers)=0.154
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+qwen25_3b predpos ctrl_nonpredicting [final]  partial fifths best +0.142 @L5  p(layer, free)=0.097 p(layer, block)=0.042  p(max-over-layers, free)=0.476 p(max, block)=0.534  null-max mean=+0.15 | final L36 -0.008 p(free)=0.486 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+olmo2_7b predpos then_key [last]              partial fifths best +0.524 @L20  p(layer, free)=0.003 p(layer, block)=0.000  p(max-over-layers, free)=0.007 p(max, block)=0.000  null-max mean=+0.08 | final L32 +0.338 p(free)=0.033 | white fifths-line best +0.78 @L30 p(exact 5040)=0.000 p(max-over-layers)=0.002
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+olmo2_7b predpos then_key [final]             partial fifths best +0.475 @L22  p(layer, free)=0.002 p(layer, block)=0.000  p(max-over-layers, free)=0.020 p(max, block)=0.010  null-max mean=+0.14 | final L32 +0.362 p(free)=0.027 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+olmo2_7b predpos modulates_to [last]          partial fifths best +0.465 @L26  p(layer, free)=0.012 p(layer, block)=0.000  p(max-over-layers, free)=0.015 p(max, block)=0.000  null-max mean=+0.08 | final L32 +0.433 p(free)=0.013 | white fifths-line best +0.86 @L30 p(exact 5040)=0.000 p(max-over-layers)=0.001
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+olmo2_7b predpos modulates_to [final]         partial fifths best +0.527 @L18  p(layer, free)=0.004 p(layer, block)=0.000  p(max-over-layers, free)=0.010 p(max, block)=0.000  null-max mean=+0.11 | final L32 +0.384 p(free)=0.018 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+olmo2_7b predpos related_key [last]           partial fifths best +0.121 @L27  p(layer, free)=0.165 p(layer, block)=0.119  p(max-over-layers, free)=0.297 p(max, block)=0.342  null-max mean=+0.08 | final L32 +0.000 p(free)=0.447 | white fifths-line best +0.25 @L30 p(exact 5040)=0.140 p(max-over-layers)=0.601
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+olmo2_7b predpos related_key [final]          partial fifths best +0.407 @L24  p(layer, free)=0.006 p(layer, block)=0.001  p(max-over-layers, free)=0.026 p(max, block)=0.012  null-max mean=+0.11 | final L32 +0.315 p(free)=0.037 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+olmo2_7b predpos next_song [last]             partial fifths best +0.369 @L27  p(layer, free)=0.017 p(layer, block)=0.000  p(max-over-layers, free)=0.031 p(max, block)=0.006  null-max mean=+0.08 | final L32 +0.306 p(free)=0.034 | white fifths-line best +0.62 @L30 p(exact 5040)=0.001 p(max-over-layers)=0.016
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+olmo2_7b predpos next_song [final]            partial fifths best +0.280 @L22  p(layer, free)=0.050 p(layer, block)=0.045  p(max-over-layers, free)=0.143 p(max, block)=0.173  null-max mean=+0.14 | final L32 +0.194 p(free)=0.095 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+olmo2_7b predpos ctrl_nonpredicting [last]    partial fifths best +0.465 @L26  p(layer, free)=0.012 p(layer, block)=0.000  p(max-over-layers, free)=0.015 p(max, block)=0.000  null-max mean=+0.08 | final L32 +0.433 p(free)=0.013 | white fifths-line best +0.86 @L30 p(exact 5040)=0.000 p(max-over-layers)=0.001
+  return float(spearmanr(D[u], L[u]).correlation)
+  Du = D[u]; vals = np.array([spearmanr(D[np.ix_(p, p)][u], Lm[u]).correlation for p in PERMS7])
+olmo2_7b predpos ctrl_nonpredicting [final]   partial fifths best +0.365 @L20  p(layer, free)=0.014 p(layer, block)=0.010  p(max-over-layers, free)=0.046 p(max, block)=0.034  null-max mean=+0.12 | final L32 +0.189 p(free)=0.106 | white fifths-line best +nan @L0 p(exact 5040)=0.000 p(max-over-layers)=0.000
+PREDPOS_NULLS_DONE

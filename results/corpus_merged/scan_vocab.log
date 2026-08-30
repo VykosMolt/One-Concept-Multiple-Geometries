@@ -1,0 +1,2 @@
+pass1: 14235 key docs, 330939 types, vocab 3000 (42 keys), 32s
+pass2 done: N=23482078 words in key docs; saved results/corpus_merged/keydocs_V3000.npz; 69s

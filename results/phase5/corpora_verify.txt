@@ -1,0 +1,16 @@
+OK olmo_mix/wiki/wiki-0000.json.gz 4258475299
+OK olmo_mix/wiki/wiki-0001.json.gz 2222652693
+OK olmo_mix/dclm/gs01_shard_00000000_processed.jsonl.zstd 141306362
+OK olmo_mix/dclm/gs01_shard_00000011_processed.jsonl.zstd 254737941
+OK olmo_mix/dclm/gs01_shard_00000022_processed.jsonl.zstd 203268202
+OK olmo_mix/dclm/gs05_shard_00000000_processed.jsonl.zstd 89886071
+OK olmo_mix/dclm/gs05_shard_00000011_processed.jsonl.zstd 215115549
+OK olmo_mix/dclm/gs05_shard_00000022_processed.jsonl.zstd 273565403
+OK olmo_mix/dclm/gs09_shard_00000000_processed.jsonl.zstd 141513981
+OK olmo_mix/dclm/gs09_shard_00000011_processed.jsonl.zstd 215965037
+OK olmo_mix/dclm/gs09_shard_00000022_processed.jsonl.zstd 216853632
+OK dolmino/dclm/dclm-0000.json.zst 757462426
+OK dolmino/dclm/dclm-0001.json.zst 733032421
+OK dolmino/flan/tulu_flan-0000.json.gz 187286661
+OK dolmino/flan/tulu_flan-0001.json.gz 212843711
+ALL_SIZES_OK

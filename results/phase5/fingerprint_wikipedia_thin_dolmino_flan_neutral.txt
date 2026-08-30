@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/moloch/Documents/Research/pitch_fourier/phase5/fingerprint.py", line 19, in <module>
+    Zc = np.load(corpus_npz); uni = Zc["uni"].astype(float)
+         ^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 454, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/phase5/cond_wikipedia_thin_dolmino_flan.npz'

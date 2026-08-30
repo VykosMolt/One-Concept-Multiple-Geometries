@@ -1,0 +1,41 @@
+## olmo2_1b few-shot, three scorers: raw sum logP | mean per token | calibrated (minus logP under 'The key is'); 3 demos, disjoint keys; chance 1/12
+  dominant(+7)         raw=0.08 mean-per-token=0.17 calibrated=0.25 | multi-token targets (n=2): raw 0.50 mean 1.00  C->A(x) Db->Bb(x) D->Bb(x) Eb->Bb E->Bb(x) F->Bb(x) F#->Bb(x) G->F#(x) Ab->Bb(x) A->Bb(x) Bb->Eb(x) B->F#
+  subdominant(+5)      raw=0.17 mean-per-token=0.00 calibrated=0.00 | multi-token targets (n=2): raw 0.00 mean 0.00  C->Bb(x) Db->Bb(x) D->Bb(x) Eb->F#(x) E->F#(x) F->A(x) F#->Bb(x) G->Bb(x) Ab->Bb(x) A->Bb(x) Bb->F#(x) B->F#(x)
+  relative_minor(+9)   raw=0.08 mean-per-token=0.00 calibrated=0.00 | multi-token targets (n=4): raw 0.00 mean 0.00  C->G(x) Db->F#(x) D->F#(x) Eb->Bb(x) E->G(x) F->C#(x) F#->C#(x) G->F#(x) Ab->F#(x) A->E(x) Bb->F#(x) B->F#(x)
+  relative_major(+3)   raw=0.08 mean-per-token=0.08 calibrated=0.08 | multi-token targets (n=2): raw 0.00 mean 0.00  C->F#(x) C#->Bb(x) D->Bb(x) Eb->C(x) E->F#(x) F->Bb(x) F#->A G->E(x) G#->Bb(x) A->F#(x) Bb->G(x) B->C(x)
+  semitone_up(+1)      raw=0.17 mean-per-token=0.17 calibrated=0.08 | multi-token targets (n=2): raw 0.00 mean 1.00  C->G(x) Db->Bb(x) D->F#(x) Eb->Bb(x) E->F#(x) F->F# F#->Bb(x) G->Bb(x) Ab->Bb(x) A->Bb Bb->Bb(x) B->F#(x)
+  whole_tone_up(+2)    raw=0.00 mean-per-token=0.17 calibrated=0.17 | multi-token targets (n=2): raw 0.00 mean 1.00  C->B(x) Db->Bb(x) D->Eb(x) Eb->Bb(x) E->F# F->Bb(x) F#->Bb(x) G->F#(x) Ab->Bb A->C(x) Bb->Ab(x) B->Bb(x)
+  fifth_up(+7)         raw=0.08 mean-per-token=0.17 calibrated=0.08 | multi-token targets (n=2): raw 0.00 mean 0.50  C->G Db->Bb(x) D->G(x) Eb->Bb E->Bb(x) F->A(x) F#->Bb(x) G->Bb(x) Ab->Bb(x) A->Bb(x) Bb->F#(x) B->E(x)
+  minor_third_up(+3)   raw=0.00 mean-per-token=0.00 calibrated=0.17 | multi-token targets (n=2): raw 0.00 mean 0.00  C->F#(x) Db->Bb(x) D->E(x) Eb->G(x) E->F#(x) F->Bb(x) F#->Bb(x) G->C(x) Ab->F(x) A->Bb(x) Bb->Eb(x) B->Bb(x)
+  tritone(+6)          raw=0.08 mean-per-token=0.00 calibrated=0.17 | multi-token targets (n=2): raw 0.00 mean 0.00  C->Bb(x) Db->Bb(x) D->F#(x) Eb->Ab(x) E->B(x) F->C(x) F#->Bb(x) G->F#(x) Ab->Bb(x) A->F#(x) Bb->F#(x) B->F#(x)
+## gemma2_2b few-shot, three scorers: raw sum logP | mean per token | calibrated (minus logP under 'The key is'); 3 demos, disjoint keys; chance 1/12
+  dominant(+7)         raw=0.33 mean-per-token=0.33 calibrated=0.08 | multi-token targets (n=1): raw 0.00 mean 0.00  C->F(x) Db->Bb(x) D->E(x) Eb->Bb E->B F->A(x) F#->Bb(x) G->C(x) Ab->Eb A->E Bb->Eb(x) B->F(x)
+  subdominant(+5)      raw=0.33 mean-per-token=0.33 calibrated=0.08 | multi-token targets (n=1): raw 0.00 mean 0.00  C->G(x) Db->Eb(x) D->A(x) Eb->F(x) E->B(x) F->A(x) F#->Bb(x) G->C Ab->C(x) A->D Bb->Eb B->E
+  relative_minor(+9)   raw=0.08 mean-per-token=0.08 calibrated=0.08 | multi-token targets (n=3): raw 0.00 mean 0.00  C->G#(x) Db->C#(x) D->A(x) Eb->Bb(x) E->D(x) F->D F#->D(x) G->D(x) Ab->F#(x) A->E(x) Bb->F#(x) B->A(x)
+  relative_major(+3)   raw=0.17 mean-per-token=0.17 calibrated=0.08 | multi-token targets (n=1): raw 0.00 mean 0.00  C->F(x) C#->Eb(x) D->C(x) Eb->Ab(x) E->A(x) F->G(x) F#->A G->C(x) G#->A(x) A->Ab(x) Bb->Eb(x) B->D
+  semitone_up(+1)      raw=0.25 mean-per-token=0.25 calibrated=0.08 | multi-token targets (n=1): raw 0.00 mean 0.00  C->G(x) Db->Db(x) D->Eb Eb->D(x) E->Ab(x) F->G(x) F#->G G->D(x) Ab->Bb(x) A->Bb Bb->C(x) B->E(x)
+  whole_tone_up(+2)    raw=0.08 mean-per-token=0.08 calibrated=0.08 | multi-token targets (n=1): raw 0.00 mean 0.00  C->B(x) Db->Ab(x) D->Eb(x) Eb->Ab(x) E->F(x) F->A(x) F#->G(x) G->A Ab->E(x) A->C(x) Bb->Eb(x) B->C(x)
+  fifth_up(+7)         raw=0.33 mean-per-token=0.33 calibrated=0.08 | multi-token targets (n=1): raw 0.00 mean 0.00  C->G Db->E(x) D->G(x) Eb->Bb E->B F->A(x) F#->C(x) G->C(x) Ab->F(x) A->E Bb->Eb(x) B->F(x)
+  minor_third_up(+3)   raw=0.00 mean-per-token=0.00 calibrated=0.08 | multi-token targets (n=1): raw 0.00 mean 0.00  C->F(x) Db->Ab(x) D->C(x) Eb->Ab(x) E->B(x) F->A(x) F#->E(x) G->C(x) Ab->C(x) A->Bb(x) Bb->Eb(x) B->Eb(x)
+  tritone(+6)          raw=0.25 mean-per-token=0.17 calibrated=0.08 | multi-token targets (n=1): raw 0.00 mean 0.00  C->F(x) Db->Ab(x) D->Eb(x) Eb->Ab(x) E->F#(x) F->Bb(x) F#->C G->Eb(x) Ab->D A->E(x) Bb->F#(x) B->F#(x)
+## qwen25_3b few-shot, three scorers: raw sum logP | mean per token | calibrated (minus logP under 'The key is'); 3 demos, disjoint keys; chance 1/12
+  dominant(+7)         raw=0.75 mean-per-token=0.67 calibrated=0.42 | multi-token targets (n=2): raw 1.00 mean 1.00  C->G Db->Bb(x) D->A Eb->Bb E->B F->C F#->F#(x) G->C(x) Ab->Eb A->E Bb->Bb(x) B->F#
+  subdominant(+5)      raw=0.83 mean-per-token=0.67 calibrated=0.42 | multi-token targets (n=2): raw 0.50 mean 0.50  C->F Db->Ab(x) D->F#(x) Eb->Ab E->A F->Bb F#->Bb(x) G->C Ab->D(x) A->D Bb->Eb B->E
+  relative_minor(+9)   raw=0.50 mean-per-token=0.50 calibrated=0.17 | multi-token targets (n=4): raw 0.25 mean 0.25  C->A Db->Bb D->B Eb->Bb(x) E->D(x) F->D F#->E(x) G->E Ab->F A->G(x) Bb->F#(x) B->A(x)
+  relative_major(+3)   raw=0.33 mean-per-token=0.25 calibrated=0.25 | multi-token targets (n=2): raw 0.00 mean 0.00  C->A(x) C#->F#(x) D->F#(x) Eb->Ab(x) E->A(x) F->A(x) F#->A G->B(x) G#->B A->B(x) Bb->Eb(x) B->D
+  semitone_up(+1)      raw=0.50 mean-per-token=0.50 calibrated=0.33 | multi-token targets (n=2): raw 0.50 mean 0.50  C->D(x) Db->C(x) D->Eb Eb->E E->F#(x) F->G(x) F#->G G->A(x) Ab->Bb(x) A->Bb Bb->B B->C
+  whole_tone_up(+2)    raw=0.67 mean-per-token=0.50 calibrated=0.42 | multi-token targets (n=2): raw 1.00 mean 1.00  C->D Db->Bb(x) D->F#(x) Eb->Bb(x) E->F# F->G F#->G(x) G->A Ab->Bb A->C(x) Bb->C B->C(x)
+  fifth_up(+7)         raw=0.83 mean-per-token=0.83 calibrated=0.33 | multi-token targets (n=2): raw 1.00 mean 1.00  C->G Db->Bb(x) D->A Eb->Bb E->B F->C F#->C(x) G->D Ab->Eb A->E Bb->F B->F#
+  minor_third_up(+3)   raw=0.25 mean-per-token=0.25 calibrated=0.17 | multi-token targets (n=2): raw 0.00 mean 0.50  C->D(x) Db->Bb(x) D->E(x) Eb->Bb(x) E->G F->G(x) F#->G(x) G->Bb Ab->Bb(x) A->Bb(x) Bb->C(x) B->D
+  tritone(+6)          raw=0.25 mean-per-token=0.17 calibrated=0.17 | multi-token targets (n=2): raw 0.00 mean 0.50  C->F# Db->Bb(x) D->Bb(x) Eb->Bb(x) E->B(x) F->Bb(x) F#->Bb(x) G->D(x) Ab->D A->E(x) Bb->F(x) B->F#(x)
+## olmo2_7b few-shot, three scorers: raw sum logP | mean per token | calibrated (minus logP under 'The key is'); 3 demos, disjoint keys; chance 1/12
+  dominant(+7)         raw=0.92 mean-per-token=0.83 calibrated=0.17 | multi-token targets (n=2): raw 1.00 mean 1.00  C->G Db->Bb(x) D->A Eb->Bb E->B F->C F#->B(x) G->D Ab->Eb A->E Bb->F B->F#
+  subdominant(+5)      raw=0.75 mean-per-token=0.83 calibrated=0.17 | multi-token targets (n=2): raw 0.50 mean 1.00  C->F Db->F# D->G Eb->Ab E->B(x) F->Bb F#->B G->C Ab->Eb(x) A->D Bb->Eb B->E
+  relative_minor(+9)   raw=0.83 mean-per-token=0.75 calibrated=0.58 | multi-token targets (n=4): raw 0.75 mean 0.75  C->A Db->C#(x) D->B Eb->Bb(x) E->C# F->D F#->E(x) G->E Ab->F A->F# Bb->G B->G#
+  relative_major(+3)   raw=0.75 mean-per-token=0.67 calibrated=0.33 | multi-token targets (n=2): raw 0.50 mean 0.50  C->Eb C#->F#(x) D->F Eb->G(x) E->G F->G(x) F#->A G->Bb G#->B A->C Bb->Eb(x) B->D
+  semitone_up(+1)      raw=0.75 mean-per-token=0.67 calibrated=0.25 | multi-token targets (n=2): raw 1.00 mean 1.00  C->Db Db->D D->Eb Eb->E E->F#(x) F->F# F#->F#(x) G->A(x) Ab->Bb(x) A->Bb Bb->B B->C
+  whole_tone_up(+2)    raw=0.50 mean-per-token=0.58 calibrated=0.17 | multi-token targets (n=2): raw 0.50 mean 1.00  C->D Db->Eb D->Eb(x) Eb->E(x) E->F# F->G F#->G(x) G->A Ab->Bb A->C(x) Bb->C B->C(x)
+  fifth_up(+7)         raw=0.58 mean-per-token=0.58 calibrated=0.08 | multi-token targets (n=2): raw 1.00 mean 1.00  C->G Db->Bb(x) D->G(x) Eb->Bb E->B F->C F#->C(x) G->D Ab->Db(x) A->E Bb->Eb(x) B->F#
+  minor_third_up(+3)   raw=0.25 mean-per-token=0.17 calibrated=0.08 | multi-token targets (n=2): raw 0.00 mean 0.00  C->E(x) Db->F#(x) D->E(x) Eb->Bb(x) E->G F->A(x) F#->G(x) G->C(x) Ab->Bb(x) A->Bb(x) Bb->F(x) B->D
+  tritone(+6)          raw=0.50 mean-per-token=0.50 calibrated=0.17 | multi-token targets (n=2): raw 0.50 mean 1.00  C->F# Db->F#(x) D->F#(x) Eb->Bb(x) E->Bb F->Bb(x) F#->C G->Db Ab->D A->Eb Bb->F#(x) B->F#(x)
+FEWSHOT3_DONE

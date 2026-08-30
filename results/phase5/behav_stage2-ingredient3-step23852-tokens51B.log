@@ -1,0 +1,13 @@
+Loading weights:   0%|          | 0/179 [00:00<?, ?it/s]Loading weights:   1%|          | 2/179 [00:00<00:16, 10.56it/s]Loading weights:  12%|█▏        | 21/179 [00:00<00:01, 79.78it/s]Loading weights:  44%|████▍     | 79/179 [00:00<00:00, 258.14it/s]Loading weights:  62%|██████▏   | 111/179 [00:00<00:00, 265.49it/s]Loading weights:  85%|████████▌ | 153/179 [00:00<00:00, 313.08it/s]Loading weights: 100%|██████████| 179/179 [00:00<00:00, 268.31it/s]
+olmo2_1b_stage2-ingredient3-step23852-tokens51B C_harmonic t0: top-1 (non-self) by total: Cb->C Gb->G Db->C Ab->C Eb->C Bb->C F->C C->A G->C D->C A->C E->C B->C F#->C C#->C
+olmo2_1b_stage2-ingredient3-step23852-tokens51B C_harmonic t1: top-1 (non-self) by total: Cb->C Gb->F Db->D Ab->D Eb->C Bb->C F->D C->D G->C D->C A->D E->D B->D F#->F C#->C
+olmo2_1b_stage2-ingredient3-step23852-tokens51B C_harmonic t2: top-1 (non-self) by total: Cb->C Gb->G Db->Eb Ab->C Eb->C Bb->Eb F->C C->D G->C D->C A->C E->C B->C F#->C C#->D
+olmo2_1b_stage2-ingredient3-step23852-tokens51B C_harmonic t3: top-1 (non-self) by total: Cb->C Gb->G Db->C Ab->C Eb->C Bb->C F->C C->G G->C D->C A->C E->C B->C F#->F C#->C
+olmo2_1b_stage2-ingredient3-step23852-tokens51B D_chord t0: top-1 (non-self) by total: Cb->C Gb->F Db->D Ab->D Eb->D Bb->F F->D C->F G->D D->A A->D E->A B->A F#->F C#->G
+olmo2_1b_stage2-ingredient3-step23852-tokens51B D_chord t1: top-1 (non-self) by total: Cb->F Gb->F Db->D Ab->A Eb->E Bb->F F->E C->A G->D D->E A->E E->D B->A F#->E C#->A
+olmo2_1b_stage2-ingredient3-step23852-tokens51B D_chord t2: top-1 (non-self) by total: Cb->C Gb->G Db->C Ab->C Eb->E Bb->C F->C C->E G->C D->C A->C E->C B->C F#->C C#->C
+olmo2_1b_stage2-ingredient3-step23852-tokens51B D_chord t3: top-1 (non-self) by total: Cb->Bb Gb->C Db->C Ab->C Eb->C Bb->C F->C C->D G->C D->C A->D E->D B->C F#->C C#->C
+olmo2_1b_stage2-ingredient3-step23852-tokens51B E_modulation t0: top-1 (non-self) by total: Cb->C Gb->Eb Db->C Ab->D Eb->C Bb->C F->G C->D G->D D->G A->D E->D B->C F#->G C#->G
+olmo2_1b_stage2-ingredient3-step23852-tokens51B E_modulation t1: top-1 (non-self) by total: Cb->F Gb->C Db->Eb Ab->D Eb->C Bb->C F->G C->F G->C D->C A->D E->F B->C F#->C C#->F
+olmo2_1b_stage2-ingredient3-step23852-tokens51B E_modulation t2: top-1 (non-self) by total: Cb->D Gb->D Db->C Ab->D Eb->D Bb->A F->D C->D G->D D->A A->D E->D B->A F#->A C#->D
+olmo2_1b_stage2-ingredient3-step23852-tokens51B E_modulation t3: top-1 (non-self) by total: Cb->Eb Gb->Eb Db->Eb Ab->D Eb->Ab Bb->Eb F->G C->G G->D D->G A->D E->A B->A F#->G C#->G

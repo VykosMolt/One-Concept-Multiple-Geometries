@@ -1,0 +1,13 @@
+Loading weights:   0%|          | 0/179 [00:00<?, ?it/s]Loading weights:   1%|          | 1/179 [00:00<00:38,  4.61it/s]Loading weights:   2%|▏         | 3/179 [00:00<00:16, 10.55it/s]Loading weights:  32%|███▏      | 57/179 [00:00<00:00, 191.05it/s]Loading weights:  62%|██████▏   | 111/179 [00:00<00:00, 266.93it/s]Loading weights:  95%|█████████▍| 170/179 [00:00<00:00, 358.71it/s]Loading weights: 100%|██████████| 179/179 [00:00<00:00, 261.08it/s]
+olmo2_1b_stage1-step480000-tokens1007B C_harmonic t0: top-1 (non-self) by total: Cb->C Gb->C Db->C Ab->C Eb->C Bb->C F->C C->F G->C D->C A->C E->C B->C F#->C C#->C
+olmo2_1b_stage1-step480000-tokens1007B C_harmonic t1: top-1 (non-self) by total: Cb->Db Gb->C Db->C Ab->C Eb->C Bb->C F->C C->E G->C D->C A->C E->C B->C F#->C C#->Db
+olmo2_1b_stage1-step480000-tokens1007B C_harmonic t2: top-1 (non-self) by total: Cb->Db Gb->C Db->C Ab->C Eb->C Bb->C F->G C->D G->C D->C A->D E->C B->C F#->G C#->D
+olmo2_1b_stage1-step480000-tokens1007B C_harmonic t3: top-1 (non-self) by total: Cb->C Gb->G Db->C Ab->C Eb->C Bb->C F->C C->D G->C D->C A->C E->C B->C F#->F C#->C
+olmo2_1b_stage1-step480000-tokens1007B D_chord t0: top-1 (non-self) by total: Cb->Db Gb->Db Db->G Ab->G Eb->G Bb->F F->G C->G G->F D->G A->G E->G B->G F#->G C#->G
+olmo2_1b_stage1-step480000-tokens1007B D_chord t1: top-1 (non-self) by total: Cb->F Gb->F Db->F Ab->F Eb->E Bb->F F->G C->F G->F D->F A->F E->F B->F F#->E C#->F
+olmo2_1b_stage1-step480000-tokens1007B D_chord t2: top-1 (non-self) by total: Cb->C Gb->C Db->C Ab->C Eb->C Bb->C F->C C->G G->C D->C A->C E->C B->C F#->C C#->C
+olmo2_1b_stage1-step480000-tokens1007B D_chord t3: top-1 (non-self) by total: Cb->Db Gb->Db Db->C Ab->C Eb->Db Bb->Db F->G C->E G->C D->E A->E E->C B->C F#->E C#->E
+olmo2_1b_stage1-step480000-tokens1007B E_modulation t0: top-1 (non-self) by total: Cb->Db Gb->C Db->C Ab->C Eb->C Bb->C F->G C->D G->C D->G A->C E->G B->C F#->G C#->D
+olmo2_1b_stage1-step480000-tokens1007B E_modulation t1: top-1 (non-self) by total: Cb->Db Gb->C Db->Eb Ab->C Eb->C Bb->C F->G C->G G->C D->G A->C E->G B->C F#->G C#->D
+olmo2_1b_stage1-step480000-tokens1007B E_modulation t2: top-1 (non-self) by total: Cb->C Gb->C Db->C Ab->C Eb->C Bb->C F->C C->D G->C D->C A->D E->C B->C F#->C C#->D
+olmo2_1b_stage1-step480000-tokens1007B E_modulation t3: top-1 (non-self) by total: Cb->Db Gb->C Db->C Ab->C Eb->C Bb->C F->G C->G G->C D->C A->B E->F B->C F#->G C#->D

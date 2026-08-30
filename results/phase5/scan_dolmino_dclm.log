@@ -1,0 +1,1 @@
+saved results/phase5/cond_dolmino_dclm.npz key docs 611 source counts [4, 23, 19, 33, 52, 66, 192, 686, 239, 190, 297, 130, 47, 21, 20] {'A_win40': 1320, 'B_modulation': 53, 'B_chord': 441, 'B_signature': 159, 'B_enharmonic': 14, 'B_relation': 68, 'B_any': 629, 'C_patterns': 36, 'D_doc': 845}

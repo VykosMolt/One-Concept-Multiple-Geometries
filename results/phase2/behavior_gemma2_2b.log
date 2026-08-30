@@ -1,0 +1,17 @@
+Loading weights:   0%|          | 0/288 [00:00<?, ?it/s]Loading weights:   0%|          | 1/288 [00:00<01:33,  3.07it/s]Loading weights:   6%|▌         | 17/288 [00:00<00:05, 50.87it/s]Loading weights:  15%|█▍        | 43/288 [00:00<00:02, 113.93it/s]Loading weights:  22%|██▏       | 64/288 [00:00<00:01, 142.10it/s]Loading weights:  31%|███       | 89/288 [00:00<00:01, 174.03it/s]Loading weights:  39%|███▉      | 113/288 [00:00<00:00, 189.62it/s]Loading weights:  47%|████▋     | 135/288 [00:00<00:00, 186.41it/s]Loading weights:  55%|█████▍    | 158/288 [00:01<00:00, 187.26it/s]Loading weights:  63%|██████▎   | 181/288 [00:01<00:00, 194.50it/s]Loading weights:  70%|███████   | 203/288 [00:01<00:00, 192.74it/s]Loading weights:  77%|███████▋  | 223/288 [00:01<00:00, 160.60it/s]Loading weights:  85%|████████▌ | 245/288 [00:01<00:00, 170.60it/s]Loading weights:  92%|█████████▏| 264/288 [00:01<00:00, 167.36it/s]Loading weights:  98%|█████████▊| 282/288 [00:01<00:00, 160.78it/s]Loading weights: 100%|██████████| 288/288 [00:01<00:00, 156.38it/s]
+gemma2_2b B_enharmonic t0: top-1 (non-self) by total: Cb->Eb Gb->C Db->C Ab->C Eb->Bb Bb->C F->C C->G G->C D->C A->C E->C B->C F#->C C#->C
+gemma2_2b B_enharmonic t1: top-1 (non-self) by total: Cb->Db Gb->Bb Db->Bb Ab->Bb Eb->Bb Bb->C F->G C->C# G->C D->C A->E E->A B->A F#->C C#->C
+gemma2_2b B_enharmonic t2: top-1 (non-self) by total: Cb->Db Gb->Bb Db->Eb Ab->Bb Eb->Ab Bb->Eb F->G C->D G->C D->G A->D E->F B->C F#->G C#->D
+gemma2_2b B_enharmonic t3: top-1 (non-self) by total: Cb->Db Gb->C Db->C Ab->C Eb->C Bb->C F->C C->G G->C D->C A->C E->C B->C F#->C C#->C
+gemma2_2b C_harmonic t0: top-1 (non-self) by total: Cb->C Gb->C Db->C Ab->C Eb->C Bb->C F->C C->D G->C D->C A->C E->C B->C F#->C C#->C
+gemma2_2b C_harmonic t1: top-1 (non-self) by total: Cb->Bb Gb->Bb Db->Bb Ab->C Eb->Bb Bb->C F->C C->D G->C D->C A->D E->D B->C F#->D C#->C
+gemma2_2b C_harmonic t2: top-1 (non-self) by total: Cb->Bb Gb->A Db->Bb Ab->B Eb->Bb Bb->Eb F->G C->G G->C D->C A->C E->F B->C F#->C C#->F#
+gemma2_2b C_harmonic t3: top-1 (non-self) by total: Cb->Bb Gb->C Db->Bb Ab->C Eb->Bb Bb->Eb F->C C->G G->C D->C A->C E->C B->C F#->C C#->C
+gemma2_2b D_chord t0: top-1 (non-self) by total: Cb->C Gb->G Db->D Ab->C Eb->Bb Bb->C F->G C->G G->C D->A A->C E->F B->A F#->F C#->C
+gemma2_2b D_chord t1: top-1 (non-self) by total: Cb->C Gb->F Db->F Ab->F Eb->F Bb->F F->A C->F G->F D->F A->F E->F B->F F#->F C#->F
+gemma2_2b D_chord t2: top-1 (non-self) by total: Cb->C Gb->G Db->C Ab->C Eb->C Bb->C F->G C->G G->C D->G A->C E->C B->C F#->C C#->C
+gemma2_2b D_chord t3: top-1 (non-self) by total: Cb->C Gb->C Db->C Ab->G Eb->F Bb->F F->G C->G G->F D->G A->G E->F B->A F#->A C#->C
+gemma2_2b E_modulation t0: top-1 (non-self) by total: Cb->Eb Gb->Eb Db->Ab Ab->C Eb->Bb Bb->Eb F->G C->G G->C D->G A->F E->F B->C F#->C C#->G
+gemma2_2b E_modulation t1: top-1 (non-self) by total: Cb->Eb Gb->Eb Db->Eb Ab->C Eb->Bb Bb->F F->C C->F G->C D->C A->C E->C B->C F#->C C#->F
+gemma2_2b E_modulation t2: top-1 (non-self) by total: Cb->Eb Gb->C Db->C Ab->C Eb->C Bb->C F->G C->D G->C D->C A->C E->C B->C F#->C C#->D
+gemma2_2b E_modulation t3: top-1 (non-self) by total: Cb->Eb Gb->Eb Db->Eb Ab->C Eb->Bb Bb->Eb F->G C->G G->C D->C A->C E->C B->C F#->C C#->D

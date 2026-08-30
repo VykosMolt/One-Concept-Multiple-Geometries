@@ -1,0 +1,2 @@
+saved results/phase5/cond_wikipedia_rescan.npz key docs 9168 source counts [38, 162, 438, 813, 2943, 2666, 4285, 6334, 4719, 6139, 4283, 3096, 1542, 232, 121] {'A_win40': 47247, 'B_modulation': 722, 'B_chord': 2038, 'B_signature': 8552, 'B_enharmonic': 145, 'B_relation': 252, 'B_any': 10775, 'C_patterns': 317, 'D_doc': 19162}
+saved per-document counts results/phase5/cond_wikipedia_perdoc.npz 9168 docs

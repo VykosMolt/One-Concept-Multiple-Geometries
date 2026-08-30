@@ -1,0 +1,9 @@
+Shard-cluster bootstrap (41 shards resampled with replacement, B = 1000); point estimate, bootstrap SD, 2.5/97.5 percentiles:
+  canonical_fifths   +0.623  sd 0.061  [+0.442, +0.677]
+  canonical_cl       +0.400  sd 0.130  [+0.052, +0.551]
+  canonical_lc       +0.269  sd 0.170  [-0.077, +0.582]
+  merged_fifths      +0.661  sd 0.057  [+0.485, +0.708]
+  merged_cl          +0.580  sd 0.066  [+0.385, +0.643]
+  merged_lc          -0.070  sd 0.069  [-0.195, +0.073]
+  eci15              +0.038  sd 0.137  [+0.025, +0.440]
+  P(circle|line > line|circle): merged 1.000, canonical 0.632

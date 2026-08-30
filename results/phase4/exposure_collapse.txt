@@ -1,0 +1,28 @@
+Exposure-matched latent twin JS (median within log-exposure bins), by r and code — collapse test:
+  exposure bin |       r=0.5(a/p)       r=0.1(a/p)      r=0.03(a/p)      r=0.01(a/p)     r=0.003(a/p)     r=0.001(a/p)
+    50-   100 |      -   /  -         -   /  -       0.0031/0.0026    0.0975/0.0764    0.0716/0.0936    0.0484/0.0643 
+   100-   200 |      -   /  -       0.0020/0.0018    0.0670/0.0233    0.0504/0.0807    0.0368/0.0446    0.0260/0.0332 
+   200-   400 |      -   /  -       0.0035/0.0024    0.0439/0.0604    0.0245/0.0351    0.0185/0.0211    0.0132/0.0145 
+   400-   800 |    0.0011/0.0013    0.0318/0.0237    0.0149/0.0249    0.0111/0.0151    0.0092/0.0104    0.0069/0.0095 
+   800-  1600 |    0.0024/0.0022    0.0095/0.0206    0.0049/0.0089    0.0047/0.0075    0.0041/0.0070    0.0052/0.0132 
+  1600-  3200 |    0.0054/0.0040    0.0034/0.0058    0.0032/0.0044    0.0024/0.0039    0.0024/0.0046    0.0025/0.0030 
+  3200-  6400 |    0.0038/0.0043    0.0020/0.0023    0.0023/0.0025    0.0013/0.0018    0.0016/0.0035      -   /  -    
+  6400- 12800 |    0.0023/0.0024    0.0019/0.0015    0.0009/0.0014    0.0006/0.0009    0.0006/0.0012      -   /  -    
+ 12800- 25600 |    0.0019/0.0016    0.0007/0.0007    0.0003/0.0004      -   /  -         -   /  -         -   /  -    
+ 25600- 51200 |    0.0010/0.0009    0.0003/0.0003      -   /  -         -   /  -         -   /  -         -   /  -    
+ 51200-102400 |    0.0005/0.0005    0.0001/0.0001      -   /  -         -   /  -         -   /  -         -   /  -    
+102400-204800 |    0.0002/0.0002      -   /  -         -   /  -         -   /  -         -   /  -         -   /  -    
+204800-409600 |    0.0001/0.0001      -   /  -         -   /  -         -   /  -         -   /  -         -   /  -    
+
+Pooled power-law fit (exposure >= 200, n=1254): latent JS ≈ 1.18 * exposure^(-0.74); Spearman(log JS, log exposure) = -0.862
+  aligned: JS ≈ 0.94 * exposure^(-0.72)
+  permuted: JS ≈ 1.5 * exposure^(-0.76)
+Partial Spearman(log JS, log step | log exposure) = -0.186;  Partial(log JS, log exposure | log step) = -0.843
+
+Timing (exposures) — behaviour JSz<0.002 vs representation dist_rel<0.30 (last layer), per run:
+  r=0.01 aligned  : [smo beh — rep —] [pri beh 3144 rep 1598] [pri beh 7698 rep 1520] [pri beh 4822 rep 1930] [pri beh 3822 rep 963] [pri beh 2485 rep 1574]
+  r=0.01 permuted : [pri beh 6135 rep —] [pri beh 4822 rep 2425] [pri beh 6082 rep 2422] [pri beh 6157 rep 2415] [pri beh 3896 rep 1973]
+  r=0.003 aligned  : [ext beh 3001 rep 425] [ext beh 5195 rep 1718] [ext beh 5256 rep 707] [pri beh 1786 rep 576] [pri beh 912 rep 459] [pri beh 1834 rep 1834] [pri beh 1461 rep 743] [pri beh 2258 rep 699]
+  r=0.003 permuted : [ext beh 5299 rep 1278] [ext beh 6858 rep —] [ext beh 6955 rep 535] [pri beh 2265 rep 1455] [pri beh — rep —] [pri beh — rep 699] [pri beh — rep —] [pri beh — rep —]
+  r=0.001 aligned  : [ext beh 1760 rep 1007] [ext beh 2961 rep 294] [ext beh 3094 rep 250] [pri beh — rep 633] [pri beh — rep 222] [pri beh — rep 386] [pri beh — rep —] [pri beh 759 rep 249]
+  r=0.001 permuted : [ext beh 1785 rep 1006] [ext beh — rep —] [ext beh — rep 1267] [pri beh — rep —] [pri beh — rep —] [pri beh — rep —] [pri beh — rep —] [pri beh — rep 440]

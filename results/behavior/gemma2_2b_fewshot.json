@@ -1,0 +1,695 @@
+{
+ "dominant(+7)": {
+  "acc": 0.3333333333333333,
+  "rows": [
+   {
+    "x": "C",
+    "pred": "F",
+    "target": "G",
+    "correct": false
+   },
+   {
+    "x": "Db",
+    "pred": "Bb",
+    "target": "Ab",
+    "correct": false
+   },
+   {
+    "x": "D",
+    "pred": "E",
+    "target": "A",
+    "correct": false
+   },
+   {
+    "x": "Eb",
+    "pred": "Bb",
+    "target": "Bb",
+    "correct": true
+   },
+   {
+    "x": "E",
+    "pred": "B",
+    "target": "B",
+    "correct": true
+   },
+   {
+    "x": "F",
+    "pred": "A",
+    "target": "C",
+    "correct": false
+   },
+   {
+    "x": "F#",
+    "pred": "Bb",
+    "target": "Db",
+    "correct": false
+   },
+   {
+    "x": "G",
+    "pred": "C",
+    "target": "D",
+    "correct": false
+   },
+   {
+    "x": "Ab",
+    "pred": "Eb",
+    "target": "Eb",
+    "correct": true
+   },
+   {
+    "x": "A",
+    "pred": "E",
+    "target": "E",
+    "correct": true
+   },
+   {
+    "x": "Bb",
+    "pred": "Eb",
+    "target": "F",
+    "correct": false
+   },
+   {
+    "x": "B",
+    "pred": "F",
+    "target": "F#",
+    "correct": false
+   }
+  ]
+ },
+ "subdominant(+5)": {
+  "acc": 0.3333333333333333,
+  "rows": [
+   {
+    "x": "C",
+    "pred": "G",
+    "target": "F",
+    "correct": false
+   },
+   {
+    "x": "Db",
+    "pred": "Eb",
+    "target": "F#",
+    "correct": false
+   },
+   {
+    "x": "D",
+    "pred": "A",
+    "target": "G",
+    "correct": false
+   },
+   {
+    "x": "Eb",
+    "pred": "F",
+    "target": "Ab",
+    "correct": false
+   },
+   {
+    "x": "E",
+    "pred": "B",
+    "target": "A",
+    "correct": false
+   },
+   {
+    "x": "F",
+    "pred": "A",
+    "target": "Bb",
+    "correct": false
+   },
+   {
+    "x": "F#",
+    "pred": "Bb",
+    "target": "B",
+    "correct": false
+   },
+   {
+    "x": "G",
+    "pred": "C",
+    "target": "C",
+    "correct": true
+   },
+   {
+    "x": "Ab",
+    "pred": "C",
+    "target": "Db",
+    "correct": false
+   },
+   {
+    "x": "A",
+    "pred": "D",
+    "target": "D",
+    "correct": true
+   },
+   {
+    "x": "Bb",
+    "pred": "Eb",
+    "target": "Eb",
+    "correct": true
+   },
+   {
+    "x": "B",
+    "pred": "E",
+    "target": "E",
+    "correct": true
+   }
+  ]
+ },
+ "relative_minor(+9)": {
+  "acc": 0.08333333333333333,
+  "rows": [
+   {
+    "x": "C",
+    "pred": "G",
+    "target": "A",
+    "correct": false
+   },
+   {
+    "x": "Db",
+    "pred": "C#",
+    "target": "Bb",
+    "correct": false
+   },
+   {
+    "x": "D",
+    "pred": "A",
+    "target": "B",
+    "correct": false
+   },
+   {
+    "x": "Eb",
+    "pred": "Bb",
+    "target": "C",
+    "correct": false
+   },
+   {
+    "x": "E",
+    "pred": "D",
+    "target": "C#",
+    "correct": false
+   },
+   {
+    "x": "F",
+    "pred": "D",
+    "target": "D",
+    "correct": true
+   },
+   {
+    "x": "F#",
+    "pred": "D",
+    "target": "Eb",
+    "correct": false
+   },
+   {
+    "x": "G",
+    "pred": "D",
+    "target": "E",
+    "correct": false
+   },
+   {
+    "x": "Ab",
+    "pred": "F#",
+    "target": "F",
+    "correct": false
+   },
+   {
+    "x": "A",
+    "pred": "E",
+    "target": "F#",
+    "correct": false
+   },
+   {
+    "x": "Bb",
+    "pred": "F#",
+    "target": "G",
+    "correct": false
+   },
+   {
+    "x": "B",
+    "pred": "A",
+    "target": "G#",
+    "correct": false
+   }
+  ]
+ },
+ "relative_major(+3)": {
+  "acc": 0.16666666666666666,
+  "rows": [
+   {
+    "x": "C",
+    "pred": "F",
+    "target": "Eb",
+    "correct": false
+   },
+   {
+    "x": "C#",
+    "pred": "Eb",
+    "target": "E",
+    "correct": false
+   },
+   {
+    "x": "D",
+    "pred": "C",
+    "target": "F",
+    "correct": false
+   },
+   {
+    "x": "Eb",
+    "pred": "Ab",
+    "target": "F#",
+    "correct": false
+   },
+   {
+    "x": "E",
+    "pred": "A",
+    "target": "G",
+    "correct": false
+   },
+   {
+    "x": "F",
+    "pred": "G",
+    "target": "Ab",
+    "correct": false
+   },
+   {
+    "x": "F#",
+    "pred": "A",
+    "target": "A",
+    "correct": true
+   },
+   {
+    "x": "G",
+    "pred": "C",
+    "target": "Bb",
+    "correct": false
+   },
+   {
+    "x": "G#",
+    "pred": "A",
+    "target": "B",
+    "correct": false
+   },
+   {
+    "x": "A",
+    "pred": "Ab",
+    "target": "C",
+    "correct": false
+   },
+   {
+    "x": "Bb",
+    "pred": "Eb",
+    "target": "Db",
+    "correct": false
+   },
+   {
+    "x": "B",
+    "pred": "D",
+    "target": "D",
+    "correct": true
+   }
+  ]
+ },
+ "semitone_up(+1)": {
+  "acc": 0.25,
+  "rows": [
+   {
+    "x": "C",
+    "pred": "G",
+    "target": "Db",
+    "correct": false
+   },
+   {
+    "x": "Db",
+    "pred": "Db",
+    "target": "D",
+    "correct": false
+   },
+   {
+    "x": "D",
+    "pred": "Eb",
+    "target": "Eb",
+    "correct": true
+   },
+   {
+    "x": "Eb",
+    "pred": "D",
+    "target": "E",
+    "correct": false
+   },
+   {
+    "x": "E",
+    "pred": "Ab",
+    "target": "F",
+    "correct": false
+   },
+   {
+    "x": "F",
+    "pred": "G",
+    "target": "F#",
+    "correct": false
+   },
+   {
+    "x": "F#",
+    "pred": "G",
+    "target": "G",
+    "correct": true
+   },
+   {
+    "x": "G",
+    "pred": "D",
+    "target": "Ab",
+    "correct": false
+   },
+   {
+    "x": "Ab",
+    "pred": "Bb",
+    "target": "A",
+    "correct": false
+   },
+   {
+    "x": "A",
+    "pred": "Bb",
+    "target": "Bb",
+    "correct": true
+   },
+   {
+    "x": "Bb",
+    "pred": "C",
+    "target": "B",
+    "correct": false
+   },
+   {
+    "x": "B",
+    "pred": "E",
+    "target": "C",
+    "correct": false
+   }
+  ]
+ },
+ "whole_tone_up(+2)": {
+  "acc": 0.08333333333333333,
+  "rows": [
+   {
+    "x": "C",
+    "pred": "B",
+    "target": "D",
+    "correct": false
+   },
+   {
+    "x": "Db",
+    "pred": "Ab",
+    "target": "Eb",
+    "correct": false
+   },
+   {
+    "x": "D",
+    "pred": "Eb",
+    "target": "E",
+    "correct": false
+   },
+   {
+    "x": "Eb",
+    "pred": "Ab",
+    "target": "F",
+    "correct": false
+   },
+   {
+    "x": "E",
+    "pred": "F",
+    "target": "F#",
+    "correct": false
+   },
+   {
+    "x": "F",
+    "pred": "A",
+    "target": "G",
+    "correct": false
+   },
+   {
+    "x": "F#",
+    "pred": "G",
+    "target": "Ab",
+    "correct": false
+   },
+   {
+    "x": "G",
+    "pred": "A",
+    "target": "A",
+    "correct": true
+   },
+   {
+    "x": "Ab",
+    "pred": "E",
+    "target": "Bb",
+    "correct": false
+   },
+   {
+    "x": "A",
+    "pred": "C",
+    "target": "B",
+    "correct": false
+   },
+   {
+    "x": "Bb",
+    "pred": "Eb",
+    "target": "C",
+    "correct": false
+   },
+   {
+    "x": "B",
+    "pred": "C",
+    "target": "Db",
+    "correct": false
+   }
+  ]
+ },
+ "fifth_up(+7)": {
+  "acc": 0.3333333333333333,
+  "rows": [
+   {
+    "x": "C",
+    "pred": "G",
+    "target": "G",
+    "correct": true
+   },
+   {
+    "x": "Db",
+    "pred": "E",
+    "target": "Ab",
+    "correct": false
+   },
+   {
+    "x": "D",
+    "pred": "G",
+    "target": "A",
+    "correct": false
+   },
+   {
+    "x": "Eb",
+    "pred": "Bb",
+    "target": "Bb",
+    "correct": true
+   },
+   {
+    "x": "E",
+    "pred": "B",
+    "target": "B",
+    "correct": true
+   },
+   {
+    "x": "F",
+    "pred": "A",
+    "target": "C",
+    "correct": false
+   },
+   {
+    "x": "F#",
+    "pred": "C",
+    "target": "Db",
+    "correct": false
+   },
+   {
+    "x": "G",
+    "pred": "C",
+    "target": "D",
+    "correct": false
+   },
+   {
+    "x": "Ab",
+    "pred": "F",
+    "target": "Eb",
+    "correct": false
+   },
+   {
+    "x": "A",
+    "pred": "E",
+    "target": "E",
+    "correct": true
+   },
+   {
+    "x": "Bb",
+    "pred": "Eb",
+    "target": "F",
+    "correct": false
+   },
+   {
+    "x": "B",
+    "pred": "F",
+    "target": "F#",
+    "correct": false
+   }
+  ]
+ },
+ "minor_third_up(+3)": {
+  "acc": 0.0,
+  "rows": [
+   {
+    "x": "C",
+    "pred": "F",
+    "target": "Eb",
+    "correct": false
+   },
+   {
+    "x": "Db",
+    "pred": "Ab",
+    "target": "E",
+    "correct": false
+   },
+   {
+    "x": "D",
+    "pred": "C",
+    "target": "F",
+    "correct": false
+   },
+   {
+    "x": "Eb",
+    "pred": "Ab",
+    "target": "F#",
+    "correct": false
+   },
+   {
+    "x": "E",
+    "pred": "B",
+    "target": "G",
+    "correct": false
+   },
+   {
+    "x": "F",
+    "pred": "A",
+    "target": "Ab",
+    "correct": false
+   },
+   {
+    "x": "F#",
+    "pred": "E",
+    "target": "A",
+    "correct": false
+   },
+   {
+    "x": "G",
+    "pred": "C",
+    "target": "Bb",
+    "correct": false
+   },
+   {
+    "x": "Ab",
+    "pred": "C",
+    "target": "B",
+    "correct": false
+   },
+   {
+    "x": "A",
+    "pred": "Bb",
+    "target": "C",
+    "correct": false
+   },
+   {
+    "x": "Bb",
+    "pred": "Eb",
+    "target": "Db",
+    "correct": false
+   },
+   {
+    "x": "B",
+    "pred": "Eb",
+    "target": "D",
+    "correct": false
+   }
+  ]
+ },
+ "tritone(+6)": {
+  "acc": 0.25,
+  "rows": [
+   {
+    "x": "C",
+    "pred": "F",
+    "target": "F#",
+    "correct": false
+   },
+   {
+    "x": "Db",
+    "pred": "Ab",
+    "target": "G",
+    "correct": false
+   },
+   {
+    "x": "D",
+    "pred": "Eb",
+    "target": "Ab",
+    "correct": false
+   },
+   {
+    "x": "Eb",
+    "pred": "Ab",
+    "target": "A",
+    "correct": false
+   },
+   {
+    "x": "E",
+    "pred": "B",
+    "target": "Bb",
+    "correct": false
+   },
+   {
+    "x": "F",
+    "pred": "Bb",
+    "target": "B",
+    "correct": false
+   },
+   {
+    "x": "F#",
+    "pred": "C",
+    "target": "C",
+    "correct": true
+   },
+   {
+    "x": "G",
+    "pred": "Eb",
+    "target": "Db",
+    "correct": false
+   },
+   {
+    "x": "Ab",
+    "pred": "D",
+    "target": "D",
+    "correct": true
+   },
+   {
+    "x": "A",
+    "pred": "E",
+    "target": "Eb",
+    "correct": false
+   },
+   {
+    "x": "Bb",
+    "pred": "F#",
+    "target": "E",
+    "correct": false
+   },
+   {
+    "x": "B",
+    "pred": "F",
+    "target": "F",
+    "correct": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+Result-3 scorer robustness: line|circle / circle|line (family mean over 4 templates) and #templates with line|circle significant under the glyph-preserving null (b/B, B=1000), total vs length-normalized (mean) scorer.
+model      family        | total: lc  cl  sig | mean: lc  cl  sig | ECI total/mean
+olmo2_1b   B_enharmonic  | +0.30 +0.07  4/4 | +0.28 +0.08  3/4 | 0.70/0.58
+olmo2_1b   C_harmonic    | +0.33 -0.03  4/4 | +0.21 -0.00  4/4 | 0.86/0.69
+olmo2_1b   D_chord       | +0.27 -0.10  4/4 | +0.19 -0.06  2/4 | 0.84/0.59
+olmo2_1b   E_modulation  | +0.44 +0.02  4/4 | +0.37 +0.01  4/4 | 0.88/0.81
+gemma2_2b  B_enharmonic  | +0.50 -0.14  4/4 | +0.45 -0.07  4/4 | 0.83/0.75
+gemma2_2b  C_harmonic    | +0.32 -0.00  4/4 | +0.24 +0.03  4/4 | 0.83/0.73
+gemma2_2b  D_chord       | +0.36 -0.14  4/4 | +0.26 -0.03  4/4 | 0.90/0.72
+gemma2_2b  E_modulation  | +0.54 -0.07  4/4 | +0.43 +0.03  4/4 | 0.90/0.85
+qwen25_3b  B_enharmonic  | +0.31 +0.11  4/4 | +0.31 +0.07  4/4 | 0.51/0.38
+qwen25_3b  C_harmonic    | +0.42 +0.11  4/4 | +0.27 +0.09  4/4 | 0.73/0.52
+qwen25_3b  D_chord       | +0.40 -0.01  4/4 | +0.23 +0.06  3/4 | 0.78/0.57
+qwen25_3b  E_modulation  | +0.52 +0.07  4/4 | +0.50 +0.00  4/4 | 0.88/0.79
+olmo2_7b   B_enharmonic  | +0.14 +0.28  3/4 | +0.19 +0.25  3/4 | 0.11/0.05
+olmo2_7b   C_harmonic    | +0.38 +0.16  4/4 | +0.38 +0.09  4/4 | 0.67/0.43
+olmo2_7b   D_chord       | +0.50 +0.13  4/4 | +0.38 +0.16  3/4 | 0.74/0.53
+olmo2_7b   E_modulation  | +0.56 +0.13  4/4 | +0.45 +0.12  4/4 | 0.81/0.68

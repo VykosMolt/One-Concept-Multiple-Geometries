@@ -1,0 +1,1 @@
+saved results/phase5/cond_dolmino_flan.npz key docs 49 source counts [0, 0, 0, 1, 2, 1, 4, 9, 1, 2, 29, 5, 2, 0, 0] {'A_win40': 6, 'B_modulation': 1, 'B_chord': 2, 'B_signature': 0, 'B_enharmonic': 0, 'B_relation': 0, 'B_any': 3, 'C_patterns': 1, 'D_doc': 6}

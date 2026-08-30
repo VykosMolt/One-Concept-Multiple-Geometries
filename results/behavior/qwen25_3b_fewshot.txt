@@ -1,0 +1,10 @@
+## qwen25_3b few-shot (3 demos, disjoint keys): accuracy of argmax over 12 candidate completions; chance 1/12
+  dominant(+7)         acc=0.75  C->G Db->Ab D->A Eb->Bb E->B F->C F#->C(x) G->C(x) Ab->Eb A->E Bb->A(x) B->F#
+  subdominant(+5)      acc=0.83  C->F Db->Ab(x) D->G Eb->Ab E->A F->Bb F#->B G->C Ab->D(x) A->D Bb->Eb B->E
+  relative_minor(+9)   acc=0.50  C->A Db->Bb D->B Eb->Bb(x) E->D(x) F->D F#->E(x) G->E Ab->F A->G(x) Bb->A(x) B->A(x)
+  relative_major(+3)   acc=0.33  C->A(x) C#->Eb(x) D->F Eb->Ab(x) E->A(x) F->A(x) F#->A G->B(x) G#->B A->B(x) Bb->Eb(x) B->D
+  semitone_up(+1)      acc=0.50  C->D(x) Db->C(x) D->Eb Eb->E E->F#(x) F->G(x) F#->G G->A(x) Ab->Bb(x) A->Bb Bb->B B->C
+  whole_tone_up(+2)    acc=0.67  C->D Db->Eb D->Eb(x) Eb->F E->F# F->G F#->G(x) G->A Ab->Bb A->C(x) Bb->C B->C(x)
+  fifth_up(+7)         acc=0.83  C->G Db->C(x) D->A Eb->Bb E->B F->C F#->C(x) G->D Ab->Eb A->E Bb->F B->F#
+  minor_third_up(+3)   acc=0.25  C->D(x) Db->Eb(x) D->E(x) Eb->C(x) E->G F->G(x) F#->G(x) G->B(x) Ab->B A->B(x) Bb->C(x) B->D
+  tritone(+6)          acc=0.25  C->F(x) Db->F(x) D->B(x) Eb->A E->B(x) F->C(x) F#->C G->D(x) Ab->D A->E(x) Bb->F(x) B->F#(x)

@@ -1,0 +1,39 @@
+=== FINAL CHECKPOINT (mean ± sd over seeds) ===
+condition          |           kl   rsa_oracle circle_given line_given_c code_given_b     rsa_code twin_source_ twin_target_          eci | hidden(last layer): c|l l|c code eci | hidden(mid): c|l l|c code eci
+circle×aligned   n=5 |  +0.001±0.000  +0.989±0.001  +0.976±0.002  +0.113±0.032  -0.052±0.038  +0.382±0.008  +0.000±0.000  +0.101±0.010  +0.133±0.000 | +0.64 -0.15 +0.18 +0.02 | +0.66 -0.14 +0.18 +0.02
+circle×permuted  n=5 |  +0.001±0.000  +0.989±0.002  +0.979±0.001  +0.421±0.042  -0.014±0.042  +0.007±0.100  +0.000±0.000  +0.088±0.017  +0.133±0.000 | +0.61 -0.23 +0.05 +0.03 | +0.57 -0.23 +0.04 +0.03
+line×aligned   n=5 |  +0.000±0.000  +0.998±0.000  +0.000±0.000  +0.787±0.000  -0.000±0.000  +0.986±0.000  +0.564±0.001  +3.220±0.021  +0.962±0.000 | +0.09 +0.39 +0.95 +0.93 | -0.07 +0.37 +0.95 +0.96
+line×permuted  n=5 |  +0.001±0.000  +0.997±0.000  -0.008±0.009  +0.995±0.000  -0.038±0.149  -0.020±0.061  +0.564±0.002  +3.234±0.015  +0.963±0.001 | +0.23 +0.46 +0.24 +0.66 | +0.32 +0.41 +0.26 +0.57
+
+=== PAIRED ALIGNED − PERMUTED per seed (final checkpoint) ===
+circle behaviour   line_given_circle : mean diff -0.307 (sd 0.062); 0/5 positive; sign p=0.062; t p=0.001; per-seed -0.361 -0.270 -0.368 -0.205 -0.333
+circle behaviour   circle_given_line : mean diff -0.003 (sd 0.001); 0/5 positive; sign p=0.062; t p=0.013; per-seed -0.003 -0.004 -0.000 -0.003 -0.003
+circle behaviour   rsa_code          : mean diff +0.375 (sd 0.096); 5/5 positive; sign p=0.062; t p=0.001; per-seed +0.404 +0.457 +0.193 +0.375 +0.447
+circle behaviour   twin_target_asym  : mean diff +0.013 (sd 0.009); 5/5 positive; sign p=0.062; t p=0.044; per-seed +0.002 +0.017 +0.025 +0.004 +0.014
+circle behaviour   twin_source_js    : mean diff -0.000 (sd 0.000); 1/5 positive; sign p=0.375; t p=0.201; per-seed -0.000 -0.000 -0.000 +0.000 -0.000
+circle behaviour   kl                : mean diff +0.000 (sd 0.000); 3/5 positive; sign p=1.000; t p=0.956; per-seed -0.000 -0.000 +0.000 +0.000 +0.000
+circle behaviour   eci               : mean diff +0.000 (sd 0.000); 0/5 positive; sign p=0.062; t p=nan; per-seed +0.000 +0.000 +0.000 +0.000 +0.000
+circle hidden_last line_given_circle : mean diff +0.081 (sd 0.038); 5/5 positive; sign p=0.062; t p=0.014; per-seed +0.021 +0.071 +0.140 +0.078 +0.094
+circle hidden_last circle_given_line : mean diff +0.035 (sd 0.111); 2/5 positive; sign p=1.000; t p=0.562; per-seed -0.005 +0.133 -0.125 -0.012 +0.184
+circle hidden_last rsa_code          : mean diff +0.130 (sd 0.158); 4/5 positive; sign p=0.375; t p=0.174; per-seed +0.148 +0.298 -0.111 +0.293 +0.024
+circle hidden_last eci               : mean diff -0.005 (sd 0.006); 0/5 positive; sign p=0.062; t p=0.178; per-seed +0.000 -0.013 -0.013 +0.000 +0.000
+circle hidden_mid  line_given_circle : mean diff +0.097 (sd 0.024); 5/5 positive; sign p=0.062; t p=0.001; per-seed +0.102 +0.079 +0.134 +0.107 +0.065
+circle hidden_mid  circle_given_line : mean diff +0.091 (sd 0.096); 4/5 positive; sign p=0.375; t p=0.132; per-seed +0.021 +0.171 -0.031 +0.063 +0.231
+circle hidden_mid  rsa_code          : mean diff +0.142 (sd 0.172); 4/5 positive; sign p=0.375; t p=0.175; per-seed +0.229 +0.297 -0.138 +0.297 +0.024
+circle hidden_mid  eci               : mean diff -0.008 (sd 0.011); 0/5 positive; sign p=0.062; t p=0.217; per-seed +0.000 -0.029 -0.013 +0.000 +0.000
+line   behaviour   line_given_circle : mean diff -0.208 (sd 0.000); 0/5 positive; sign p=0.062; t p=0.000; per-seed -0.208 -0.208 -0.208 -0.209 -0.209
+line   behaviour   circle_given_line : mean diff +0.008 (sd 0.009); 5/5 positive; sign p=0.062; t p=0.165; per-seed +0.000 +0.001 +0.014 +0.001 +0.022
+line   behaviour   rsa_code          : mean diff +1.007 (sd 0.061); 5/5 positive; sign p=0.062; t p=0.000; per-seed +1.018 +1.113 +1.007 +0.941 +0.954
+line   behaviour   twin_target_asym  : mean diff -0.014 (sd 0.012); 1/5 positive; sign p=0.375; t p=0.076; per-seed -0.018 -0.027 +0.003 -0.023 -0.004
+line   behaviour   twin_source_js    : mean diff +0.000 (sd 0.001); 3/5 positive; sign p=1.000; t p=0.434; per-seed +0.000 -0.000 +0.001 -0.001 +0.002
+line   behaviour   kl                : mean diff -0.000 (sd 0.000); 0/5 positive; sign p=0.062; t p=0.006; per-seed -0.000 -0.000 -0.000 -0.000 -0.000
+line   behaviour   eci               : mean diff -0.001 (sd 0.001); 0/5 positive; sign p=0.062; t p=0.374; per-seed +0.000 +0.000 +0.000 -0.003 +0.000
+line   hidden_last line_given_circle : mean diff -0.073 (sd 0.193); 2/5 positive; sign p=1.000; t p=0.493; per-seed -0.352 -0.045 +0.167 -0.225 +0.091
+line   hidden_last circle_given_line : mean diff -0.139 (sd 0.149); 1/5 positive; sign p=0.375; t p=0.137; per-seed -0.263 -0.084 -0.302 -0.164 +0.118
+line   hidden_last rsa_code          : mean diff +0.713 (sd 0.165); 5/5 positive; sign p=0.062; t p=0.001; per-seed +0.826 +0.872 +0.596 +0.825 +0.444
+line   hidden_last eci               : mean diff +0.262 (sd 0.070); 5/5 positive; sign p=0.062; t p=0.002; per-seed +0.283 +0.244 +0.340 +0.137 +0.305
+line   hidden_mid  line_given_circle : mean diff -0.037 (sd 0.206); 3/5 positive; sign p=1.000; t p=0.734; per-seed -0.236 +0.023 +0.241 -0.310 +0.095
+line   hidden_mid  circle_given_line : mean diff -0.391 (sd 0.131); 0/5 positive; sign p=0.062; t p=0.004; per-seed -0.501 -0.311 -0.574 -0.360 -0.210
+line   hidden_mid  rsa_code          : mean diff +0.686 (sd 0.192); 5/5 positive; sign p=0.062; t p=0.002; per-seed +0.715 +0.890 +0.573 +0.875 +0.379
+line   hidden_mid  eci               : mean diff +0.382 (sd 0.113); 5/5 positive; sign p=0.062; t p=0.003; per-seed +0.387 +0.349 +0.556 +0.203 +0.416
+figures written

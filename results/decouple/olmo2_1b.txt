@@ -1,0 +1,14 @@
+## olmo2_1b canonical set ['C', 'Db', 'D', 'Eb', 'E', 'F', 'F#', 'G', 'Ab', 'A', 'Bb', 'B']: glyph indicator [0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0]
+   L 2: RSA(Gram, black-key block) = +0.71   RSA(Gram, accidental-glyph block) = +0.71
+   L 4: RSA(Gram, black-key block) = +0.77   RSA(Gram, accidental-glyph block) = +0.77
+   L 8: RSA(Gram, black-key block) = +0.80   RSA(Gram, accidental-glyph block) = +0.80
+   L12: RSA(Gram, black-key block) = +0.82   RSA(Gram, accidental-glyph block) = +0.82
+   L14: RSA(Gram, black-key block) = +0.85   RSA(Gram, accidental-glyph block) = +0.85
+   L16: RSA(Gram, black-key block) = +0.86   RSA(Gram, accidental-glyph block) = +0.86
+## olmo2_1b decoupled set ['B#', 'Db', 'D', 'Eb', 'Fb', 'E#', 'F#', 'G', 'Ab', 'A', 'Bb', 'Cb']: glyph indicator [1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1]
+   L 2: RSA(Gram, black-key block) = +0.12   RSA(Gram, accidental-glyph block) = -0.23
+   L 4: RSA(Gram, black-key block) = -0.01   RSA(Gram, accidental-glyph block) = +0.01
+   L 8: RSA(Gram, black-key block) = -0.09   RSA(Gram, accidental-glyph block) = +0.37
+   L12: RSA(Gram, black-key block) = -0.04   RSA(Gram, accidental-glyph block) = +0.51
+   L14: RSA(Gram, black-key block) = -0.03   RSA(Gram, accidental-glyph block) = +0.51
+   L16: RSA(Gram, black-key block) = +0.06   RSA(Gram, accidental-glyph block) = +0.49

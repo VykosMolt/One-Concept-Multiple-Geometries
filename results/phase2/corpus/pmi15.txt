@@ -1,0 +1,14 @@
+15-key corpus PMI (Wikipedia). min key count 38 ; enharmonic pair weighted counts: [('Cb', 'B', 104), ('Gb', 'F#', 201), ('Db', 'C#', 82)]
+  PMI of enharmonic pairs: [np.float64(9.92), np.float64(11.02), np.float64(9.78)]  median off-diag PMI: 7.3
+  observed: ECI 0.04  circle|line +0.42  line|circle +0.38  RSA circle +0.52 line +0.59 glyph +0.52  partial circle +0.45 line +0.42
+  bootstrap eci            : +0.04 ± 0.00   (Poisson on f-weighted counts: understates true uncertainty)
+  bootstrap cl             : +0.41 ± 0.01   (Poisson on f-weighted counts: understates true uncertainty)
+  bootstrap lc             : +0.38 ± 0.02   (Poisson on f-weighted counts: understates true uncertainty)
+  bootstrap circle_partial : +0.44 ± 0.01   (Poisson on f-weighted counts: understates true uncertainty)
+  bootstrap line_partial   : +0.42 ± 0.02   (Poisson on f-weighted counts: understates true uncertainty)
+  P(circle|line > line|circle) = 0.892
+  null p for eci            : free 0.000  glyph-preserving 0.002
+  null p for cl             : free 0.000  glyph-preserving 0.000
+  null p for lc             : free 0.000  glyph-preserving 0.000
+  null p for circle_partial : free 0.000  glyph-preserving 0.000
+  null p for line_partial   : free 0.000  glyph-preserving 0.000

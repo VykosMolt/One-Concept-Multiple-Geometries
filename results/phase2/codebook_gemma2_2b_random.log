@@ -1,0 +1,16 @@
+Loading weights:   0%|          | 0/288 [00:00<?, ?it/s]Loading weights:   0%|          | 1/288 [00:00<01:51,  2.58it/s]Loading weights:   7%|▋         | 21/288 [00:00<00:04, 55.51it/s]Loading weights:  16%|█▋        | 47/288 [00:00<00:02, 111.94it/s]Loading weights:  24%|██▍       | 69/288 [00:00<00:01, 135.44it/s]Loading weights:  31%|███       | 88/288 [00:00<00:01, 130.62it/s]Loading weights:  36%|███▋      | 105/288 [00:01<00:01, 125.74it/s]Loading weights:  42%|████▏     | 120/288 [00:01<00:01, 113.90it/s]Loading weights:  46%|████▌     | 133/288 [00:01<00:01, 116.25it/s]Loading weights:  55%|█████▍    | 157/288 [00:01<00:00, 145.17it/s]Loading weights:  62%|██████▏   | 178/288 [00:01<00:00, 161.85it/s]Loading weights:  68%|██████▊   | 196/288 [00:01<00:00, 123.41it/s]Loading weights:  73%|███████▎  | 211/288 [00:01<00:00, 107.66it/s]Loading weights:  78%|███████▊  | 224/288 [00:02<00:00, 96.47it/s] Loading weights:  85%|████████▌ | 246/288 [00:02<00:00, 120.28it/s]Loading weights:  93%|█████████▎| 269/288 [00:02<00:00, 141.35it/s]Loading weights: 100%|██████████| 288/288 [00:02<00:00, 121.85it/s]
+gemma2_2b codebook 0: identity accuracy 0.67
+gemma2_2b codebook 0 dominant: top-1 (non-self) Cb->Db Gb->Db Db->A Ab->Db Eb->Db Bb->Db F->Db C->Db G->Db D->Db A->Db E->Db B->Db F#->Db C#->Db
+gemma2_2b codebook 0 modulation: top-1 (non-self) Cb->C Gb->C Db->C Ab->C Eb->C Bb->C F->Db C->Db G->Db D->Db A->Db E->Db B->C F#->C C#->C
+gemma2_2b codebook 0 chord: top-1 (non-self) Cb->C# Gb->Bb Db->Bb Ab->Db Eb->Db Bb->Db F->C C->Db G->Gb D->Bb A->Db E->Db B->C# F#->Bb C#->G
+gemma2_2b codebook 0 enharmonic: top-1 (non-self) Cb->Db Gb->Db Db->Ab Ab->Db Eb->Db Bb->Db F->Db C->Db G->Db D->Db A->Db E->Db B->Db F#->Db C#->Db
+gemma2_2b codebook 1: identity accuracy 0.73
+gemma2_2b codebook 1 dominant: top-1 (non-self) Cb->C# Gb->Db Db->C# Ab->F Eb->Db Bb->Db F->F# C->C# G->Db D->Db A->Db E->F B->Db F#->Db C#->Db
+gemma2_2b codebook 1 modulation: top-1 (non-self) Cb->F Gb->F Db->F Ab->F Eb->F Bb->F F->Db C->F G->F D->F A->F E->F B->F F#->F C#->F
+gemma2_2b codebook 1 chord: top-1 (non-self) Cb->C# Gb->C# Db->C# Ab->F# Eb->Db Bb->F# F->F# C->C# G->C# D->C# A->F# E->F B->F# F#->F C#->Cb
+gemma2_2b codebook 1 enharmonic: top-1 (non-self) Cb->C# Gb->C# Db->C# Ab->Db Eb->Db Bb->Db F->Db C->C# G->C# D->Db A->Db E->Db B->Db F#->Db C#->Cb
+gemma2_2b codebook 2: identity accuracy 0.60
+gemma2_2b codebook 2 dominant: top-1 (non-self) Cb->D Gb->D Db->D Ab->D Eb->D Bb->D F->D C->D G->Gb D->Bb A->D E->D B->Bb F#->D C#->D
+gemma2_2b codebook 2 modulation: top-1 (non-self) Cb->D Gb->D Db->Bb Ab->D Eb->D Bb->D F->Bb C->Bb G->D D->Bb A->D E->D B->Bb F#->D C#->D
+gemma2_2b codebook 2 chord: top-1 (non-self) Cb->Gb Gb->Db Db->D Ab->Gb Eb->Gb Bb->D F->F# C->D G->Gb D->Bb A->Ab E->Eb B->Bb F#->D C#->Eb
+gemma2_2b codebook 2 enharmonic: top-1 (non-self) Cb->Gb Gb->Ab Db->Bb Ab->A Eb->Gb Bb->Eb F->Eb C->Gb G->Gb D->Bb A->Gb E->Gb B->Bb F#->Eb C#->Eb

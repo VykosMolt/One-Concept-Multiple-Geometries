@@ -1,0 +1,1253 @@
+{
+ "dominant(+7)": {
+  "acc_cal": 0.08333333333333333,
+  "acc_raw": 0.3333333333333333,
+  "acc_mean": 0.3333333333333333,
+  "rows": [
+   {
+    "x": "C",
+    "pred_cal": "Ab",
+    "pred_raw": "F",
+    "pred_mean": "F",
+    "target": "G",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Db",
+    "pred_cal": "Ab",
+    "pred_raw": "Bb",
+    "pred_mean": "Bb",
+    "target": "Ab",
+    "correct_cal": true,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "D",
+    "pred_cal": "Ab",
+    "pred_raw": "E",
+    "pred_mean": "E",
+    "target": "A",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Eb",
+    "pred_cal": "Ab",
+    "pred_raw": "Bb",
+    "pred_mean": "Bb",
+    "target": "Bb",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "E",
+    "pred_cal": "Ab",
+    "pred_raw": "B",
+    "pred_mean": "B",
+    "target": "B",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "F",
+    "pred_cal": "Ab",
+    "pred_raw": "A",
+    "pred_mean": "A",
+    "target": "C",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "F#",
+    "pred_cal": "Ab",
+    "pred_raw": "Bb",
+    "pred_mean": "Bb",
+    "target": "Db",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "G",
+    "pred_cal": "Ab",
+    "pred_raw": "C",
+    "pred_mean": "C",
+    "target": "D",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Ab",
+    "pred_cal": "Ab",
+    "pred_raw": "Eb",
+    "pred_mean": "Eb",
+    "target": "Eb",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "A",
+    "pred_cal": "Ab",
+    "pred_raw": "E",
+    "pred_mean": "E",
+    "target": "E",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "Bb",
+    "pred_cal": "Ab",
+    "pred_raw": "Eb",
+    "pred_mean": "Eb",
+    "target": "F",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "B",
+    "pred_cal": "Ab",
+    "pred_raw": "F",
+    "pred_mean": "F",
+    "target": "F#",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 4
+   }
+  ]
+ },
+ "subdominant(+5)": {
+  "acc_cal": 0.08333333333333333,
+  "acc_raw": 0.3333333333333333,
+  "acc_mean": 0.3333333333333333,
+  "rows": [
+   {
+    "x": "C",
+    "pred_cal": "Ab",
+    "pred_raw": "G",
+    "pred_mean": "G",
+    "target": "F",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Db",
+    "pred_cal": "Ab",
+    "pred_raw": "Eb",
+    "pred_mean": "Eb",
+    "target": "F#",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 4
+   },
+   {
+    "x": "D",
+    "pred_cal": "Ab",
+    "pred_raw": "A",
+    "pred_mean": "A",
+    "target": "G",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Eb",
+    "pred_cal": "Ab",
+    "pred_raw": "F",
+    "pred_mean": "F",
+    "target": "Ab",
+    "correct_cal": true,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "E",
+    "pred_cal": "Ab",
+    "pred_raw": "B",
+    "pred_mean": "B",
+    "target": "A",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "F",
+    "pred_cal": "Ab",
+    "pred_raw": "A",
+    "pred_mean": "A",
+    "target": "Bb",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "F#",
+    "pred_cal": "Ab",
+    "pred_raw": "Bb",
+    "pred_mean": "Bb",
+    "target": "B",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "G",
+    "pred_cal": "Ab",
+    "pred_raw": "C",
+    "pred_mean": "C",
+    "target": "C",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "Ab",
+    "pred_cal": "Ab",
+    "pred_raw": "C",
+    "pred_mean": "C",
+    "target": "Db",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "A",
+    "pred_cal": "Ab",
+    "pred_raw": "D",
+    "pred_mean": "D",
+    "target": "D",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "Bb",
+    "pred_cal": "Ab",
+    "pred_raw": "Eb",
+    "pred_mean": "Eb",
+    "target": "Eb",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "B",
+    "pred_cal": "Ab",
+    "pred_raw": "E",
+    "pred_mean": "E",
+    "target": "E",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   }
+  ]
+ },
+ "relative_minor(+9)": {
+  "acc_cal": 0.08333333333333333,
+  "acc_raw": 0.08333333333333333,
+  "acc_mean": 0.08333333333333333,
+  "rows": [
+   {
+    "x": "C",
+    "pred_cal": "C#",
+    "pred_raw": "G",
+    "pred_mean": "G#",
+    "target": "A",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Db",
+    "pred_cal": "C#",
+    "pred_raw": "C#",
+    "pred_mean": "C#",
+    "target": "Bb",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "D",
+    "pred_cal": "C#",
+    "pred_raw": "A",
+    "pred_mean": "A",
+    "target": "B",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Eb",
+    "pred_cal": "C#",
+    "pred_raw": "Bb",
+    "pred_mean": "Bb",
+    "target": "C",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "E",
+    "pred_cal": "C#",
+    "pred_raw": "D",
+    "pred_mean": "D",
+    "target": "C#",
+    "correct_cal": true,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 4
+   },
+   {
+    "x": "F",
+    "pred_cal": "C#",
+    "pred_raw": "D",
+    "pred_mean": "D",
+    "target": "D",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "F#",
+    "pred_cal": "C#",
+    "pred_raw": "D",
+    "pred_mean": "D",
+    "target": "Eb",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "G",
+    "pred_cal": "C#",
+    "pred_raw": "D",
+    "pred_mean": "D",
+    "target": "E",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Ab",
+    "pred_cal": "C#",
+    "pred_raw": "F#",
+    "pred_mean": "F#",
+    "target": "F",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "A",
+    "pred_cal": "C#",
+    "pred_raw": "E",
+    "pred_mean": "E",
+    "target": "F#",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 4
+   },
+   {
+    "x": "Bb",
+    "pred_cal": "C#",
+    "pred_raw": "F#",
+    "pred_mean": "F#",
+    "target": "G",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "B",
+    "pred_cal": "C#",
+    "pred_raw": "A",
+    "pred_mean": "A",
+    "target": "G#",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 4
+   }
+  ]
+ },
+ "relative_major(+3)": {
+  "acc_cal": 0.08333333333333333,
+  "acc_raw": 0.16666666666666666,
+  "acc_mean": 0.16666666666666666,
+  "rows": [
+   {
+    "x": "C",
+    "pred_cal": "Ab",
+    "pred_raw": "F",
+    "pred_mean": "F",
+    "target": "Eb",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "C#",
+    "pred_cal": "Ab",
+    "pred_raw": "Eb",
+    "pred_mean": "Eb",
+    "target": "E",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "D",
+    "pred_cal": "Ab",
+    "pred_raw": "C",
+    "pred_mean": "C",
+    "target": "F",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Eb",
+    "pred_cal": "Ab",
+    "pred_raw": "Ab",
+    "pred_mean": "Ab",
+    "target": "F#",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 4
+   },
+   {
+    "x": "E",
+    "pred_cal": "Ab",
+    "pred_raw": "A",
+    "pred_mean": "A",
+    "target": "G",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "F",
+    "pred_cal": "Ab",
+    "pred_raw": "G",
+    "pred_mean": "G",
+    "target": "Ab",
+    "correct_cal": true,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "F#",
+    "pred_cal": "Ab",
+    "pred_raw": "A",
+    "pred_mean": "A",
+    "target": "A",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "G",
+    "pred_cal": "Ab",
+    "pred_raw": "C",
+    "pred_mean": "C",
+    "target": "Bb",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "G#",
+    "pred_cal": "Ab",
+    "pred_raw": "A",
+    "pred_mean": "A",
+    "target": "B",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "A",
+    "pred_cal": "Ab",
+    "pred_raw": "Ab",
+    "pred_mean": "Ab",
+    "target": "C",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Bb",
+    "pred_cal": "Ab",
+    "pred_raw": "Eb",
+    "pred_mean": "Eb",
+    "target": "Db",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "B",
+    "pred_cal": "Ab",
+    "pred_raw": "D",
+    "pred_mean": "D",
+    "target": "D",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   }
+  ]
+ },
+ "semitone_up(+1)": {
+  "acc_cal": 0.08333333333333333,
+  "acc_raw": 0.25,
+  "acc_mean": 0.25,
+  "rows": [
+   {
+    "x": "C",
+    "pred_cal": "Ab",
+    "pred_raw": "G",
+    "pred_mean": "G",
+    "target": "Db",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Db",
+    "pred_cal": "Ab",
+    "pred_raw": "Db",
+    "pred_mean": "Db",
+    "target": "D",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "D",
+    "pred_cal": "Ab",
+    "pred_raw": "Eb",
+    "pred_mean": "Eb",
+    "target": "Eb",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "Eb",
+    "pred_cal": "Ab",
+    "pred_raw": "D",
+    "pred_mean": "D",
+    "target": "E",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "E",
+    "pred_cal": "Ab",
+    "pred_raw": "Ab",
+    "pred_mean": "Ab",
+    "target": "F",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "F",
+    "pred_cal": "Ab",
+    "pred_raw": "G",
+    "pred_mean": "G",
+    "target": "F#",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 4
+   },
+   {
+    "x": "F#",
+    "pred_cal": "Ab",
+    "pred_raw": "G",
+    "pred_mean": "G",
+    "target": "G",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "G",
+    "pred_cal": "Ab",
+    "pred_raw": "D",
+    "pred_mean": "D",
+    "target": "Ab",
+    "correct_cal": true,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Ab",
+    "pred_cal": "Ab",
+    "pred_raw": "Bb",
+    "pred_mean": "Bb",
+    "target": "A",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "A",
+    "pred_cal": "Ab",
+    "pred_raw": "Bb",
+    "pred_mean": "Bb",
+    "target": "Bb",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "Bb",
+    "pred_cal": "Ab",
+    "pred_raw": "C",
+    "pred_mean": "C",
+    "target": "B",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "B",
+    "pred_cal": "Ab",
+    "pred_raw": "E",
+    "pred_mean": "E",
+    "target": "C",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   }
+  ]
+ },
+ "whole_tone_up(+2)": {
+  "acc_cal": 0.08333333333333333,
+  "acc_raw": 0.08333333333333333,
+  "acc_mean": 0.08333333333333333,
+  "rows": [
+   {
+    "x": "C",
+    "pred_cal": "Ab",
+    "pred_raw": "B",
+    "pred_mean": "B",
+    "target": "D",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Db",
+    "pred_cal": "Ab",
+    "pred_raw": "Ab",
+    "pred_mean": "Ab",
+    "target": "Eb",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "D",
+    "pred_cal": "Ab",
+    "pred_raw": "Eb",
+    "pred_mean": "Eb",
+    "target": "E",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Eb",
+    "pred_cal": "Ab",
+    "pred_raw": "Ab",
+    "pred_mean": "Ab",
+    "target": "F",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "E",
+    "pred_cal": "Ab",
+    "pred_raw": "F",
+    "pred_mean": "F",
+    "target": "F#",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 4
+   },
+   {
+    "x": "F",
+    "pred_cal": "Ab",
+    "pred_raw": "A",
+    "pred_mean": "A",
+    "target": "G",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "F#",
+    "pred_cal": "Ab",
+    "pred_raw": "G",
+    "pred_mean": "G",
+    "target": "Ab",
+    "correct_cal": true,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "G",
+    "pred_cal": "Ab",
+    "pred_raw": "A",
+    "pred_mean": "A",
+    "target": "A",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "Ab",
+    "pred_cal": "Ab",
+    "pred_raw": "E",
+    "pred_mean": "E",
+    "target": "Bb",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "A",
+    "pred_cal": "Ab",
+    "pred_raw": "C",
+    "pred_mean": "C",
+    "target": "B",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Bb",
+    "pred_cal": "Ab",
+    "pred_raw": "Eb",
+    "pred_mean": "Eb",
+    "target": "C",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "B",
+    "pred_cal": "Ab",
+    "pred_raw": "C",
+    "pred_mean": "C",
+    "target": "Db",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   }
+  ]
+ },
+ "fifth_up(+7)": {
+  "acc_cal": 0.08333333333333333,
+  "acc_raw": 0.3333333333333333,
+  "acc_mean": 0.3333333333333333,
+  "rows": [
+   {
+    "x": "C",
+    "pred_cal": "Ab",
+    "pred_raw": "G",
+    "pred_mean": "G",
+    "target": "G",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "Db",
+    "pred_cal": "Ab",
+    "pred_raw": "E",
+    "pred_mean": "E",
+    "target": "Ab",
+    "correct_cal": true,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "D",
+    "pred_cal": "Ab",
+    "pred_raw": "G",
+    "pred_mean": "G",
+    "target": "A",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Eb",
+    "pred_cal": "Ab",
+    "pred_raw": "Bb",
+    "pred_mean": "Bb",
+    "target": "Bb",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "E",
+    "pred_cal": "Ab",
+    "pred_raw": "B",
+    "pred_mean": "B",
+    "target": "B",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "F",
+    "pred_cal": "Ab",
+    "pred_raw": "A",
+    "pred_mean": "A",
+    "target": "C",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "F#",
+    "pred_cal": "Ab",
+    "pred_raw": "C",
+    "pred_mean": "C",
+    "target": "Db",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "G",
+    "pred_cal": "Ab",
+    "pred_raw": "C",
+    "pred_mean": "C",
+    "target": "D",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Ab",
+    "pred_cal": "Ab",
+    "pred_raw": "F",
+    "pred_mean": "F",
+    "target": "Eb",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "A",
+    "pred_cal": "Ab",
+    "pred_raw": "E",
+    "pred_mean": "E",
+    "target": "E",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "Bb",
+    "pred_cal": "Ab",
+    "pred_raw": "Eb",
+    "pred_mean": "Eb",
+    "target": "F",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "B",
+    "pred_cal": "Ab",
+    "pred_raw": "F",
+    "pred_mean": "F",
+    "target": "F#",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 4
+   }
+  ]
+ },
+ "minor_third_up(+3)": {
+  "acc_cal": 0.08333333333333333,
+  "acc_raw": 0.0,
+  "acc_mean": 0.0,
+  "rows": [
+   {
+    "x": "C",
+    "pred_cal": "Ab",
+    "pred_raw": "F",
+    "pred_mean": "F",
+    "target": "Eb",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Db",
+    "pred_cal": "Ab",
+    "pred_raw": "Ab",
+    "pred_mean": "Ab",
+    "target": "E",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "D",
+    "pred_cal": "Ab",
+    "pred_raw": "C",
+    "pred_mean": "C",
+    "target": "F",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Eb",
+    "pred_cal": "Ab",
+    "pred_raw": "Ab",
+    "pred_mean": "Ab",
+    "target": "F#",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 4
+   },
+   {
+    "x": "E",
+    "pred_cal": "Ab",
+    "pred_raw": "B",
+    "pred_mean": "B",
+    "target": "G",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "F",
+    "pred_cal": "Ab",
+    "pred_raw": "A",
+    "pred_mean": "A",
+    "target": "Ab",
+    "correct_cal": true,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "F#",
+    "pred_cal": "Ab",
+    "pred_raw": "E",
+    "pred_mean": "E",
+    "target": "A",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "G",
+    "pred_cal": "Ab",
+    "pred_raw": "C",
+    "pred_mean": "C",
+    "target": "Bb",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Ab",
+    "pred_cal": "Ab",
+    "pred_raw": "C",
+    "pred_mean": "C",
+    "target": "B",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "A",
+    "pred_cal": "Ab",
+    "pred_raw": "Bb",
+    "pred_mean": "Bb",
+    "target": "C",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Bb",
+    "pred_cal": "Ab",
+    "pred_raw": "Eb",
+    "pred_mean": "Eb",
+    "target": "Db",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "B",
+    "pred_cal": "Ab",
+    "pred_raw": "Eb",
+    "pred_mean": "Eb",
+    "target": "D",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   }
+  ]
+ },
+ "tritone(+6)": {
+  "acc_cal": 0.08333333333333333,
+  "acc_raw": 0.25,
+  "acc_mean": 0.16666666666666666,
+  "rows": [
+   {
+    "x": "C",
+    "pred_cal": "Ab",
+    "pred_raw": "F",
+    "pred_mean": "F",
+    "target": "F#",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 4
+   },
+   {
+    "x": "Db",
+    "pred_cal": "Ab",
+    "pred_raw": "Ab",
+    "pred_mean": "Ab",
+    "target": "G",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "D",
+    "pred_cal": "Ab",
+    "pred_raw": "Eb",
+    "pred_mean": "Eb",
+    "target": "Ab",
+    "correct_cal": true,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Eb",
+    "pred_cal": "Ab",
+    "pred_raw": "Ab",
+    "pred_mean": "Ab",
+    "target": "A",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "E",
+    "pred_cal": "Ab",
+    "pred_raw": "B",
+    "pred_mean": "F#",
+    "target": "Bb",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "F",
+    "pred_cal": "Ab",
+    "pred_raw": "Bb",
+    "pred_mean": "Bb",
+    "target": "B",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "F#",
+    "pred_cal": "Ab",
+    "pred_raw": "C",
+    "pred_mean": "C",
+    "target": "C",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "G",
+    "pred_cal": "Ab",
+    "pred_raw": "Eb",
+    "pred_mean": "Eb",
+    "target": "Db",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Ab",
+    "pred_cal": "Ab",
+    "pred_raw": "D",
+    "pred_mean": "D",
+    "target": "D",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": true,
+    "ntok_target": 3
+   },
+   {
+    "x": "A",
+    "pred_cal": "Ab",
+    "pred_raw": "E",
+    "pred_mean": "E",
+    "target": "Eb",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "Bb",
+    "pred_cal": "Ab",
+    "pred_raw": "F#",
+    "pred_mean": "F#",
+    "target": "E",
+    "correct_cal": false,
+    "correct_raw": false,
+    "correct_mean": false,
+    "ntok_target": 3
+   },
+   {
+    "x": "B",
+    "pred_cal": "Ab",
+    "pred_raw": "F",
+    "pred_mean": "F#",
+    "target": "F",
+    "correct_cal": false,
+    "correct_raw": true,
+    "correct_mean": false,
+    "ntok_target": 3
+   }
+  ]
+ }
+}

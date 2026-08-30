@@ -1,0 +1,73 @@
+6 shards to scan with 16 procs
+train-00000-of-00041: 156289 docs, 112.2M words, 70s
+train-00001-of-00041: 156289 docs, 93.8M words, 60s
+train-00002-of-00041: 156289 docs, 87.4M words, 55s
+train-00003-of-00041: 156289 docs, 87.6M words, 57s
+train-00004-of-00041: 156289 docs, 81.7M words, 55s
+train-00005-of-00041: 156289 docs, 66.0M words, 44s
+00:06 scanned=6 downloaded=7 dl_running=3
+2 shards to scan with 16 procs
+train-00006-of-00041: 156288 docs, 71.5M words, 38s
+train-00007-of-00041: 156288 docs, 61.2M words, 32s
+00:08 scanned=9 downloaded=9 dl_running=3
+1 shards to scan with 16 procs
+train-00008-of-00041: 156288 docs, 66.1M words, 29s
+00:11 scanned=10 downloaded=10 dl_running=3
+2 shards to scan with 16 procs
+train-00009-of-00041: 156288 docs, 60.9M words, 28s
+train-00010-of-00041: 156288 docs, 62.6M words, 29s
+00:13 scanned=12 downloaded=12 dl_running=3
+1 shards to scan with 16 procs
+train-00011-of-00041: 156288 docs, 61.8M words, 24s
+00:16 scanned=13 downloaded=13 dl_running=3
+2 shards to scan with 16 procs
+train-00012-of-00041: 156288 docs, 63.5M words, 27s
+train-00013-of-00041: 156288 docs, 64.0M words, 28s
+00:18 scanned=15 downloaded=15 dl_running=3
+1 shards to scan with 16 procs
+train-00014-of-00041: 156288 docs, 59.3M words, 38s
+00:21 scanned=16 downloaded=16 dl_running=3
+1 shards to scan with 16 procs
+train-00015-of-00041: 156288 docs, 62.2M words, 30s
+00:23 scanned=17 downloaded=17 dl_running=3
+1 shards to scan with 16 procs
+train-00016-of-00041: 156288 docs, 143.3M words, 72s
+00:27 scanned=18 downloaded=18 dl_running=3
+2 shards to scan with 16 procs
+train-00017-of-00041: 156288 docs, 61.3M words, 29s
+train-00018-of-00041: 156288 docs, 61.1M words, 28s
+00:29 scanned=20 downloaded=20 dl_running=3
+2 shards to scan with 16 procs
+train-00019-of-00041: 156288 docs, 52.3M words, 25s
+train-00020-of-00041: 156288 docs, 59.5M words, 28s
+00:32 scanned=22 downloaded=22 dl_running=3
+1 shards to scan with 16 procs
+train-00021-of-00041: 156288 docs, 59.7M words, 27s
+00:34 scanned=23 downloaded=23 dl_running=3
+4 shards to scan with 16 procs
+train-00022-of-00041: 156288 docs, 54.3M words, 34s
+train-00023-of-00041: 156288 docs, 57.2M words, 34s
+train-00024-of-00041: 156288 docs, 58.6M words, 34s
+train-00025-of-00041: 156288 docs, 58.7M words, 36s
+00:37 scanned=27 downloaded=27 dl_running=3
+4 shards to scan with 16 procs
+train-00026-of-00041: 156288 docs, 55.3M words, 33s
+train-00027-of-00041: 156288 docs, 57.0M words, 33s
+train-00028-of-00041: 156288 docs, 50.4M words, 30s
+train-00029-of-00041: 156288 docs, 58.3M words, 34s
+00:39 scanned=31 downloaded=31 dl_running=3
+5 shards to scan with 16 procs
+train-00030-of-00041: 156288 docs, 54.3M words, 34s
+train-00031-of-00041: 156288 docs, 58.0M words, 40s
+train-00032-of-00041: 156288 docs, 56.9M words, 37s
+train-00033-of-00041: 156288 docs, 55.0M words, 35s
+train-00034-of-00041: 156288 docs, 58.5M words, 37s
+00:42 scanned=36 downloaded=36 dl_running=3
+2 shards to scan with 16 procs
+train-00035-of-00041: 156288 docs, 59.6M words, 30s
+train-00036-of-00041: 156288 docs, 164.5M words, 84s
+00:45 scanned=38 downloaded=38 dl_running=3
+2 shards to scan with 16 procs
+train-00037-of-00041: 156288 docs, 182.2M words, 94s
+train-00038-of-00041: 156288 docs, 144.5M words, 76s
+00:49 scanned=40 downloaded=40 dl_running=3

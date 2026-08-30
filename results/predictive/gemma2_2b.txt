@@ -1,0 +1,14 @@
+## gemma2_2b predictive matrices (major keys). RSA over 66 off-diagonal pairs of symmetrized L; partial ctrl = block+commonness+letter+alpha
+context        | diag-self | RSA: PMI  -fifths -chrom  block  common | partial: fifths chrom PMI | Fourier profile of sym-centered L (P1..P5,E6) | top-1 target hist (interval)
+   [enharmonic-merged targets] partial fifths=+0.32  circle|line=-0.07  line|circle=+0.52   (canonical: -0.38 / +0.74)
+modulates_to   | 0.03      | +0.56 +0.44 -0.14 +0.66 +0.67 | +0.23 +0.01 +0.36 | [0.17 0.05 0.15 0.08 0.5  0.05] | [0, 2, 2, 1, 1, 3, 1, 2, 0, 0, 0, 0]
+   [enharmonic-merged targets] partial fifths=+0.14  circle|line=-0.23  line|circle=+0.54   (canonical: -0.35 / +0.65)
+then_key       | 0.02      | +0.48 +0.37 -0.12 +0.64 +0.78 | +0.16 +0.02 +0.22 | [0.17 0.05 0.15 0.08 0.5  0.05] | [0, 2, 2, 1, 1, 2, 0, 2, 1, 0, 1, 0]
+   [enharmonic-merged targets] partial fifths=+0.09  circle|line=+0.02  line|circle=+0.11   (canonical: -0.11 / +0.32)
+related_key    | 0.10      | +0.37 +0.39 -0.03 +0.65 +0.48 | +0.13 -0.02 +0.02 | [0.11 0.1  0.1  0.04 0.5  0.15] | [0, 2, 1, 2, 0, 3, 1, 1, 0, 1, 1, 0]
+   [enharmonic-merged targets] partial fifths=+0.09  circle|line=-0.12  line|circle=+0.33   (canonical: -0.29 / +0.57)
+transposed_to  | 0.00      | +0.46 +0.31 -0.08 +0.55 +0.86 | +0.13 -0.01 +0.30 | [0.08 0.03 0.22 0.12 0.5  0.05] | [0, 1, 3, 1, 1, 1, 1, 0, 1, 1, 1, 1]
+   [enharmonic-merged targets] partial fifths=+0.29  circle|line=-0.17  line|circle=+0.59   (canonical: -0.39 / +0.74)
+next_song      | 0.06      | +0.52 +0.42 -0.08 +0.67 +0.73 | +0.23 +0.08 +0.32 | [0.1  0.07 0.15 0.12 0.5  0.06] | [0, 1, 3, 1, 1, 2, 1, 1, 1, 0, 1, 0]
+   [enharmonic-merged targets] partial fifths=+0.05  circle|line=-0.29  line|circle=+0.40   (canonical: -0.38 / +0.56)
+chord_after    | 0.48      | +0.42 +0.31 +0.03 +0.63 +0.57 | +0.10 +0.08 +0.17 | [0.   0.02 0.15 0.21 0.48 0.13] | [0, 2, 3, 1, 1, 2, 0, 1, 0, 0, 1, 1]

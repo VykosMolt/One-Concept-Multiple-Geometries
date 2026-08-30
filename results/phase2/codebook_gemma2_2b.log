@@ -1,0 +1,19 @@
+Loading weights:   0%|          | 0/288 [00:00<?, ?it/s]Loading weights:   5%|▌         | 15/288 [00:00<00:01, 149.84it/s]Loading weights:  32%|███▏      | 93/288 [00:00<00:00, 518.41it/s]Loading weights:  50%|█████     | 145/288 [00:00<00:00, 498.40it/s]Loading weights:  81%|████████  | 232/288 [00:00<00:00, 627.86it/s]Loading weights: 100%|██████████| 288/288 [00:00<00:00, 628.22it/s]
+gemma2_2b codebook 0: identity accuracy 0.53
+[W829 10:08:58.240733056 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 1814036480 bytes (free: 1383923712, total: 12386893824).
+gemma2_2b codebook 0 dominant: top-1 (non-self) Cb->Db Gb->Db Db->C# Ab->Db Eb->Db Bb->Db F->C# C->C# G->C# D->C# A->C# E->C# B->C# F#->C# C#->Db
+[W829 10:09:02.644824281 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 1843396608 bytes (free: 1511849984, total: 12386893824).
+gemma2_2b codebook 0 modulation: top-1 (non-self) Cb->Db Gb->Db Db->Cb Ab->Db Eb->Db Bb->Db F->Db C->Db G->Db D->Db A->Db E->Db B->Db F#->Cb C#->Cb
+[W829 10:09:05.134927223 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 1906311168 bytes (free: 1344077824, total: 12386893824).
+gemma2_2b codebook 0 chord: top-1 (non-self) Cb->Gb Gb->Cb Db->Gb Ab->Db Eb->Db Bb->Ab F->F# C->Cb G->Gb D->Bb A->C# E->C# B->F# F#->C# C#->F#
+gemma2_2b codebook 0 enharmonic: top-1 (non-self) Cb->Db Gb->Db Db->C# Ab->Db Eb->C# Bb->C# F->C# C->Db G->Db D->Db A->C# E->C# B->C# F#->C# C#->Db
+gemma2_2b codebook 1: identity accuracy 0.87
+gemma2_2b codebook 1 dominant: top-1 (non-self) Cb->Gb Gb->Cb Db->Cb Ab->Cb Eb->Cb Bb->Cb F->C# C->Cb G->Cb D->Cb A->C# E->C# B->C# F#->C# C#->Cb
+gemma2_2b codebook 1 modulation: top-1 (non-self) Cb->F Gb->Cb Db->Cb Ab->Cb Eb->Cb Bb->Cb F->Cb C->Cb G->Cb D->Cb A->Cb E->Cb B->Cb F#->Cb C#->Cb
+gemma2_2b codebook 1 chord: top-1 (non-self) Cb->Gb Gb->Cb Db->Cb Ab->Cb Eb->Cb Bb->Cb F->Cb C->Cb G->Cb D->Cb A->Cb E->Cb B->Cb F#->Cb C#->Cb
+gemma2_2b codebook 1 enharmonic: top-1 (non-self) Cb->Bb Gb->Cb Db->Cb Ab->Cb Eb->E Bb->Cb F->C# C->Cb G->Cb D->Cb A->E E->C# B->Bb F#->C# C#->Cb
+gemma2_2b codebook 2: identity accuracy 0.67
+gemma2_2b codebook 2 dominant: top-1 (non-self) Cb->F Gb->Cb Db->Cb Ab->Cb Eb->Cb Bb->Cb F->Cb C->Cb G->Cb D->Cb A->C# E->C# B->C# F#->Cb C#->Cb
+gemma2_2b codebook 2 modulation: top-1 (non-self) Cb->B Gb->Cb Db->Cb Ab->Cb Eb->Cb Bb->Cb F->Cb C->Cb G->Cb D->Cb A->Cb E->Cb B->Cb F#->Cb C#->Cb
+gemma2_2b codebook 2 chord: top-1 (non-self) Cb->Gb Gb->Cb Db->Cb Ab->Cb Eb->Cb Bb->Cb F->Bb C->Cb G->Gb D->Cb A->F E->Bb B->Bb F#->B C#->B
+gemma2_2b codebook 2 enharmonic: top-1 (non-self) Cb->F Gb->Cb Db->Cb Ab->Cb Eb->F Bb->F F->Bb C->Cb G->Cb D->Cb A->F E->Bb B->Bb F#->B C#->Cb

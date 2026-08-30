@@ -1,0 +1,8 @@
+## major_canon: min key count 232; weighted seam-pair counts (C_ij, f-weighted): median non-seam 1453, seam pairs:
+   Db-D=207, Db-E=144, Db-F#=17, Db-A=79, Db-B=73, Eb-E=964, Eb-F#=54, Eb-B=193, E-Ab=366, F-F#=110, F#-Ab=57, F#-Bb=51, Ab-A=290, Ab-B=120, Bb-B=476
+   circle|line = +0.40 (boot +0.39 ± 0.05), line|circle = +0.27 (boot +0.26 ± 0.05); P(circle > line) = 0.874  [Poisson bootstrap on f-weighted counts: SDs understate true uncertainty]
+   white-key fifths-line RSA = +0.63; rank among 5040 orderings: 78 (p = 0.0155); best ordering +0.81
+## major_merged: min key count 394; weighted seam-pair counts (C_ij, f-weighted): median non-seam 1472, seam pairs:
+   Db-D=213, Db-E=194, Db-F#=214, Db-A=129, Db-B=164, Eb-E=964, Eb-F#=217, Eb-B=240, E-Ab=395, F-F#=200, F#-Ab=183, F#-Bb=114, Ab-A=290, Ab-B=155, Bb-B=489
+   circle|line = +0.58 (boot +0.58 ± 0.02), line|circle = -0.07 (boot -0.07 ± 0.03); P(circle > line) = 1.000  [Poisson bootstrap on f-weighted counts: SDs understate true uncertainty]
+   white-key fifths-line RSA = +0.67; rank among 5040 orderings: 48 (p = 0.0095); best ordering +0.81

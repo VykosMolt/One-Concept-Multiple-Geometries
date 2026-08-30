@@ -1,0 +1,86 @@
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files:  10%|█         | 1/10 [00:00<00:04,  2.09it/s]Fetching 10 files:  30%|███       | 3/10 [00:00<00:02,  3.41it/s]Fetching 10 files:  40%|████      | 4/10 [00:01<00:01,  3.84it/s]Fetching 10 files:  50%|█████     | 5/10 [00:01<00:01,  3.99it/s]Fetching 10 files:  60%|██████    | 6/10 [00:02<00:01,  2.66it/s]Fetching 10 files:  70%|███████   | 7/10 [00:03<00:02,  1.38it/s]Fetching 10 files:  80%|████████  | 8/10 [00:03<00:01,  1.62it/s]Fetching 10 files:  90%|█████████ | 9/10 [08:06<02:28, 148.62s/it]Fetching 10 files: 100%|██████████| 10/10 [15:34<00:00, 239.69s/it]Fetching 10 files: 100%|██████████| 10/10 [15:34<00:00, 93.42s/it] 
+DONE stage1-step300-tokens1B
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files:  10%|█         | 1/10 [00:00<00:04,  2.05it/s]Fetching 10 files:  30%|███       | 3/10 [00:00<00:01,  4.64it/s]Fetching 10 files:  40%|████      | 4/10 [00:00<00:01,  4.26it/s]Fetching 10 files:  50%|█████     | 5/10 [00:01<00:01,  4.62it/s]Fetching 10 files:  60%|██████    | 6/10 [00:01<00:01,  2.82it/s]Fetching 10 files:  70%|███████   | 7/10 [00:03<00:02,  1.13it/s]Fetching 10 files:  80%|████████  | 8/10 [00:04<00:01,  1.52it/s]Fetching 10 files:  90%|█████████ | 9/10 [05:35<01:42, 102.19s/it]Fetching 10 files: 100%|██████████| 10/10 [15:25<00:00, 250.73s/it]Fetching 10 files: 100%|██████████| 10/10 [15:25<00:00, 92.51s/it] 
+DONE stage1-step10000-tokens21B
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files:  10%|█         | 1/10 [00:00<00:05,  1.80it/s]Fetching 10 files:  30%|███       | 3/10 [00:00<00:01,  5.30it/s]Fetching 10 files:  50%|█████     | 5/10 [00:01<00:01,  4.92it/s]Fetching 10 files:  60%|██████    | 6/10 [00:01<00:01,  3.43it/s]Fetching 10 files:  70%|███████   | 7/10 [00:01<00:00,  3.83it/s]Fetching 10 files:  80%|████████  | 8/10 [00:02<00:00,  2.52it/s]Fetching 10 files:  90%|█████████ | 9/10 [05:42<01:38, 98.24s/it]Fetching 10 files: 100%|██████████| 10/10 [15:59<00:00, 249.74s/it]Fetching 10 files: 100%|██████████| 10/10 [15:59<00:00, 95.96s/it] 
+DONE stage1-step23100-tokens49B
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files:  10%|█         | 1/10 [00:00<00:03,  2.40it/s]Fetching 10 files:  20%|██        | 2/10 [00:00<00:02,  3.22it/s]Fetching 10 files:  30%|███       | 3/10 [00:00<00:01,  4.41it/s]Fetching 10 files:  40%|████      | 4/10 [00:01<00:01,  3.83it/s]Fetching 10 files:  50%|█████     | 5/10 [00:01<00:01,  4.80it/s]Fetching 10 files:  60%|██████    | 6/10 [00:01<00:01,  2.78it/s]Fetching 10 files:  70%|███████   | 7/10 [00:03<00:02,  1.23it/s]Fetching 10 files:  80%|████████  | 8/10 [00:04<00:01,  1.17it/s]Fetching 10 files:  90%|█████████ | 9/10 [05:39<01:45, 105.22s/it]Fetching 10 files: 100%|██████████| 10/10 [15:31<00:00, 255.68s/it]Fetching 10 files: 100%|██████████| 10/10 [15:31<00:00, 93.18s/it] 
+DONE stage1-step50000-tokens105B
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files:  10%|█         | 1/10 [00:00<00:03,  2.37it/s]Fetching 10 files:  20%|██        | 2/10 [00:00<00:01,  4.05it/s]Fetching 10 files:  30%|███       | 3/10 [00:00<00:01,  4.95it/s]Fetching 10 files:  40%|████      | 4/10 [00:00<00:01,  4.20it/s]Fetching 10 files:  50%|█████     | 5/10 [00:01<00:01,  4.36it/s]Fetching 10 files:  60%|██████    | 6/10 [00:01<00:01,  3.00it/s]Fetching 10 files:  80%|████████  | 8/10 [00:02<00:00,  2.11it/s]Fetching 10 files:  90%|█████████ | 9/10 [05:46<01:29, 89.73s/it]Fetching 10 files: 100%|██████████| 10/10 [15:17<00:00, 220.17s/it]Fetching 10 files: 100%|██████████| 10/10 [15:17<00:00, 91.72s/it] 
+DONE stage1-step140000-tokens294B
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files:  10%|█         | 1/10 [00:00<00:04,  2.21it/s]Fetching 10 files:  30%|███       | 3/10 [00:00<00:01,  6.12it/s]Fetching 10 files:  50%|█████     | 5/10 [00:01<00:00,  5.13it/s]Fetching 10 files:  60%|██████    | 6/10 [00:01<00:01,  3.96it/s]Fetching 10 files:  70%|███████   | 7/10 [00:02<00:01,  2.80it/s]Fetching 10 files:  80%|████████  | 8/10 [00:02<00:00,  2.13it/s]Fetching 10 files:  90%|█████████ | 9/10 [05:59<01:43, 103.22s/it]Fetching 10 files:  90%|█████████ | 9/10 [40:29<04:29, 269.95s/it]
+Traceback (most recent call last):
+  File "<stdin>", line 5, in <module>
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 522, in snapshot_download
+    hf_thread_map(
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/home/moloch/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/moloch/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 502, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1006, in hf_hub_download
+    return _hf_hub_download_to_local_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1465, in _hf_hub_download_to_local_dir
+    _download_to_tmp_and_move(
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1969, in _download_to_tmp_and_move
+    xet_get(
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 570, in xet_get
+    with session.new_file_download_group(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Task error: File reconstruction error: CAS Client Error: Request middleware error: error sending request for url (https://us.aws.cdn.hf.co/xorbs/default/193695af40c973dadaea83252d005a633d5965d7f8d0b5cdad76a513ff96e199?user_id=69d7c2a9e408ebadd112ddf7&X-Xet-Session-Id=01a04d6f-9fa3-7e10-b119-325f7790fc62&repo_id=6801849906babaea60ca8cb3&Expires=1788013828&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hvcmJzL2RlZmF1bHQvMTkzNjk1YWY0MGM5NzNkYWRhZWE4MzI1MmQwMDVhNjMzZDU5NjVkN2Y4ZDBiNWNkYWQ3NmE1MTNmZjk2ZTE5OVxcP3VzZXJfaWQ9NjlkN2MyYTllNDA4ZWJhZGQxMTJkZGY3JlgtWGV0LVNlc3Npb24tSWQ9MDFhMDRkNmYtOWZhMy03ZTEwLWIxMTktMzI1Zjc3OTBmYzYyJnJlcG9faWQ9NjgwMTg0OTkwNmJhYmFlYTYwY2E4Y2IzIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJFcG9jaFRpbWUiOjE3ODgwMTM4Mjh9LCJCeXRlUmFuZ2UiOnsiRXhwZWN0ZWRIZWFkZXIiOiJieXRlcz0wLTYzNTM2MTk1In19fV19&Signature=MEUCIQDeqdKbwwtwYE7PSktHbLPm-AN5yUM4nMYlE3JD4u3SjwIgdfHW-53QW5gi2rLwkqLfVLDN%7E1mNxOvQYKisYzEH9pk_&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F)
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [08:49<00:00, 52.99s/it]Fetching 10 files: 100%|██████████| 10/10 [08:49<00:00, 52.99s/it]
+DONE stage1-step480000-tokens1007B
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files:  10%|█         | 1/10 [00:00<00:08,  1.05it/s]Fetching 10 files:  30%|███       | 3/10 [00:01<00:02,  2.60it/s]Fetching 10 files:  40%|████      | 4/10 [00:01<00:02,  2.84it/s]Fetching 10 files:  50%|█████     | 5/10 [00:01<00:01,  2.89it/s]Fetching 10 files:  60%|██████    | 6/10 [00:02<00:01,  2.07it/s]Fetching 10 files:  70%|███████   | 7/10 [00:02<00:01,  2.46it/s]Fetching 10 files:  80%|████████  | 8/10 [00:03<00:01,  1.92it/s]Fetching 10 files:  90%|█████████ | 9/10 [07:29<02:17, 137.03s/it]Fetching 10 files:  90%|█████████ | 9/10 [13:35<01:30, 90.64s/it] 
+Traceback (most recent call last):
+  File "<stdin>", line 5, in <module>
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 522, in snapshot_download
+    hf_thread_map(
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ^^^^^^^^^^^^^^^
+  File "/home/moloch/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/moloch/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/huggingface_hub/_snapshot_download.py", line 502, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1006, in hf_hub_download
+    return _hf_hub_download_to_local_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1465, in _hf_hub_download_to_local_dir
+    _download_to_tmp_and_move(
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1969, in _download_to_tmp_and_move
+    xet_get(
+  File "/home/moloch/Documents/Research/pitch_fourier/.venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 570, in xet_get
+    with session.new_file_download_group(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Task error: File reconstruction error: CAS Client Error: Request middleware error: error sending request for url (https://us.aws.cdn.hf.co/xorbs/default/586632d449abc255bb4160a652adf286660ab0607cddc8b486097c846263184f?user_id=69d7c2a9e408ebadd112ddf7&repo_id=6801849906babaea60ca8cb3&X-Xet-Session-Id=01a04ddf-ad6f-7fe1-9413-5d25e629c3d1&Expires=1788017032&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly91cy5hd3MuY2RuLmhmLmNvL3hvcmJzL2RlZmF1bHQvNTg2NjMyZDQ0OWFiYzI1NWJiNDE2MGE2NTJhZGYyODY2NjBhYjA2MDdjZGRjOGI0ODYwOTdjODQ2MjYzMTg0ZlxcP3VzZXJfaWQ9NjlkN2MyYTllNDA4ZWJhZGQxMTJkZGY3JnJlcG9faWQ9NjgwMTg0OTkwNmJhYmFlYTYwY2E4Y2IzJlgtWGV0LVNlc3Npb24tSWQ9MDFhMDRkZGYtYWQ2Zi03ZmUxLTk0MTMtNWQyNWU2MjljM2QxIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJFcG9jaFRpbWUiOjE3ODgwMTcwMzJ9LCJCeXRlUmFuZ2UiOnsiRXhwZWN0ZWRIZWFkZXIiOiJieXRlcz0wLTYzNzkzMjM2In19fV19&Signature=MEQCIG3Qj1omdoRrBUJJDlyvoBUJeyP69inlbHRkd6hIsN7oAiBHb4jYhLQvwYmiqu3a-3eeAETVKZntMkWQ3X%7EINLYnIg__&Key-Pair-Id=01KXEF4KZ1B6FV465MAWR4M21F)
+DONE stage1-step950000-tokens1993B
+DONE stage1-step1907359-tokens4001B
+DONE stage2-ingredient3-step23852-tokens51B
+ALL_CKPTS_DONE

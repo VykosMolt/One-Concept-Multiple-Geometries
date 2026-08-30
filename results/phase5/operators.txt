@@ -1,0 +1,20 @@
+Corpus operators — geometry over 15 spellings (spelled tonal view = raw RSA; neutralized/controlled = partials):
+  SYM (PMI, symmetric window)                  ECI 0.04 | raw RSA circle +0.52 line +0.59 | controlled circle|line +0.42 line|circle +0.39
+  HELP (helper-word factorization)             ECI 0.74 | raw RSA circle +0.03 line +0.43 | controlled circle|line +0.21 line|circle -0.07
+  COND rows JS (A_win40)                       ECI 0.57 | raw RSA circle +0.25 line +0.56 | controlled circle|line +0.55 line|circle +0.12
+  COND rows JS (B_any)                         ECI 0.45 | raw RSA circle +0.30 line +0.50 | controlled circle|line +0.58 line|circle +0.08
+  COND rows JS (D_doc)                         ECI 0.36 | raw RSA circle +0.17 line -0.09 | controlled circle|line +0.15 line|circle -0.07
+  MATCHED sym-conditional JS (N+N^T rows)      ECI 0.56 | raw RSA circle +0.26 line +0.57 | controlled circle|line +0.55 line|circle +0.18
+  MATCHED PMI (N+N^T), distance = -PMI         ECI 0.05 | raw RSA circle +0.69 line +0.27 | controlled circle|line +0.62 line|circle +0.14
+  MATCHED reverse conditional JS (N^T rows)    ECI 0.60 | raw RSA circle +0.25 line +0.57 | controlled circle|line +0.56 line|circle +0.18
+
+What each operator predicts (Spearman over 105 pairs of distances; behaviour uses symmetrized −log q):
+operator                     |   keyname span-mean (7B L24)        prompt-final (7B L18)             behaviour E (7B)             behaviour E (1B) keyname span-mean (Qwen L27)           behaviour E (Qwen)          behaviour E (Gemma)
+SYM (PMI, symmetric window)  |                        +0.15                        +0.46                        +0.54                        +0.39                        +0.08                        +0.40                        +0.46
+HELP (helper-word factorization) |                        +0.09                        +0.61                        +0.65                        +0.68                        +0.37                        +0.64                        +0.67
+COND rows JS (A_win40)       |                        -0.12                        +0.61                        +0.80                        +0.80                        +0.01                        +0.79                        +0.78
+COND rows JS (B_any)         |                        -0.20                        +0.57                        +0.70                        +0.71                        -0.03                        +0.68                        +0.70
+COND rows JS (D_doc)         |                        -0.17                        +0.14                        +0.03                        -0.04                        -0.34                        -0.07                        -0.02
+MATCHED sym-conditional JS (N+N^T rows) |                        -0.09                        +0.61                        +0.81                        +0.82                        +0.05                        +0.80                        +0.78
+MATCHED PMI (N+N^T), distance = -PMI |                        +0.10                        +0.31                        +0.24                        +0.12                        +0.01                        +0.10                        +0.16
+MATCHED reverse conditional JS (N^T rows) |                        -0.09                        +0.60                        +0.81                        +0.83                        +0.06                        +0.80                        +0.78

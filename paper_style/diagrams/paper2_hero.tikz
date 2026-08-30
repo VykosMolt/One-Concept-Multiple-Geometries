@@ -1,0 +1,70 @@
+\begin{tikzpicture}[x=1cm,y=1cm,>=Latex,
+  every node/.style={font=\sffamily\fontsize{7.2pt}{8.3pt}\selectfont,text=KirinInk},
+  panel/.style={rounded corners=2.4mm,draw=KirinRule,line width=.65pt,fill=white},
+  chip/.style={rounded corners=1.2mm,draw=KirinRule,fill=KirinAccentFaint,
+    inner sep=3.0pt,align=center,minimum height=6.0mm},
+  leak/.style={chip,fill=KirinAccentPale,draw=KirinAccent!55},
+  warn/.style={chip,fill=KirinAccentPale,draw=KirinAccent,line width=.8pt},
+  clean/.style={chip,fill=white,draw=KirinPositive,line width=.8pt,text=KirinPositive},
+  flow/.style={-Latex,line width=.85pt,draw=KirinAccentDark},
+  hdr/.style={font=\sffamily\bfseries\fontsize{8.5pt}{9.5pt}\selectfont,text=KirinAccentDark}]
+
+% ---- Two tall panels, clear top-to-bottom flow in each. ----
+\draw[panel] (0,0) rectangle (7.0,7.1);
+\draw[panel] (7.5,0) rectangle (14.5,7.1);
+\node[hdr,anchor=west] at (0.30,6.72) {TRAP 1 \quad SOURCE-ITEM LEAKAGE};
+\node[hdr,anchor=west] at (7.80,6.72) {TRAP 2 \quad PRESENTATION ORDER};
+
+% ================= Panel A: source-item leakage =================
+\node[chip] (a1) at (3.5,5.95) {source item};
+\node[chip] (a2) at (3.5,5.05) {constructed sibling rows\\$r_{i1},\, r_{i2},\, \ldots$};
+\node[chip] (a3) at (3.5,4.15) {row-level random split};
+\draw[flow] (a1) -- (a2);
+\draw[flow] (a2) -- (a3);
+
+\node[leak] (train) at (2.15,3.02) {train\\sibling};
+\node[leak] (test)  at (4.85,3.02) {test\\sibling};
+\draw[flow] (a3) -- (train);
+\draw[flow] (a3) -- (test);
+% One source item lands in both partitions: dashed link with the label on it.
+\draw[<->,draw=KirinNegative,dashed,line width=.85pt] (train.east) -- (test.west);
+\node[fill=white,inner sep=1.6pt,text=KirinNegative,
+  font=\sffamily\bfseries\fontsize{6.7pt}{7.6pt}\selectfont] at (3.5,3.02) {same source};
+
+\node[chip] (a5) at (3.5,1.80) {recognition replaces generalization};
+\draw[flow] (train.south) to[bend right=9] (a5.north west);
+\draw[flow] (test.south)  to[bend left=9]  (a5.north east);
+
+\node[warn,text width=5.0cm] (a6) at (3.5,0.72)
+  {\bfseries inflated accuracy \textit{\mdseries or} below-chance inversion};
+\draw[flow] (a5) -- (a6);
+
+% ================= Panel B: presentation order =================
+\node[chip] (b1) at (11.0,5.95) {preferred candidate always first};
+\node[chip] (b2) at (11.0,5.05) {scorer learns first-position prior};
+\node[warn] (b3) at (11.0,4.15) {fixed-order metric \;=\; relational signal \textbf{+} prior};
+\draw[flow] (b1) -- (b2);
+\draw[flow] (b2) -- (b3);
+
+% Separate diagnostic branch that actually removes the prior.
+\draw[draw=KirinRule,line width=.6pt] (7.85,3.55) -- (14.15,3.55);
+\node[anchor=west,text=KirinMuted,font=\sffamily\itshape\fontsize{6.9pt}{7.8pt}\selectfont]
+  at (7.85,3.55) {\;the diagnostic that removes the prior};
+
+\node[chip] (b4) at (11.0,3.02) {flip correlation can stay strong};
+\node[left=1.4mm of b4] {\textcolor{KirinNegative}{\bfseries\sffamily\large$\times$}};
+\node[chip] (b5) at (11.0,2.20) {antisymmetrize · removes the prior};
+\node[left=1.4mm of b5] {\textcolor{KirinPositive}{\checkmark}};
+\node[clean] (b6) at (11.0,1.40) {relational performance};
+\draw[flow] (b4) -- (b5);
+\draw[flow] (b5) -- (b6);
+
+% Footer strip inside panel B: the non-split-leak note and the real correction.
+\draw[rounded corners=1.2mm,fill=KirinAccentFaint,draw=KirinRule,line width=.55pt]
+  (7.72,0.26) rectangle (14.28,1.02);
+\node[anchor=west,text=KirinMuted,font=\sffamily\fontsize{6.9pt}{7.8pt}\selectfont]
+  at (7.95,0.78) {not a split leak · split audits cannot detect it};
+\node[anchor=west,font=\sffamily\bfseries\fontsize{7.4pt}{8.4pt}\selectfont] at (7.95,0.48)
+  {\textcolor{KirinAccentDark}{0.952 fixed-order} $\rightarrow$ \textcolor{KirinPositive}{0.6392 antisymmetrized}};
+
+\end{tikzpicture}

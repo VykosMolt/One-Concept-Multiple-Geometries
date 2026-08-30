@@ -1,0 +1,10 @@
+Wikipedia CONDITIONAL next-key rows (source spelling -> next-class distribution), row-divergence matrix over 15 spellings:
+  ECI (twin rows among closest) = 0.45; circle|line = +0.60 (p 0.000); line|circle = +0.05 (p 0.264)
+  RSA(row divergence, circle dist) = +0.33; RSA(row divergence, line dist) = +0.53
+  Poisson bootstrap: circle|line +0.59±0.02, line|circle +0.05±0.05, P(line > circle) = 0.00
+
+RSA between the corpus conditional-row divergence matrix and each model's behavioural row-divergence matrix (Phase II family E, 4 templates):
+  olmo2_1b  : RSA = +0.44 ± 0.10
+  gemma2_2b : RSA = +0.24 ± 0.09
+  qwen25_3b : RSA = +0.12 ± 0.15
+  olmo2_7b  : RSA = +0.26 ± 0.21
