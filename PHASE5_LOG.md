@@ -221,3 +221,11 @@ V4_CORRECTION_REPORT.md, notes/OPUS5_V4_VERIFICATION.md, notes/HANDOFF_2026-08-3
 - 09-01 – 09-02 paper rewritten from the v4 artifacts (paper-v2): abstract, glance, central claim, contributions,
   Results 4/5/6/9, methods, discussion, limitations, Appendix A (B1/B2/standardization/RNG rows), C.2/C.3/C.5/C.7,
   D.6; make_figs.py reads v4 files (Figs 5, 7, C.1). paper-v1 (fb3e3e8) left immutable.
+
+ROUND-5 REVIEW (2026-09-02, Opus 5 + Sonnet 5 on paper-v2; notes/review_*_v5.md). New diagnostics, all from stored
+artifacts: phase5/row_jackknife.py (C♭ row carries 66/44/94 % of the 1B/Gemma/7B rich-window gain; pivotal vs percentile
+intervals), phase5/ridge_lambda_sensitivity.py (λ=1 ≈ OLS; pattern flat for λ ≤ 1), phase5/operator_eci_boot.py
+(conditional ECI intervals include chance; marginals-only null 0.84). Manuscript restated: the held-out residual is
+small AND fragile (one row in two of three models); "support only for Gemma" withdrawn (interval-type dependent);
+"directionality contributes nothing" rescoped (N is 98 % symmetric); glyph-RSA and R² statements corrected. Details in
+MANUSCRIPT_AUDIT.md round 5.

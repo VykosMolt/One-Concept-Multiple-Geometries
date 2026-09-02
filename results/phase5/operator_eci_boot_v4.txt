@@ -1,0 +1,7 @@
+Conditional-row ECI (40-word counts), B=1000, seed 20260830. ECI: mean percentile rank of the three enharmonic pairs (0 closest, 0.5 null).
+directional      observed 0.568  doc-cluster 95% CI [0.467, 0.670]  marginals-only null mean 0.836 sd 0.045 (95% [0.736, 0.924])
+symmetrized      observed 0.562  doc-cluster 95% CI [0.492, 0.679]  marginals-only null mean 0.844 sd 0.043 (95% [0.749, 0.918])
+reverse          observed 0.597  doc-cluster 95% CI [0.530, 0.711]  marginals-only null mean 0.835 sd 0.045 (95% [0.737, 0.914])
+pmi_same_counts  observed 0.048  doc-cluster 95% CI [0.041, 0.267]  marginals-only null mean 0.427 sd 0.245 (95% [0.054, 0.965])
+B row subsampled to Cb's 48 events (from 1506): directional ECI 0.545 sd 0.024
+row totals: Cb 48, Gb 128, Db 284, Ab 672, Eb 3950, Bb 4236, F 5835, C 7933, G 6415, D 7992, A 4790, E 3236, B 1506, F# 156, C# 66

@@ -161,3 +161,61 @@ test (Result 7, Figure 6, audit note), §8.2 other corpora (Result 8), §8.3 one
 Discussion. The checkpoint figure moved to Appendix C.5 as Figure C.2 with the provenance note; Results 5/6/7/8/9 of
 the v4 draft are now 7/8/5/6/9. Subtitle, abstract, glance box, central-claim box, contributions and roadmap were
 rewritten to the same order; no number changed.
+
+---
+
+# Round 5 (2026-09-02): independent Opus 5 and Sonnet 5 reviews of paper-v2, plain-language rewrite
+
+Reports: `notes/review_opus5_v5.md` (4 BLOCKING, 14 MAJOR, 19 MINOR; MAJOR REVISION) and `notes/review_sonnet5_v5.md`
+(0/5/9; MAJOR REVISION); brief `notes/review_brief_v5.md`. Both re-verified the Phase-V numbers (≈150 and ≈30 checks,
+no transcription errors). Verdict after integration: **PAPER SURVIVES BUT THE HELD-OUT RESIDUAL IS NOW STATED AS
+FRAGILE.**
+
+## Findings acted on (all verified against artifacts before editing)
+
+- **Row jackknife (Opus B1).** `phase5/row_jackknife.py` → `results/phase5/row_jackknife_v4.txt`: C♭ major (38 mentions,
+  48 co-mention events) carries 66/44/94 % of the rich-window gain in OLMo-1B/Gemma/OLMo-7B; without it the gains are
+  +0.0013/+0.0037/+0.0002; Qwen's null flips to +0.0007 without C♯. Result 7, abstract, glance, central claim,
+  contribution 4, Limitations and Appendix A restated; new Table C.8.
+- **Interval type (Opus M1).** Percentile intervals are shifted toward zero by 28–40 %; pivotal intervals from the
+  same 300 draws exclude zero for 1B/Gemma/7B. Both are now reported (Result 7, Table C.8, D.6); "support only for
+  Gemma" removed from every headline.
+- **Ridge λ (Sonnet M1, Opus M11).** `phase5/ridge_lambda_sensitivity.py` → `ridge_lambda_sensitivity_v4.txt`: λ=1 is
+  effectively OLS (base eigenvalues 1.6–730; rich min 0.006); pattern flat for λ ≤ 1, gains inflate at λ ≥ 10 (all
+  cells positive at λ = 100). Disclosed in D.6; λ = 1 kept as the pre-specified, conservative end.
+- **Conditional-row ECI (Sonnet M2/M4).** `phase5/operator_eci_boot.py` → `operator_eci_boot_v4.txt`: document-cluster
+  intervals [0.47,0.67]/[0.49,0.68]/[0.53,0.71] include or graze 0.5; marginals-only null gives 0.84 ± 0.05; B row
+  subsampled to 48 events → 0.55. "Keep twins apart" → "do not identify twins" everywhere.
+- **Matched-operator control (Opus M2/M3/M5/M6).** Pearson(N, Nᵀ) = 0.977 stated in §6; "directionality contributes
+  nothing" rescoped to this corpus; helper-word factorization named as an association operator that lands between the
+  groups; first-order/second-order (syntagmatic/paradigmatic) framing added with Schütze & Pedersen 1993 and Sahlgren
+  2008; the p-value spread across three ρ ≥ 0.93 predictors stated as estimator variance.
+- **False statements (Opus B2/B3).** Result 2: glyph RSA falls from +0.84…+0.86 to +0.51/+0.43/+0.67/+0.28 (six-layer
+  maxima, no selection null), respelled-name frequencies 1/2/21/38 vs 6,348/3,101/4,290/1,544 stated. §4: layer-mean
+  R²_cv 0.06–0.45 (single layers −0.04…0.76), circle/line adds ≤ 0.03 to layer means, 30/660 single layer-cells
+  exceed 0.04 (max +0.10); p-values labelled layer-corrected.
+- **Reproducibility (Opus B4).** MIRROR_MANIFEST.md lives in the mirror, not the working repo; the excluded
+  multi-context and merged-count files are named in §Reproducibility.
+- **Multiplicity (Opus M7):** 288 Wikipedia held-out tests stated; nothing survives. **View choice (M9):** declared post
+  hoc; "neither privileged" dropped. **Twin exclusion (M10):** stated in Result 7 and D.6. **Harmonic bootstrap (M4):**
+  two significantly negative cells reported; bootstrap coverage (16 cells) stated. **Synthetic scope (M12):** abstract
+  and Result 5 rescoped to the toy world. **Fifths-specific alias base rate (M13):** 5.0 % / 0.9 % added beside 31 %.
+  **Control sets (M8):** new Appendix D.7. **Figure 6 (M14):** percentile intervals drawn. **Identifiability
+  (Sonnet M3)** and **memorization alternative (Sonnet §3)** stated in Result 8 and Discussion. Minor items: status
+  macro "Bounded screen" → "Bounded"; convergence sequence given non-monotonically; 1T peak / 2T drop; 90 runs;
+  222–2,425 exposures; r = .003 arm labelled; dose-response n stated; PMI range 0.1–0.54; ECI interval in glance;
+  Gemma mirror fidelity caveat; Phase-II b/B and shared permutation bank stated; brenner2026grid title fixed in
+  LITERATURE_AUDIT.md.
+
+## Not acted on
+
+- Raising the document bootstrap above B = 300 (Opus fix 2): not rerun; the disagreement between interval types is
+  reported instead. Moving §7 and §8.2–8.3 to appendices (Opus structure): §7 kept as a short section, §8.2–8.3 kept as
+  compressed subsections; further cutting is a venue decision.
+- Appendix A trim (Sonnet): kept; the audit trail is the point of this preprint.
+
+## Prose
+
+At the user's request the whole manuscript was rewritten for plain reading (abstract, glance, introduction, every
+Result box, section openings, discussion): idea before number, one claim per sentence, terms explained where first
+used. No number changed except as listed above.

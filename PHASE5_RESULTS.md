@@ -250,3 +250,14 @@ stage-2 ingredients +.21 (.023) / +.23 (.013) / +.18 (.052), released run +.24 (
 significant. Twin asymmetry still 4.3 → 2.6 nats. No acquisition threshold is established.
 
 v3 → v4 significance changes over all inherited cells: `results/phase5/v3_v4_comparison.md`.
+
+## 11. Round-5 review follow-up (2026-09-02; results/phase5/row_jackknife_v4.txt, ridge_lambda_sensitivity_v4.txt, operator_eci_boot_v4.txt)
+
+Row jackknife of the flagship cells: C♭ major (38 mentions, 48 window co-mention events) contributes 66 % (1B), 44 %
+(Gemma) and 94 % (7B) of the rich-window ΔKL; without it +0.0013/+0.0037/−0.0003/+0.0002; base model 51/34/81 % and
++0.0021/+0.0038/−0.0002/+0.0008. Pivotal 95 % intervals (2θ̂ − q) exclude 0 for 1B/Gemma/7B under both models while the
+percentile intervals exclude 0 only for Gemma (rich) or 1B/Gemma/7B (base); replicate distributions are shifted toward
+zero by 28–40 %. λ-sweep: ΔKL flat for λ ∈ {0.01, 0.1, 1}, inflating at λ ≥ 10 (Qwen +0.0060 at λ = 100). Conditional-row
+ECI 0.57/0.56/0.60 with doc-cluster CIs [0.47,0.67]/[0.49,0.68]/[0.53,0.71]; marginals-only null 0.84 ± 0.05; B row
+subsampled to 48 events → 0.55. Verdict wording updated: the residual is small and fragile; only Gemma's is distributed
+across source rows.

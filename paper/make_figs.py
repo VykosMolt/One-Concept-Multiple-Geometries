@@ -140,6 +140,7 @@ def fig_operators():
 # ---------------------------------------------------------------- Fig 5: held-out prediction
 def fig_heldout():
     Jn = json.load(open("results/phase5/fingerprint/wikipedia_v4_neutral.json")); Jr = json.load(open("results/phase5/fingerprint/wikipedia_v4_neutral_rich.json")); Js = json.load(open("results/phase5/fingerprint/wikipedia_v4.json"))
+    Jbn = json.load(open("results/phase5/fingerprint/wikipedia_v4_neutral_docboot.json")); Jbr = json.load(open("results/phase5/fingerprint/wikipedia_v4_neutral_rich_docboot.json"))
     fig, axes = plt.subplots(2, 2, figsize=(7.2, 5.0)); axes = axes.ravel()
     short = ["OLMo\n1B", "Gemma\n2B", "Qwen\n3B", "OLMo\n7B"]
     for ax, fam, title in ((axes[0], "E_modulation", "(a) modulation family, target-aggregated view"), (axes[1], "C_harmonic", "(b) harmonic family, target-aggregated view")):
@@ -150,8 +151,12 @@ def fig_heldout():
             vals = [_finite_number(J[f"{m}|{fam}|{ex}"]["dkl"]) for m in MODELS]; ps = [J[f"{m}|{fam}|{ex}"].get("dkl_p") for m in MODELS]
             plotted.extend(vals)
             ax.bar(x + (k - 1.5) * w, vals, w, color=col, alpha=1.0 if not hatch else 0.5, hatch=hatch, edgecolor="white", linewidth=0.4, label=lab if fam == "E_modulation" else None)
-            for xi, v, p in zip(x + (k - 1.5) * w, vals, ps):
+            Jb = Jbn if J is Jn else Jbr
+            for xi, v, p, m in zip(x + (k - 1.5) * w, vals, ps, MODELS):
                 _mark_significance(ax, xi, v, p, 0.0008)
+                db = Jb[f"{m}|{fam}|{ex}"]["docboot"]; lo, hi = _finite_number(db["q025"]), _finite_number(db["q975"])
+                if lo is not None and hi is not None:
+                    ax.plot([xi, xi], [lo, hi], color=st.INK, lw=0.7, zorder=4); plotted.extend([lo, hi])
         th = [Jn[f"{m}|{fam}|A_win40"]["kl"]["theory"] for m in MODELS]; thr = [Jr[f"{m}|{fam}|A_win40"]["kl"]["theory"] for m in MODELS]
         ax.set_xticks(x); ax.set_xticklabels([f"{s}\nKL$_0$ {t:.3f}\nrich {u:.3f}" for s, t, u in zip(short, th, thr)], fontsize=6.0)
         ax.axhline(0, color=st.MUTED, lw=0.5); ax.set_title(title, loc="left", fontsize=8.2); _set_zero_anchored_ylim(ax, plotted, minimum_span=0.01)

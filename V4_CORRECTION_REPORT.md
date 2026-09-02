@@ -159,3 +159,5 @@ the slash-notation count, the 7B top-1 statistic, the Sadek et al. venue, and th
 - After the v4 integration the manuscript was re-ordered so that operator dependence and the aliasing result lead and
   Phase V is one section (§8, "Beyond correspondence"); section/result/figure numbers above refer to paper-v1 where
   they cite the old draft. The mapping is recorded in `MANUSCRIPT_AUDIT.md` (Restructure).
+- Round-5 review (2026-09-02) further showed that the corrected residual is carried by the C♭ source row in
+  two of the three positive models (`results/phase5/row_jackknife_v4.txt`); see `MANUSCRIPT_AUDIT.md` round 5.

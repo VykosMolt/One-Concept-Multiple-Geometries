@@ -94,7 +94,7 @@ the contiguous-arc caution is a service note (textbook Quinn/Amiot in pitch-clas
   behaviour; cited as prior art for "representation geometry corresponds to behaviour geometry".
 - **Shai et al. 2026, *Transformers learn factored representations* (arXiv:2602.02385)** — abstract only: factors in
   orthogonal residual subspaces when conditionally independent; cited as prior art for factored representations.
-- **Brenner, Knösche, Scherf 2026, *Grid-World Representations in Transformers Reflect Predictive Geometry*
+- **Brenner, Knösche, Scherf 2026, *Predictive statistics shape emergent world representations of grid walkers*
   (arXiv:2603.16689)** — abstract only: representations align with analytically derived predictive vectors; cited as
   prior art for predictive-statistics → geometry in a synthetic world.
 - **Bassi & Tomar 2026, *Geometry of Ordinal Representations in Language Models* (arXiv:2607.04167)** — abstract only:
