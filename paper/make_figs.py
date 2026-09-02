@@ -264,5 +264,26 @@ def fig_crosscorpus():
     axes[0].bar([0], [0], color=st.BASELINE, alpha=0.38, hatch="////", label="Wikipedia thinned: five-seed mean ± SD"); axes[0].legend(fontsize=6.3, loc="upper center", bbox_to_anchor=(1.7, -0.32), ncol=5)
     save(fig, "fig_crosscorpus")
 
+# ---------------------------------------------------------------- Fig: two matrices from the same text
+def fig_matrices():
+    from scipy.spatial.distance import jensenshannon
+    P = json.load(open("results/phase2/corpus/pmi15.json")); M = np.array(P["M"], float)
+    N = np.load("results/phase5/cond_wikipedia.npz")["A_win40"].astype(float); rows = (N + 0.5) / (N + 0.5).sum(1, keepdims=True)
+    J = np.array([[jensenshannon(rows[i], rows[j], base=np.e) ** 2 for j in range(N15)] for i in range(N15)])
+    labels = list(KEYS15)
+    fig, axes = plt.subplots(1, 2, figsize=(7.2, 3.6))
+    for ax, A, title, cmap, cbl in ((axes[0], np.where(np.eye(N15, dtype=bool), np.nan, M), "(a) co-occurrence: PMI between keys (first-order)", "Blues", "PMI (higher = more associated)"),
+                                    (axes[1], np.where(np.eye(N15, dtype=bool), np.nan, J), "(b) next-key table: JS divergence between rows (second-order)", "Blues_r", "JS divergence (lower = rows more alike)")):
+        im = ax.imshow(A, cmap=cmap, interpolation="nearest")
+        for i, j in ((0, 12), (1, 13), (2, 14)):
+            for a, b in ((i, j), (j, i)):
+                ax.add_patch(plt.Rectangle((b - 0.5, a - 0.5), 1, 1, fill=False, edgecolor=st.P2, lw=1.4))
+        ax.set_xticks(range(N15)); ax.set_xticklabels(labels, fontsize=6.2); ax.set_yticks(range(N15)); ax.set_yticklabels(labels, fontsize=6.2)
+        ax.set_title(title, loc="left", fontsize=8.2); ax.tick_params(length=0)
+        for s in ax.spines.values(): s.set_visible(False)
+        cb = fig.colorbar(im, ax=ax, fraction=0.046, pad=0.03); cb.ax.tick_params(labelsize=6); cb.set_label(cbl, fontsize=6.6)
+    axes[0].set_ylabel("key, line-of-fifths order (Cb ... C#)", fontsize=7)
+    fig.subplots_adjust(left=0.07, right=0.98, top=0.9, bottom=0.08, wspace=0.25); st.save(fig, f"{OUT}/fig_matrices.pdf"); plt.close(fig); print("wrote fig_matrices")
+
 if __name__ == "__main__":
-    for f in (fig_spaces, fig_corpus, fig_alias, fig_operators, fig_heldout, fig_synthetic, fig_trajectory, fig_crosscorpus): f()
+    for f in (fig_spaces, fig_corpus, fig_alias, fig_operators, fig_matrices, fig_heldout, fig_synthetic, fig_trajectory, fig_crosscorpus): f()

@@ -215,6 +215,7 @@ FRAGILE.**
 - Appendix A trim (Sonnet): kept; the audit trail is the point of this preprint.
 - Structure (Opus): done after tagging v2.1 — §7 and §8 moved to Appendices E and F, replaced in the main text by a one-page "Two follow-ups, in brief" (§7); Discussion is §8; tag `paper-v2.2`.
 - Reader's cut (`paper-v2.3`, 25 pages): abstract ≈150 words; glance bullets one line each; §2 trimmed; result boxes 4–6 sentences with Tables 1–2 in the main text; §4 hidden-state detail → Appendix G; matched-operator regressor numbers → Appendix F.1; closing takeaways paragraph. Every number retained somewhere in the paper.
+- Second pass (`paper-v2.4`): new Figure 4 (PMI matrix vs next-key JS matrix, twins marked; `fig_matrices` in `paper/make_figs.py`), new subtitle leading with the alias result, roadmap cut to two sentences, contributions list dropped (glance box carries it), abstract respelling clause now carries the rarity caveat, §6 heading in plain words, $M^*$ defined at first use, two jargon phrases replaced, Table 1 probability row and Figure 5 caption relabelled first-/second-order. Independent Opus verification of every main-text number, the figure data and all cross-references before tagging.
 
 ## Prose
 
