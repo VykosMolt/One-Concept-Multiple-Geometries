@@ -213,6 +213,7 @@ FRAGILE.**
   reported instead. Moving §7 and §8.2–8.3 to appendices (Opus structure): §7 kept as a short section, §8.2–8.3 kept as
   compressed subsections; further cutting is a venue decision.
 - Appendix A trim (Sonnet): kept; the audit trail is the point of this preprint.
+- Structure (Opus): done after tagging v2.1 — §7 and §8 moved to Appendices E and F, replaced in the main text by a one-page "Two follow-ups, in brief" (§7); Discussion is §8; tag `paper-v2.2`.
 
 ## Prose
 
