@@ -192,3 +192,32 @@ MANUSCRIPT HARDENING PASS (2026-08-29 22:00 – 08-30). Findings, all logged in 
   all models; template 3 n.s. for Qwen/7B.
 - Gemma added to the operator comparison. Bibliography verified against arXiv/publisher metadata (Korchinski D.J.,
   Nava Andres; Sadek Najla; Hu Zhimin/Niu Lanhao; Zhao & Thrampoulidis title; Feucht author list; Fu et al. COLM 2026).
+
+V4 CORRECTION PASS (2026-08-30 14:00 → 2026-09-02). Review-driven, post-hoc feature correction; full record in
+V4_CORRECTION_REPORT.md, notes/OPUS5_V4_VERIFICATION.md, notes/HANDOFF_2026-08-30.md.
+- 08-30 14:00 Opus 5 review of paper-v1 (notes/review_opus5_v4.md): B1 — phase5/fingerprint.py's `circ` was the
+  chromatic cyclic distance (pc = 7S mod 12, then cyclic distance), not the fifths-circle distance (Spearman −0.19
+  between the two over the 165 aggregated pairs); B2 — target-aggregated line feature used the class-mean coordinate
+  (−1, 0, +1 for the three merged classes); B3 — template clause misstated. Both confirmed before editing.
+- 08-30 14:10 first v4 rerun launched (nearest-spelling + centroid features, global z-scoring, hash()-derived seeds);
+  completed, then REJECTED at the 21:57 audit (global scaling; centroid retained; salted hash seeds). Its outputs were
+  quarantined outside the repository, not deleted.
+- 08-30 22:00 – 08-31 13:40 contract frozen (set-valued merged-class line features: min/max |s_t−s_i|, signed
+  endpoints; true d5 + separate chromatic; fold-local tokenizer residual and scaling; SHA-256 seeds from master seed
+  20260830; exact duplicate columns dropped); phase5/theory_features.py, fingerprint.py, ckpt_fingerprint.py,
+  ckpt_twins.py, thin_wikipedia.py, crosscorpus_compare_v4.py, compare_v3_v4.py, validate_v4.py, v4_provenance.py
+  rewritten; tests/test_phase5_v4.py (19 tests). Independent verifier: pass; independent reviewer NOT_READY twice
+  (provenance, output-path safety, twin seed metadata) → repaired → READY on commit a56ad3e (08-31 21:01).
+- 08-31 19:23 UTC full chain phase5/rerun_v4.sh (20 CPU workers; Wikipedia both views × base/rich × target prior,
+  B=5,000; doc-cluster bootstraps base+rich, 300; matched sym/rev/pmi; templates t0–3, lo0–3; four corpora × two views
+  + five thinning seeds each, B=2,000; checkpoints + twins) → 09-01 01:22 UTC V4_COMPUTE_AND_COMPARISON_COMPLETE.
+  results/phase5/v3_v4_comparison.csv (57,348 rows), crosscorpus_compare_v4_{aggregated,spelled}.{json,txt},
+  thinning_seed_variance.csv, ckpt_trajectory_v4.txt, ckpt_twins_v4.txt.
+- RESULT: flagship rich-window ΔKL +0.0035/+0.0061/−0.0002/+0.0033 (p .034/.0004/.402/.0026), document
+  +0.0039/+0.0031/−0.0003/−0.0003; only Gemma's cluster interval excludes 0; Qwen null everywhere; harmonic/chord
+  families null; cross-corpus heterogeneous; DiD 8/72 split 4/4; checkpoint residual has no significant stage-1 point.
+  The 14–34 % headline, cross-model universality, "gain in every corpus" and the 294B/4T acquisition threshold are
+  withdrawn (PHASE5_RESULTS.md §10).
+- 09-01 – 09-02 paper rewritten from the v4 artifacts (paper-v2): abstract, glance, central claim, contributions,
+  Results 4/5/6/9, methods, discussion, limitations, Appendix A (B1/B2/standardization/RNG rows), C.2/C.3/C.5/C.7,
+  D.6; make_figs.py reads v4 files (Figs 5, 7, C.1). paper-v1 (fb3e3e8) left immutable.

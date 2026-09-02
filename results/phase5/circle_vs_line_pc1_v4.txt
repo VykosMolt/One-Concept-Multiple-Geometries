@@ -1,0 +1,19 @@
+Saved-matrix reconstruction of the Phase-I PC1 statement
+Date: 2026-08-30
+Command: .venv-cpu/bin/python scripts/circle_vs_line.py olmo2_1b,gemma2_2b,qwen25_3b,olmo2_7b
+Inputs: results/predictive/*.json, results/multictx/*/major.npz,
+        results/corpus_merged/keydocs_V3000.npz, results/corpus/wiki/report.json
+
+Absolute Spearman correlation of predictive-matrix PC1 with signed fifth coordinate:
+
+                    modulates_to   then_key   next_song
+OLMo-2-1B               0.78          0.78       0.78
+Gemma-2-2B              0.73          0.78       0.78
+Qwen2.5-3B              0.77          0.76       0.80
+OLMo-2-7B               0.78          0.70       0.75
+
+Corpus PMI major: 0.31
+Helper-vocabulary theory embedding: 0.17
+
+The behavioural range is therefore 0.70--0.80. This reconstructs the
+previously markdown-only claim from retained saved matrices; it is not a new model run.

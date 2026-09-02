@@ -9,8 +9,10 @@ then `RESEARCH_LOG.md` (chronological, including what was decided before/after s
 - Phase II (`PHASE2_RESULTS.md`, `phase2/`): 15-key enharmonic design; MIXED / MODEL-SPECIFIC.
 - Phase III (`PHASE3_RESULTS.md`, `synthetic/`): output code causes a transient lexical bias, not converged behaviour.
 - Phase IV (`PHASE4_RESULTS.md`, `synthetic/phase4*.py`): sparse-alias equivalence is sample-limited only.
-- Phase V (`PHASE5_RESULTS.md`, `phase5/`): training-data fingerprint test — conditional statistics predict behaviour
-  generically; not OLMo-specific; partial temporal-acquisition evidence along OLMo-2-1B checkpoints.
+- Phase V (`PHASE5_RESULTS.md`, `phase5/`): training-data fingerprint test. v4 correction (2026-09-02,
+  `V4_CORRECTION_REPORT.md`): the held-out gain beyond a corrected tonal/orthographic baseline is small and
+  model-dependent (3 of 4 models by relabeling, Qwen null); cross-corpus gains heterogeneous; fingerprint not
+  supported; checkpoint residual trajectory weak. Paper-v1's 14–34 % headline used a chromatic "circle" feature.
 
 ## Layout
 - `pf/fourier.py` — concept-axis DFT, paired energies, circulant projection, |M| prediction, nulls.
@@ -54,4 +56,4 @@ Qwen/Qwen2.5-3B (bf16), allenai/OLMo-2-1124-7B (bf16, CPU offload) — weights n
 The paper links `github.com/VykosMolt/One-Concept-Multiple-Geometries`, a mirror of this repository built by
 `scripts/build_mirror.sh` (code, docs, results files, figures, paper; model weights, corpora, hidden-state
 tensors and synthetic checkpoints excluded and listed with SHA-256 digests in `MIRROR_MANIFEST.md`).
-The manuscript version is tag `paper-v1`.
+The corrected manuscript is tag `paper-v2`; `paper-v1` (fb3e3e8) is the immutable pre-correction snapshot.

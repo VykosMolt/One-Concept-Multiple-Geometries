@@ -97,3 +97,67 @@ central-claim box, §6, Figure 4 and the discussion rewritten accordingly.
 - The Phase-II geometry and behaviour nulls (B=500 / 1,000, b/B) were not rerun; the paper states their B and estimator
   and quotes the (b+1)/(B+1) values, which differ from the originals by ≤ 0.002.
 - Feature z-scoring in the ridge uses all pairs' feature values (not responses); disclosed in D.6.
+
+---
+
+# Round 4 (2026-08-30 → 09-02): Opus 5 review and the v4 correction → paper-v2
+
+## Verdict: **CENTRAL NUMBER CORRECTED — PAPER SURVIVES WITH THE CENTRAL CLAIM NARROWED**
+
+The round-4 Opus 5 review (`notes/review_opus5_v4.md`; brief `notes/review_brief_v4.md`) found that the flagship
+regression's circle predictor was chromatic distance (B1) and that the target-aggregated line feature was a class
+centroid (B2). Both confirmed; a further audit found global predictor standardization and process-dependent RNG
+seeds. All four were corrected (`V4_CORRECTION_REPORT.md`), the full Phase-V chain was recomputed, and every
+inherited number was compared (`results/phase5/v3_v4_comparison.{csv,md}`). Item-level disposition of all 120
+review findings: `notes/OPUS5_V4_VERIFICATION.md` (63 confirmed, 12 reviewer errors, 4 partial, 1
+provenance-limited, 40 resolved from the final v4 artifacts).
+
+## What changed in the manuscript
+
+- Headline: "14–34 % held-out KL reduction beyond circle, line, orthography and frequency, all four models" →
+  "5.9/13.0/−0.4/7.3 % under the corrected rich baseline; positive by relabeling in OLMo-1B, Gemma and OLMo-7B,
+  null in Qwen; cluster-bootstrap support only for Gemma; document conditional weaker (OLMo-1B, Gemma only)".
+  Subtitle, abstract, glance box, central claim, contribution (2), Result 5, audit note, discussion, limitations.
+- Result 4: matched-operator held-out regressions restated (PMI null; reverse n.s. in two models); the document
+  conditional's "paradox" conjecture dropped.
+- Result 6 / §8: "generic across corpora; specificity inconclusive (10/72, all OLMo-favouring)" → heterogeneous
+  direct gains; DiD 8/72 split 4/4; fingerprint neither established nor suggested; Table C.3 and Figure C.1 rebuilt
+  from v4 with five thinning seeds (mean ± SD).
+- Result 9 / §10: the 294B-first-significant / stable-from-4T reading withdrawn; Table C.5 and Figure 7 rebuilt.
+- Table C.2 (base/rich/target-prior/bootstrap columns), Table C.7 (all cells), Figure 5 (v4 inputs, caption
+  corrected: scorers disagree in 1/8 aggregated and 2/8 spelled cells), D.6 rewritten (feature definitions,
+  fold-local preprocessing, deterministic seeds).
+- Appendix A: rows added for B1, B2, global standardization, process-dependent seeds; fingerprint row → retracted;
+  target-prior row → bounded; spelled-view row updated.
+- Independent of v4 (review items verified against raw artifacts): two merging experiments separated (12-key
+  merged target vs 15-key merged scorer, §5); corpus-size non-convergence disclosed (§3); "14 of 16" → 15 of 16;
+  Poisson SDs attributed to the correct family; black-key RSA floor +0.56; slash-notation count 3/21; 7B top-1
+  counts as cells of 60; last-token line nulls stated; subspace shares 0.53–0.76 / 0.46–0.73; Gemma context
+  contrast −0.026; max-over-layers p range 0.09–0.21; c|l movement 0.11; §9 wording (exponents, unique-state
+  arm, thresholds, rare shares, Cb/B JS provenance); Sadek et al. venue; Fig 4 caption layers stated.
+- Reproducibility: mirror tag `paper-v2`; `paper-v1` immutable; `V4_CORRECTION_REPORT.md` referenced.
+
+## Process record
+
+Contract frozen before implementation; independent mechanical verifier and independent reviewer (two NOT_READY
+rounds, then READY) gated the launch on commit a56ad3e; v3 artifacts byte-identical; invalid preview outputs
+quarantined outside the repository; `phase5/v4_provenance.py --verify` records VALID at chain completion
+(`results/phase5/rerun_v4.log`); re-running it on the dirty paper-editing tree fails closed by design.
+
+## Unresolved / caveats
+
+- The corrected held-out effect is small relative to the residual KL and is not robust to the document-cluster
+  bootstrap except in Gemma; the paper says so and builds no further claim on it.
+- The checkpoint residual trajectory is now weak; retained as suggestive, one run.
+- The adversarial Sol review of paper-v2 has not yet been run (to be launched separately on the frozen tag).
+
+## Restructure (2026-09-02, after the v4 integration)
+
+The paper-v1 architecture routed the reader to Phase V as "the quantitative core" and "the central number"; after v4
+that number is small and model-dependent, so the manuscript was re-ordered to lead with what is robust. New order:
+§1 Introduction · §2 Setting · §3 corpus PMI · §4 orthographic alias · §5 behaviour on the line · §6 operators
+(the main result) · §7 synthetic controls (Results 5–6, Figure 5) · §8 "Beyond correspondence" with §8.1 held-out
+test (Result 7, Figure 6, audit note), §8.2 other corpora (Result 8), §8.3 one pretraining run (Result 9) · §9
+Discussion. The checkpoint figure moved to Appendix C.5 as Figure C.2 with the provenance note; Results 5/6/7/8/9 of
+the v4 draft are now 7/8/5/6/9. Subtitle, abstract, glance box, central-claim box, contributions and roadmap were
+rewritten to the same order; no number changed.

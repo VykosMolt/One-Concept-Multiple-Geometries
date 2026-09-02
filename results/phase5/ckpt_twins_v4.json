@@ -1,0 +1,2258 @@
+[
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage1-step300-tokens1B",
+  "family": "E_modulation",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 0.2356856613471184,
+    "stability_to_released": 0.7064194757419274,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.6622524650083571,
+      "line_controlled_cosine": 0.39313013627261223,
+      "p": 0.14992503748125938,
+      "b": 299,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 852789650402067389
+     },
+     "D_doc": {
+      "raw_cosine": 0.7008635842454103,
+      "line_controlled_cosine": 0.411928880999675,
+      "p": 0.1489255372313843,
+      "b": 297,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2848809082443864008
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 0.2406652705008442,
+    "stability_to_released": 0.5349417790873222,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.611568043347294,
+      "line_controlled_cosine": 0.2174860201150041,
+      "p": 0.27586206896551724,
+      "b": 551,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 6809621762012548995
+     },
+     "D_doc": {
+      "raw_cosine": 0.5823832152789887,
+      "line_controlled_cosine": 0.2683089857492494,
+      "p": 0.2543728135932034,
+      "b": 508,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2540083418567519867
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 0.414298733069315,
+    "stability_to_released": -0.19891931431179527,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.36131925561774053,
+      "line_controlled_cosine": 0.2358663287446494,
+      "p": 0.26636681659170414,
+      "b": 532,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 1150090942840956072
+     },
+     "D_doc": {
+      "raw_cosine": -0.20010664993842858,
+      "line_controlled_cosine": -0.0621029449103481,
+      "p": 0.5492253873063468,
+      "b": 1098,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 1616871883081583323
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage1-step10000-tokens21B",
+  "family": "E_modulation",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 1.814422740779166,
+    "stability_to_released": 0.9343676442839082,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.7492549295154428,
+      "line_controlled_cosine": 0.09783604593201721,
+      "p": 0.3888055972013993,
+      "b": 777,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 6857982210321794638
+     },
+     "D_doc": {
+      "raw_cosine": 0.757712252582087,
+      "line_controlled_cosine": 0.09536331595832331,
+      "p": 0.41179410294852575,
+      "b": 823,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 6862267156175549178
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 1.4277413299271384,
+    "stability_to_released": 0.8038497102536543,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8372664338534052,
+      "line_controlled_cosine": 0.46778226150851343,
+      "p": 0.09395302348825588,
+      "b": 187,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3865857797056466070
+     },
+     "D_doc": {
+      "raw_cosine": 0.6685970387589631,
+      "line_controlled_cosine": -0.059318930875545836,
+      "p": 0.5527236381809095,
+      "b": 1105,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 7617727364002405416
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 0.8457379614923741,
+    "stability_to_released": 0.7694923243824671,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.24598308439979982,
+      "line_controlled_cosine": -0.5501292618714702,
+      "p": 0.9400299850074962,
+      "b": 1880,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 1718773660509536206
+     },
+     "D_doc": {
+      "raw_cosine": 0.48161721270278707,
+      "line_controlled_cosine": 0.14445560639615546,
+      "p": 0.3548225887056472,
+      "b": 709,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8343110805517783087
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage1-step23100-tokens49B",
+  "family": "E_modulation",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 1.7039257789298843,
+    "stability_to_released": 0.9150871405169683,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.7372758639137764,
+      "line_controlled_cosine": -0.021886949921010892,
+      "p": 0.5257371314342829,
+      "b": 1051,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3135240040224230112
+     },
+     "D_doc": {
+      "raw_cosine": 0.7649815627996442,
+      "line_controlled_cosine": 0.12087206849753662,
+      "p": 0.37681159420289856,
+      "b": 753,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 1339849754690387455
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 1.3295942792067157,
+    "stability_to_released": 0.8564266115439148,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.7927613384678714,
+      "line_controlled_cosine": 0.21503755698995505,
+      "p": 0.2848575712143928,
+      "b": 569,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 9101964316197036019
+     },
+     "D_doc": {
+      "raw_cosine": 0.5992705026866821,
+      "line_controlled_cosine": -0.3160926530847707,
+      "p": 0.7901049475262368,
+      "b": 1580,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 7789252544416549024
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 1.386707800975101,
+    "stability_to_released": 0.919169197988216,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.37770925837758196,
+      "line_controlled_cosine": 0.5970538215157214,
+      "p": 0.04697651174412794,
+      "b": 93,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8066735887994259325
+     },
+     "D_doc": {
+      "raw_cosine": 0.3552036934719546,
+      "line_controlled_cosine": -0.06285816706239925,
+      "p": 0.5502248875562219,
+      "b": 1100,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 5184465622881145944
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage1-step50000-tokens105B",
+  "family": "E_modulation",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 1.6908265375197529,
+    "stability_to_released": 0.9229271959082056,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.75289414404547,
+      "line_controlled_cosine": 0.01323978629806736,
+      "p": 0.48225887056471767,
+      "b": 964,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 4582009900584531369
+     },
+     "D_doc": {
+      "raw_cosine": 0.7583600800656379,
+      "line_controlled_cosine": 0.008482002613396546,
+      "p": 0.5057471264367817,
+      "b": 1011,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2527089562415458185
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 1.148860596939286,
+    "stability_to_released": 0.9510318332652081,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.855031142738334,
+      "line_controlled_cosine": 0.35414135917060136,
+      "p": 0.1854072963518241,
+      "b": 370,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 6094509582169385252
+     },
+     "D_doc": {
+      "raw_cosine": 0.766000843183585,
+      "line_controlled_cosine": 0.25156940266567895,
+      "p": 0.25037481259370314,
+      "b": 500,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8482265540187367269
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 0.9291146441052653,
+    "stability_to_released": 0.8577147898463013,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.38981360935943155,
+      "line_controlled_cosine": 0.1140685781532256,
+      "p": 0.3733133433283358,
+      "b": 746,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 86956162342950201
+     },
+     "D_doc": {
+      "raw_cosine": 0.514824320491046,
+      "line_controlled_cosine": 0.15747472614854535,
+      "p": 0.35132433783108447,
+      "b": 702,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2932104677799182213
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage1-step140000-tokens294B",
+  "family": "E_modulation",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 2.03716640050134,
+    "stability_to_released": 0.9369362765334607,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.7495967159613737,
+      "line_controlled_cosine": 0.020747181722318018,
+      "p": 0.46326836581709147,
+      "b": 926,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 190499656314667305
+     },
+     "D_doc": {
+      "raw_cosine": 0.7542509579319127,
+      "line_controlled_cosine": 0.0031306732073791816,
+      "p": 0.5027486256871564,
+      "b": 1005,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 7386941166858273766
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 1.3856478293331023,
+    "stability_to_released": 0.9397847336727005,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8465307456507146,
+      "line_controlled_cosine": 0.3861917720141713,
+      "p": 0.15342328835582209,
+      "b": 306,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 1531530991593946340
+     },
+     "D_doc": {
+      "raw_cosine": 0.7186218849287386,
+      "line_controlled_cosine": 0.15864706284432661,
+      "p": 0.3343328335832084,
+      "b": 668,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3782158135981802283
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 1.2884879415938855,
+    "stability_to_released": 0.8782229160707317,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.35647511096349643,
+      "line_controlled_cosine": 0.8106453811366664,
+      "p": 0.0079960019990005,
+      "b": 15,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3445573370484175470
+     },
+     "D_doc": {
+      "raw_cosine": 0.3949143248875916,
+      "line_controlled_cosine": -0.24040302682825565,
+      "p": 0.7236381809095452,
+      "b": 1447,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 1615023204341190138
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage1-step480000-tokens1007B",
+  "family": "E_modulation",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 1.4958477574488778,
+    "stability_to_released": 0.9731813816328858,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.7978333708355851,
+      "line_controlled_cosine": 0.2827459501787297,
+      "p": 0.25237381309345325,
+      "b": 504,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 7440231472742275337
+     },
+     "D_doc": {
+      "raw_cosine": 0.8170089514516322,
+      "line_controlled_cosine": 0.2681095449562059,
+      "p": 0.24887556221889057,
+      "b": 497,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8579201889424907711
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 1.072463831601779,
+    "stability_to_released": 0.960045434339216,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8047958227486837,
+      "line_controlled_cosine": 0.0048866077686228115,
+      "p": 0.48125937031484256,
+      "b": 962,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 4004923783669158318
+     },
+     "D_doc": {
+      "raw_cosine": 0.7270257540721385,
+      "line_controlled_cosine": 0.2769668781392303,
+      "p": 0.24537731134432783,
+      "b": 490,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 6342199354030379222
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 1.080723624426066,
+    "stability_to_released": 0.9293230957226709,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.4058110775773773,
+      "line_controlled_cosine": 0.5542079948482727,
+      "p": 0.050474762618690654,
+      "b": 100,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 187500955287920160
+     },
+     "D_doc": {
+      "raw_cosine": 0.5320107073392393,
+      "line_controlled_cosine": 0.029104209275461146,
+      "p": 0.4332833583208396,
+      "b": 866,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2441643265156697262
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage1-step950000-tokens1993B",
+  "family": "E_modulation",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 1.50214735899587,
+    "stability_to_released": 0.9887378222612999,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8187516053267401,
+      "line_controlled_cosine": 0.3878841824586651,
+      "p": 0.1549225387306347,
+      "b": 309,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 1121969505522561000
+     },
+     "D_doc": {
+      "raw_cosine": 0.8562923715970314,
+      "line_controlled_cosine": 0.41116864794064034,
+      "p": 0.14942528735632185,
+      "b": 298,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3047806488754017595
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 0.8659560747838436,
+    "stability_to_released": 0.9623134288014433,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8416941370740441,
+      "line_controlled_cosine": 0.4354112914961901,
+      "p": 0.1184407796101949,
+      "b": 236,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3705161772182991967
+     },
+     "D_doc": {
+      "raw_cosine": 0.7701004976526814,
+      "line_controlled_cosine": 0.4988746767800995,
+      "p": 0.08245877061469266,
+      "b": 164,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 6143545143205164647
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 0.7312063466732514,
+    "stability_to_released": 0.8577758244408317,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.44534934645844493,
+      "line_controlled_cosine": 0.14667028750608335,
+      "p": 0.3543228385807096,
+      "b": 708,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 1153259466424685124
+     },
+     "D_doc": {
+      "raw_cosine": 0.5439747939276453,
+      "line_controlled_cosine": 0.31468001746647795,
+      "p": 0.1904047976011994,
+      "b": 380,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2577966477462119917
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage1-step1907359-tokens4001B",
+  "family": "E_modulation",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 1.3953052505244132,
+    "stability_to_released": 0.9692117071541109,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8180751701619231,
+      "line_controlled_cosine": 0.4833604156958929,
+      "p": 0.10094952523738131,
+      "b": 201,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3034761987222863594
+     },
+     "D_doc": {
+      "raw_cosine": 0.8319245417674073,
+      "line_controlled_cosine": 0.42618511641077317,
+      "p": 0.13043478260869565,
+      "b": 260,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 684163650332608134
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 1.041567962398338,
+    "stability_to_released": 0.9611709065173303,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8442163881493914,
+      "line_controlled_cosine": 0.16207941440166532,
+      "p": 0.3268365817091454,
+      "b": 653,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 5957577153839473374
+     },
+     "D_doc": {
+      "raw_cosine": 0.8149940222478727,
+      "line_controlled_cosine": 0.87860322532642,
+      "p": 0.0014992503748125937,
+      "b": 2,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 5886134346425444546
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 0.7645549410793351,
+    "stability_to_released": 0.9258034060929781,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.5694400297581804,
+      "line_controlled_cosine": 0.59647980910291,
+      "p": 0.0399800099950025,
+      "b": 79,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2820894282923978383
+     },
+     "D_doc": {
+      "raw_cosine": 0.43441249138230775,
+      "line_controlled_cosine": 0.29144805431298365,
+      "p": 0.20789605197401298,
+      "b": 415,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2510364781292082701
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage2-ingredient3-step23852-tokens51B",
+  "family": "E_modulation",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 1.6524365289693466,
+    "stability_to_released": 0.9790203833287088,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8397271005267809,
+      "line_controlled_cosine": 0.3797611989425444,
+      "p": 0.16841579210394803,
+      "b": 336,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 170468574797757926
+     },
+     "D_doc": {
+      "raw_cosine": 0.8661841995980288,
+      "line_controlled_cosine": 0.4079387170167432,
+      "p": 0.14992503748125938,
+      "b": 299,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 6884922635730496798
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 1.024869661768696,
+    "stability_to_released": 0.9700207590437842,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8754052386547754,
+      "line_controlled_cosine": 0.5827711194772808,
+      "p": 0.06046976511744128,
+      "b": 120,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 5961734676593338748
+     },
+     "D_doc": {
+      "raw_cosine": 0.8281360462657839,
+      "line_controlled_cosine": 0.8610212235918977,
+      "p": 0.00399800099950025,
+      "b": 7,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 4168096350877835970
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 0.6924297569654811,
+    "stability_to_released": 0.9030381355586526,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.5906867574037566,
+      "line_controlled_cosine": 0.579185333893762,
+      "p": 0.05647176411794103,
+      "b": 112,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 6167513462006427509
+     },
+     "D_doc": {
+      "raw_cosine": 0.45477083005036456,
+      "line_controlled_cosine": 0.3998870557475446,
+      "p": 0.1359320339830085,
+      "b": 271,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 5022624871334430458
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage2-ingredient1-step23852-tokens51B",
+  "family": "E_modulation",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 1.6232338612685249,
+    "stability_to_released": 0.9750240057686371,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8569783011254594,
+      "line_controlled_cosine": 0.4534255557467216,
+      "p": 0.12543728135932034,
+      "b": 250,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3632876472250255217
+     },
+     "D_doc": {
+      "raw_cosine": 0.884647816678918,
+      "line_controlled_cosine": 0.4927965952157985,
+      "p": 0.10194902548725637,
+      "b": 203,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 5980469802366162869
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 0.970717443537591,
+    "stability_to_released": 0.9584950292724259,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8618559846025756,
+      "line_controlled_cosine": 0.3791952408485594,
+      "p": 0.15542228885557222,
+      "b": 310,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 880332166882514007
+     },
+     "D_doc": {
+      "raw_cosine": 0.8135390768210784,
+      "line_controlled_cosine": 0.7652615348302327,
+      "p": 0.009495252373813094,
+      "b": 18,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8339851764126800255
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 0.747218969622873,
+    "stability_to_released": 0.892025282044032,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.6029259325051318,
+      "line_controlled_cosine": 0.6476717341479878,
+      "p": 0.030984507746126936,
+      "b": 61,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 7938787864807824959
+     },
+     "D_doc": {
+      "raw_cosine": 0.380650508829635,
+      "line_controlled_cosine": 0.3428985306090176,
+      "p": 0.16741629185407297,
+      "b": 334,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 6536353393311580222
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage2-ingredient2-step23852-tokens51B",
+  "family": "E_modulation",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 1.6136750335141496,
+    "stability_to_released": 0.9821603485483923,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8517688211900641,
+      "line_controlled_cosine": 0.44652763797511136,
+      "p": 0.12593703148425786,
+      "b": 251,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2130938869549724002
+     },
+     "D_doc": {
+      "raw_cosine": 0.8777324243728576,
+      "line_controlled_cosine": 0.46117960941340025,
+      "p": 0.11044477761119441,
+      "b": 220,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3294838769525373652
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 0.936343695084198,
+    "stability_to_released": 0.9585161345354891,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.865848132766053,
+      "line_controlled_cosine": 0.4433904281550844,
+      "p": 0.11594202898550725,
+      "b": 231,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2504030638218739695
+     },
+     "D_doc": {
+      "raw_cosine": 0.8467241078148849,
+      "line_controlled_cosine": 0.9017683629422915,
+      "p": 0.0014992503748125937,
+      "b": 2,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8104695643981935572
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 0.686316106644494,
+    "stability_to_released": 0.8338828480428432,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.6515669448619567,
+      "line_controlled_cosine": 0.6660850592815958,
+      "p": 0.02148925537231384,
+      "b": 42,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3928243121621427984
+     },
+     "D_doc": {
+      "raw_cosine": 0.30590605508103785,
+      "line_controlled_cosine": 0.3140613546034418,
+      "p": 0.18940529735132433,
+      "b": 378,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2976457247349818420
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "main",
+  "family": "E_modulation",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 1.979947699316646,
+    "stability_to_released": 1.0,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8638582531888189,
+      "line_controlled_cosine": 0.4663155495565547,
+      "p": 0.10594702648675662,
+      "b": 211,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8866574755960923226
+     },
+     "D_doc": {
+      "raw_cosine": 0.8860601418162877,
+      "line_controlled_cosine": 0.4144053147684473,
+      "p": 0.13843078460769614,
+      "b": 276,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 5757344556123857498
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 1.323291878040177,
+    "stability_to_released": 0.9999999999999999,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8477291306014417,
+      "line_controlled_cosine": 0.4854455804213803,
+      "p": 0.08595702148925537,
+      "b": 171,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 93293317550791991
+     },
+     "D_doc": {
+      "raw_cosine": 0.780546911254411,
+      "line_controlled_cosine": 0.6283674919974833,
+      "p": 0.03648175912043978,
+      "b": 72,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 1033492869177640922
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 0.9237863051408957,
+    "stability_to_released": 1.0,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.41136188323317374,
+      "line_controlled_cosine": 0.5177327298078456,
+      "p": 0.0769615192403798,
+      "b": 153,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 7398340532958341551
+     },
+     "D_doc": {
+      "raw_cosine": 0.506016817907256,
+      "line_controlled_cosine": 0.18166671927156378,
+      "p": 0.30834582708645675,
+      "b": 616,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 1354307573722260361
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage1-step300-tokens1B",
+  "family": "C_harmonic",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 0.34260693526840286,
+    "stability_to_released": 0.4297295591893344,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.4112610038057182,
+      "line_controlled_cosine": 0.2770677973594559,
+      "p": 0.23888055972013994,
+      "b": 477,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3633779318842050642
+     },
+     "D_doc": {
+      "raw_cosine": 0.5085793414469421,
+      "line_controlled_cosine": 0.48887422557996213,
+      "p": 0.07946026986506746,
+      "b": 158,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 4536964211494419003
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 0.36982194822977044,
+    "stability_to_released": 0.3313102396822342,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.19088918953871753,
+      "line_controlled_cosine": -0.19047745562577778,
+      "p": 0.6736631684157921,
+      "b": 1347,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 7010746020415853905
+     },
+     "D_doc": {
+      "raw_cosine": 0.3723534588621234,
+      "line_controlled_cosine": 0.1893518309178009,
+      "p": 0.3118440779610195,
+      "b": 623,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 717022851537557619
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 0.4045376297058421,
+    "stability_to_released": -0.03837456909399031,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": -0.10611657614191095,
+      "line_controlled_cosine": -0.2718692573044783,
+      "p": 0.760119940029985,
+      "b": 1520,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8907255971430867962
+     },
+     "D_doc": {
+      "raw_cosine": -0.1670003752108419,
+      "line_controlled_cosine": -0.0023056491232908752,
+      "p": 0.5427286356821589,
+      "b": 1085,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 162237608883766443
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage1-step10000-tokens21B",
+  "family": "C_harmonic",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 1.440956832589772,
+    "stability_to_released": 0.8581378149580882,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8018070987762735,
+      "line_controlled_cosine": 0.45511277265913974,
+      "p": 0.10944527736131934,
+      "b": 218,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2980616418281708335
+     },
+     "D_doc": {
+      "raw_cosine": 0.7985048990161814,
+      "line_controlled_cosine": 0.3758396859492061,
+      "p": 0.16441779110444776,
+      "b": 328,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 1027149689100680107
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 1.5028880209989868,
+    "stability_to_released": 0.7159992516310009,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.7990900360979148,
+      "line_controlled_cosine": 0.010175255555513891,
+      "p": 0.5062468765617192,
+      "b": 1012,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 4341003103301715558
+     },
+     "D_doc": {
+      "raw_cosine": 0.7421106469704704,
+      "line_controlled_cosine": 0.13124345536487314,
+      "p": 0.37631184407796103,
+      "b": 752,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 324807851631972377
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 1.6212077135172862,
+    "stability_to_released": 0.8891522918341717,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.27919318490467016,
+      "line_controlled_cosine": -0.42500944393063644,
+      "p": 0.8660669665167416,
+      "b": 1732,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 6768719157124668877
+     },
+     "D_doc": {
+      "raw_cosine": 0.42968324263916774,
+      "line_controlled_cosine": -0.0341082361745858,
+      "p": 0.5482258870564718,
+      "b": 1096,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2783741039338686753
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage1-step23100-tokens49B",
+  "family": "C_harmonic",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 1.5099748406858429,
+    "stability_to_released": 0.8617280240394235,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.7569486889493414,
+      "line_controlled_cosine": 0.04931778738611564,
+      "p": 0.44677661169415295,
+      "b": 893,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8805904795086377347
+     },
+     "D_doc": {
+      "raw_cosine": 0.7576084124951459,
+      "line_controlled_cosine": 0.0477430534149444,
+      "p": 0.4687656171914043,
+      "b": 937,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 4167691427657499434
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 1.710764326694888,
+    "stability_to_released": 0.7780916612007748,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8377654740465946,
+      "line_controlled_cosine": 0.3160338416898973,
+      "p": 0.19740129935032483,
+      "b": 394,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 7386081840878425658
+     },
+     "D_doc": {
+      "raw_cosine": 0.7520608551853613,
+      "line_controlled_cosine": -0.03484696057155668,
+      "p": 0.5422288855572214,
+      "b": 1084,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 7077140825387577783
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 1.7684883649747196,
+    "stability_to_released": 0.8904238290132989,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.45445156199896386,
+      "line_controlled_cosine": 0.2364969974078503,
+      "p": 0.2723638180909545,
+      "b": 544,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8436859907792412659
+     },
+     "D_doc": {
+      "raw_cosine": 0.5067445198086934,
+      "line_controlled_cosine": 0.013837863095868487,
+      "p": 0.4662668665667166,
+      "b": 932,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 7566418169145200064
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage1-step50000-tokens105B",
+  "family": "C_harmonic",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 1.256812542444823,
+    "stability_to_released": 0.9724865555320968,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8511404940556522,
+      "line_controlled_cosine": 0.6991444640956719,
+      "p": 0.022988505747126436,
+      "b": 45,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8721026620520520900
+     },
+     "D_doc": {
+      "raw_cosine": 0.8714876600723531,
+      "line_controlled_cosine": 0.5695472209257096,
+      "p": 0.062468765617191405,
+      "b": 124,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 5075960567794919487
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 1.2009300349217578,
+    "stability_to_released": 0.5524511640308786,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.6240712682461638,
+      "line_controlled_cosine": -0.19965499112287843,
+      "p": 0.6866566716641679,
+      "b": 1373,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 108884902158313441
+     },
+     "D_doc": {
+      "raw_cosine": 0.621941538987531,
+      "line_controlled_cosine": 0.0568135650038845,
+      "p": 0.46326836581709147,
+      "b": 926,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 7362088735257876218
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 1.2795833067546274,
+    "stability_to_released": 0.873558599842791,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.48755708432675793,
+      "line_controlled_cosine": 0.5032621265414087,
+      "p": 0.08545727136431784,
+      "b": 170,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 597117404955051595
+     },
+     "D_doc": {
+      "raw_cosine": 0.2897658148801933,
+      "line_controlled_cosine": -0.04907661080212191,
+      "p": 0.5932033983008496,
+      "b": 1186,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3783381105427088339
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage1-step140000-tokens294B",
+  "family": "C_harmonic",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 1.5753089465328327,
+    "stability_to_released": 0.9776774975536898,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8421303588655146,
+      "line_controlled_cosine": 0.5472040009720355,
+      "p": 0.05847076461769116,
+      "b": 116,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3071896637568672220
+     },
+     "D_doc": {
+      "raw_cosine": 0.852057426091465,
+      "line_controlled_cosine": 0.46311622640378425,
+      "p": 0.11044477761119441,
+      "b": 220,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2682268561535078921
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 1.2798613609300598,
+    "stability_to_released": 0.7201582446164712,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.808363133814836,
+      "line_controlled_cosine": 0.22763210998716968,
+      "p": 0.29485257371314344,
+      "b": 589,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 5203889539335243716
+     },
+     "D_doc": {
+      "raw_cosine": 0.7479291911791324,
+      "line_controlled_cosine": 0.33258817321360423,
+      "p": 0.18690654672663667,
+      "b": 373,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8432167581270317466
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 1.1707474994590776,
+    "stability_to_released": 0.8437837998274652,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.27044599378728823,
+      "line_controlled_cosine": 0.5275054303313548,
+      "p": 0.08545727136431784,
+      "b": 170,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 5429286110589198036
+     },
+     "D_doc": {
+      "raw_cosine": 0.1805035677150384,
+      "line_controlled_cosine": 0.028623011834140535,
+      "p": 0.52023988005997,
+      "b": 1040,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2555614971507699960
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage1-step480000-tokens1007B",
+  "family": "C_harmonic",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 0.8901700433892691,
+    "stability_to_released": 0.9071305394461414,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.7191532146659526,
+      "line_controlled_cosine": 0.5100902440102044,
+      "p": 0.07946026986506746,
+      "b": 158,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2560723152766069094
+     },
+     "D_doc": {
+      "raw_cosine": 0.80678362401398,
+      "line_controlled_cosine": 0.6350976298119293,
+      "p": 0.035982008995502246,
+      "b": 71,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3391404351014267612
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 1.0062474272654836,
+    "stability_to_released": 0.7959688551545412,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.6464029483792212,
+      "line_controlled_cosine": -0.843960392594537,
+      "p": 0.9980009995002499,
+      "b": 1996,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3424845820187939464
+     },
+     "D_doc": {
+      "raw_cosine": 0.5627203197985767,
+      "line_controlled_cosine": -0.6492599247852652,
+      "p": 0.974512743628186,
+      "b": 1949,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2453549102988343845
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 1.3975642729694568,
+    "stability_to_released": 0.9130257564224699,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.3386690745302572,
+      "line_controlled_cosine": 0.47811805307286626,
+      "p": 0.11294352823588207,
+      "b": 225,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 7901375064436741698
+     },
+     "D_doc": {
+      "raw_cosine": 0.3007080211385336,
+      "line_controlled_cosine": 0.031228421227191567,
+      "p": 0.5052473763118441,
+      "b": 1010,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 6471348951247407211
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage1-step950000-tokens1993B",
+  "family": "C_harmonic",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 1.0546977956330985,
+    "stability_to_released": 0.8978557984811958,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.6827483984668986,
+      "line_controlled_cosine": 0.31082552400973107,
+      "p": 0.22338830584707647,
+      "b": 446,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 6288400127809538758
+     },
+     "D_doc": {
+      "raw_cosine": 0.733214764462238,
+      "line_controlled_cosine": 0.3240095237378243,
+      "p": 0.20739630184907545,
+      "b": 414,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 1410286539468779536
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 0.9636259149402566,
+    "stability_to_released": 0.9067913849295556,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.7062713055113509,
+      "line_controlled_cosine": -0.5019788427782869,
+      "p": 0.9260369815092454,
+      "b": 1852,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 622229002873016584
+     },
+     "D_doc": {
+      "raw_cosine": 0.6565921575967167,
+      "line_controlled_cosine": -0.20678907380717812,
+      "p": 0.7016491754122939,
+      "b": 1403,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 6449254487817324675
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 1.0862480742796214,
+    "stability_to_released": 0.8296085973145156,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.5806131720835329,
+      "line_controlled_cosine": 0.639505876407197,
+      "p": 0.03498250874562719,
+      "b": 69,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 7469215848260303646
+     },
+     "D_doc": {
+      "raw_cosine": 0.480836352664929,
+      "line_controlled_cosine": -0.14771309217881484,
+      "p": 0.6241879060469765,
+      "b": 1248,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8530008960336584350
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage1-step1907359-tokens4001B",
+  "family": "C_harmonic",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 1.0775982178312709,
+    "stability_to_released": 0.9259185590557422,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.6965909976698018,
+      "line_controlled_cosine": 0.31677816989526797,
+      "p": 0.19640179910044978,
+      "b": 392,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 200283486889873110
+     },
+     "D_doc": {
+      "raw_cosine": 0.6840941947797265,
+      "line_controlled_cosine": 0.09195450370256912,
+      "p": 0.44177911044477763,
+      "b": 883,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 1518498675861068962
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 0.7783612307217875,
+    "stability_to_released": 0.9034150350183315,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.7099017323062606,
+      "line_controlled_cosine": -0.4255302119460215,
+      "p": 0.8770614692653673,
+      "b": 1754,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8753368759369626546
+     },
+     "D_doc": {
+      "raw_cosine": 0.6382968523934045,
+      "line_controlled_cosine": -0.34140304545672434,
+      "p": 0.8180909545227386,
+      "b": 1636,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 7549420035399011717
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 0.686803142499084,
+    "stability_to_released": 0.90873201049688,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.6647235600552206,
+      "line_controlled_cosine": 0.7030441102564031,
+      "p": 0.01199400299850075,
+      "b": 23,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8998347493579812278
+     },
+     "D_doc": {
+      "raw_cosine": 0.39378292173072876,
+      "line_controlled_cosine": 0.42990024841819063,
+      "p": 0.12593703148425786,
+      "b": 251,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8381094581694883161
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage2-ingredient3-step23852-tokens51B",
+  "family": "C_harmonic",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 0.9924556454326864,
+    "stability_to_released": 0.9424264576381405,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.7768550594401983,
+      "line_controlled_cosine": 0.39086512105495985,
+      "p": 0.14992503748125938,
+      "b": 299,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3009859775083007101
+     },
+     "D_doc": {
+      "raw_cosine": 0.8060452115324409,
+      "line_controlled_cosine": 0.3580310897774366,
+      "p": 0.1619190404797601,
+      "b": 323,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8783230148270034976
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 0.8777357292082736,
+    "stability_to_released": 0.9027932598938846,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.7587102835380205,
+      "line_controlled_cosine": -0.45130098802631147,
+      "p": 0.8800599700149925,
+      "b": 1760,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8153760752133735711
+     },
+     "D_doc": {
+      "raw_cosine": 0.7008005087386577,
+      "line_controlled_cosine": -0.4607331137054854,
+      "p": 0.8910544727636182,
+      "b": 1782,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2126107826050243762
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 0.7030738547871178,
+    "stability_to_released": 0.8660460321935961,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.6485281982901857,
+      "line_controlled_cosine": 0.6342192196160965,
+      "p": 0.034482758620689655,
+      "b": 68,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 5853435738748316665
+     },
+     "D_doc": {
+      "raw_cosine": 0.24876275670124623,
+      "line_controlled_cosine": 0.018891148368853288,
+      "p": 0.47276361819090457,
+      "b": 945,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 7015072024398060425
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage2-ingredient1-step23852-tokens51B",
+  "family": "C_harmonic",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 1.0750558835525033,
+    "stability_to_released": 0.9305603229235646,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8015205988168526,
+      "line_controlled_cosine": 0.4358638034235755,
+      "p": 0.13493253373313344,
+      "b": 269,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 1358496461800762952
+     },
+     "D_doc": {
+      "raw_cosine": 0.8268370741022406,
+      "line_controlled_cosine": 0.42547448584142705,
+      "p": 0.13143428285857073,
+      "b": 262,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 9165453901839022440
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 1.0019021678553777,
+    "stability_to_released": 0.867765255273997,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.7182205994896531,
+      "line_controlled_cosine": -0.6319648740418118,
+      "p": 0.9615192403798101,
+      "b": 1923,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 91857407170234762
+     },
+     "D_doc": {
+      "raw_cosine": 0.6822384372861123,
+      "line_controlled_cosine": -0.455066135362973,
+      "p": 0.8910544727636182,
+      "b": 1782,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 7393455468323607706
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 0.6440458601898218,
+    "stability_to_released": 0.8780964122802418,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.6094997327563955,
+      "line_controlled_cosine": 0.5194100984099459,
+      "p": 0.0704647676161919,
+      "b": 140,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 7694587317937370372
+     },
+     "D_doc": {
+      "raw_cosine": 0.3238196826591351,
+      "line_controlled_cosine": 0.13487456963780775,
+      "p": 0.328335832083958,
+      "b": 656,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 2117958206388117336
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "stage2-ingredient2-step23852-tokens51B",
+  "family": "C_harmonic",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 0.8965001756505921,
+    "stability_to_released": 0.9446544277883754,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8018603609130793,
+      "line_controlled_cosine": 0.4954298875138999,
+      "p": 0.0814592703648176,
+      "b": 162,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3739788881120834233
+     },
+     "D_doc": {
+      "raw_cosine": 0.8196680898606321,
+      "line_controlled_cosine": 0.4122070430817065,
+      "p": 0.13243378310844578,
+      "b": 264,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 1951540426977358728
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 0.9307659655890811,
+    "stability_to_released": 0.8727769660141841,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.6977989325926831,
+      "line_controlled_cosine": -0.6793652445090945,
+      "p": 0.9820089955022488,
+      "b": 1964,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3655353994577874951
+     },
+     "D_doc": {
+      "raw_cosine": 0.7310352173205168,
+      "line_controlled_cosine": -0.1690277512262881,
+      "p": 0.6911544227886057,
+      "b": 1382,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 3782048178490625262
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 0.7244431480359113,
+    "stability_to_released": 0.7922387905122078,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.6494494321511919,
+      "line_controlled_cosine": 0.5552917466068954,
+      "p": 0.05697151424287856,
+      "b": 113,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 6733266745433062345
+     },
+     "D_doc": {
+      "raw_cosine": 0.18130403787078797,
+      "line_controlled_cosine": 0.11292223904082332,
+      "p": 0.36681659170414793,
+      "b": 733,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 8915723949891406456
+     }
+    }
+   }
+  }
+ },
+ {
+  "schema": "phase5-theory-v4.1",
+  "status": "OK",
+  "revision": "main",
+  "family": "C_harmonic",
+  "master_seed": 20260830,
+  "seed_algorithm": "sha256(canonical-json(master_seed, labels))[0:8]",
+  "pairs": {
+   "Cb|B": {
+    "mean_absolute_difference": 1.4390718662207407,
+    "stability_to_released": 1.0000000000000002,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.8534649253801276,
+      "line_controlled_cosine": 0.7361424897673282,
+      "p": 0.01199400299850075,
+      "b": 23,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 363473365794697045
+     },
+     "D_doc": {
+      "raw_cosine": 0.8392782658676756,
+      "line_controlled_cosine": 0.4316550312292709,
+      "p": 0.11394302848575712,
+      "b": 227,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 4990283596418751317
+     }
+    }
+   },
+   "Gb|F#": {
+    "mean_absolute_difference": 0.9721224902810521,
+    "stability_to_released": 1.0,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.7537813213778808,
+      "line_controlled_cosine": 0.03213052709489135,
+      "p": 0.46526736631684157,
+      "b": 930,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 6190055551521591816
+     },
+     "D_doc": {
+      "raw_cosine": 0.6747359377905089,
+      "line_controlled_cosine": -0.07530799254727798,
+      "p": 0.5892053973013494,
+      "b": 1178,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 4144602581289564924
+     }
+    }
+   },
+   "Db|C#": {
+    "mean_absolute_difference": 1.111904057410956,
+    "stability_to_released": 0.9999999999999998,
+    "extractions": {
+     "A_win40": {
+      "raw_cosine": 0.4003873597709362,
+      "line_controlled_cosine": 0.4662387722095805,
+      "p": 0.09795102448775612,
+      "b": 195,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 1154026840788497233
+     },
+     "D_doc": {
+      "raw_cosine": 0.39933625462733946,
+      "line_controlled_cosine": 0.30448378601842796,
+      "p": 0.20389805097451275,
+      "b": 407,
+      "B": 2000,
+      "B_requested": 2000,
+      "tail": ">=",
+      "estimator": "(b+1)/(B+1)",
+      "seed": 5157581267520775252
+     }
+    }
+   }
+  }
+ }
+]

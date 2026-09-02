@@ -16,6 +16,44 @@ def save(fig, name):
     st.save(fig, f"{OUT}/{name}.pdf"); plt.close(fig); print("wrote", name)
 def nogrid(ax): ax.grid(False)
 
+
+def _finite_number(value):
+    """Return a finite float, or None for an unavailable/non-finite value."""
+    try:
+        value = float(value)
+    except (TypeError, ValueError):
+        return None
+    return value if np.isfinite(value) else None
+
+
+def _significant(p):
+    """Use stars only for finite null probabilities below the stated cutoff."""
+    p = _finite_number(p)
+    return p is not None and p < 0.05
+
+
+def _mark_significance(ax, x, value, p, dy):
+    """Place a significance marker on either side of zero-valued bars."""
+    value = _finite_number(value)
+    if value is None or not _significant(p):
+        return
+    if value >= 0:
+        ax.text(x, value + dy, "*", ha="center", va="bottom", fontsize=7, color=st.INK)
+    else:
+        ax.text(x, value - dy, "*", ha="center", va="top", fontsize=7, color=st.INK)
+
+
+def _set_zero_anchored_ylim(ax, values, minimum_span=0.01):
+    """Make a data-driven zero-anchored range that also shows negative effects."""
+    finite = [_finite_number(value) for value in values]
+    finite = [value for value in finite if value is not None]
+    if not finite:
+        return
+    lo, hi = min(0.0, min(finite)), max(0.0, max(finite))
+    span = max(hi - lo, minimum_span)
+    pad = 0.12 * span
+    ax.set_ylim(lo - pad, hi + pad)
+
 # ---------------------------------------------------------------- Fig 1: the two tonal spaces
 def fig_spaces():
     fig, axes = plt.subplots(1, 2, figsize=(7.2, 2.55), gridspec_kw={"width_ratios": [1, 1.7]})
@@ -101,30 +139,34 @@ def fig_operators():
 
 # ---------------------------------------------------------------- Fig 5: held-out prediction
 def fig_heldout():
-    Jn = json.load(open("results/phase5/fingerprint/wikipedia_v3_neutral.json")); Jr = json.load(open("results/phase5/fingerprint/wikipedia_v3_neutral_rich.json")); Js = json.load(open("results/phase5/fingerprint/wikipedia_v3.json"))
+    Jn = json.load(open("results/phase5/fingerprint/wikipedia_v4_neutral.json")); Jr = json.load(open("results/phase5/fingerprint/wikipedia_v4_neutral_rich.json")); Js = json.load(open("results/phase5/fingerprint/wikipedia_v4.json"))
     fig, axes = plt.subplots(2, 2, figsize=(7.2, 5.0)); axes = axes.ravel()
     short = ["OLMo\n1B", "Gemma\n2B", "Qwen\n3B", "OLMo\n7B"]
     for ax, fam, title in ((axes[0], "E_modulation", "(a) modulation family, target-aggregated view"), (axes[1], "C_harmonic", "(b) harmonic family, target-aggregated view")):
         x = np.arange(4); w = 0.2
+        plotted = []
         for k, (ex, J, hatch, lab) in enumerate((("A_win40", Jn, "", "window conditional, base theory"), ("A_win40", Jr, "///", "window conditional, rich theory"), ("D_doc", Jn, "", "document conditional, base theory"), ("D_doc", Jr, "///", "document conditional, rich theory"))):
             col = st.P1 if ex == "A_win40" else st.P2
-            vals = [J[f"{m}|{fam}|{ex}"]["dkl"] for m in MODELS]; ps = [J[f"{m}|{fam}|{ex}"]["dkl_p"] for m in MODELS]
+            vals = [_finite_number(J[f"{m}|{fam}|{ex}"]["dkl"]) for m in MODELS]; ps = [J[f"{m}|{fam}|{ex}"].get("dkl_p") for m in MODELS]
+            plotted.extend(vals)
             ax.bar(x + (k - 1.5) * w, vals, w, color=col, alpha=1.0 if not hatch else 0.5, hatch=hatch, edgecolor="white", linewidth=0.4, label=lab if fam == "E_modulation" else None)
             for xi, v, p in zip(x + (k - 1.5) * w, vals, ps):
-                if p < .05: ax.text(xi, max(v, 0) + 0.0008, "*", ha="center", va="bottom", fontsize=7, color=st.INK)
+                _mark_significance(ax, xi, v, p, 0.0008)
         th = [Jn[f"{m}|{fam}|A_win40"]["kl"]["theory"] for m in MODELS]; thr = [Jr[f"{m}|{fam}|A_win40"]["kl"]["theory"] for m in MODELS]
-        ax.set_xticks(x); ax.set_xticklabels([f"{s}\nKL$_0$ {t:.2f}\nrich {u:.2f}" for s, t, u in zip(short, th, thr)], fontsize=6.0)
-        ax.axhline(0, color=st.MUTED, lw=0.5); ax.set_title(title, loc="left", fontsize=8.2); ax.set_ylim(-0.005, 0.052)
+        ax.set_xticks(x); ax.set_xticklabels([f"{s}\nKL$_0$ {t:.3f}\nrich {u:.3f}" for s, t, u in zip(short, th, thr)], fontsize=6.0)
+        ax.axhline(0, color=st.MUTED, lw=0.5); ax.set_title(title, loc="left", fontsize=8.2); _set_zero_anchored_ylim(ax, plotted, minimum_span=0.01)
         if fam == "E_modulation": ax.set_ylabel("held-out ΔKL (nats per source row)")
     for ax, key, ylab, title in ((axes[2], "dkl", "held-out ΔKL (nats per row)", "(c) modulation family, spelled view: ΔKL"), (axes[3], "r2gain", "held-out within-row ΔR²", "(d) modulation family, spelled view: ΔR²")):
         x = np.arange(4); w = 0.38
+        plotted = []
         for k, (ex, lab) in enumerate((("A_win40", "window"), ("D_doc", "document"))):
-            vals = [Js[f"{m}|E_modulation|{ex}"][key] for m in MODELS]; ps = [Js[f"{m}|E_modulation|{ex}"][key + "_p"] for m in MODELS]
+            vals = [_finite_number(Js[f"{m}|E_modulation|{ex}"][key]) for m in MODELS]; ps = [Js[f"{m}|E_modulation|{ex}"].get(key + "_p") for m in MODELS]
+            plotted.extend(vals)
             ax.bar(x + (k - 0.5) * w, vals, w, color=st.P1 if ex == "A_win40" else st.P2, edgecolor="white", linewidth=0.4, label=lab)
             for xi, v, p in zip(x + (k - 0.5) * w, vals, ps):
-                if p < .05: ax.text(xi, max(v, 0) + (0.0004 if key == "dkl" else 0.004), "*", ha="center", va="bottom", fontsize=7)
-        ax.axhline(0, color=st.MUTED, lw=0.5); ax.set_xticks(x); ax.set_xticklabels(short, fontsize=6.4); ax.set_ylabel(ylab); ax.set_title(title, loc="left", fontsize=8.2)
-        if key == "dkl": ax.set_ylim(-0.0068, 0.0150); ax.legend(fontsize=6.2, loc="upper left")
+                _mark_significance(ax, xi, v, p, 0.0004 if key == "dkl" else 0.004)
+        ax.axhline(0, color=st.MUTED, lw=0.5); ax.set_xticks(x); ax.set_xticklabels(short, fontsize=6.4); ax.set_ylabel(ylab); ax.set_title(title, loc="left", fontsize=8.2); _set_zero_anchored_ylim(ax, plotted, minimum_span=0.01 if key == "dkl" else 0.05)
+        if key == "dkl": ax.legend(fontsize=6.2, loc="upper left")
     h, l = axes[0].get_legend_handles_labels(); fig.legend(h, l, loc="lower center", ncol=4, fontsize=6.4, frameon=False, bbox_to_anchor=(0.5, -0.01))
     fig.subplots_adjust(left=0.09, right=0.98, top=0.95, bottom=0.17, wspace=0.28, hspace=0.55); st.save(fig, f"{OUT}/fig_heldout.pdf"); plt.close(fig); print("wrote fig_heldout")
 
@@ -155,55 +197,66 @@ def fig_synthetic():
 
 # ---------------------------------------------------------------- Fig 7: checkpoint trajectory
 def fig_trajectory():
-    rows = json.load(open("results/phase5/ckpt_fingerprint.json")); R = {(r["rev"], r["fam"]): r for r in rows}
-    s1 = [("stage1-step300-tokens1B", 1), ("stage1-step10000-tokens21B", 21), ("stage1-step23100-tokens49B", 49), ("stage1-step50000-tokens105B", 105), ("stage1-step140000-tokens294B", 294), ("stage1-step480000-tokens1007B", 1007), ("stage1-step950000-tokens1993B", 1993), ("stage1-step1907359-tokens4001B", 4001)]
-    s2 = ["stage2-ingredient1-step23852-tokens51B", "stage2-ingredient2-step23852-tokens51B", "stage2-ingredient3-step23852-tokens51B"]
-    tok = [t for _, t in s1]; x2 = [4052 * 1.07 ** k for k in (-1, 0, 1)]; xr = 4052 * 2.4
+    rows = json.load(open("results/phase5/ckpt_fingerprint_v4.json")); R = {(r["revision"], r["family"]): r for r in rows}
+    s1 = [("stage1-step300-tokens1B", "S1\n1B"), ("stage1-step10000-tokens21B", "S1\n21B"), ("stage1-step23100-tokens49B", "S1\n49B"), ("stage1-step50000-tokens105B", "S1\n105B"), ("stage1-step140000-tokens294B", "S1\n294B"), ("stage1-step480000-tokens1007B", "S1\n1T"), ("stage1-step950000-tokens1993B", "S1\n2T"), ("stage1-step1907359-tokens4001B", "S1\n4T")]
+    s2 = [("stage2-ingredient1-step23852-tokens51B", "S2\ni1"), ("stage2-ingredient2-step23852-tokens51B", "S2\ni2"), ("stage2-ingredient3-step23852-tokens51B", "S2\ni3")]
+    released = ("main", "released")
+    checkpoints = s1 + s2 + [released]
+    x = np.arange(len(checkpoints)); s1_x = x[:len(s1)]; s2_x = x[len(s1):len(s1) + len(s2)]; released_x = x[-1]
+    labels = [label for _, label in checkpoints]
     fig, axes = plt.subplots(1, 2, figsize=(7.2, 2.5))
     ax = axes[0]; fam = "E_modulation"
-    for key, col, lab, ls in (("lc", st.P1, "line | circle", "-"), ("cl", st.P2, "circle | line", "--")):
-        ax.plot(tok, [R[(rv, fam)][key] for rv, _ in s1], "o" + ls, color=col, label=lab); ax.plot(x2, [R[(rv, fam)][key] for rv in s2], "s", color=col); ax.plot([xr], [R[("main", fam)][key]], "D", color=col, mfc="white")
-    ax.plot(tok, [R[(rv, "C_harmonic")]["lc"] for rv, _ in s1], "o-", color=st.BASELINE, ms=3, lw=1, label="line | circle, harmonic family"); ax.plot(x2, [R[(rv, "C_harmonic")]["lc"] for rv in s2], "s", color=st.BASELINE, ms=3); ax.plot([xr], [R[("main", "C_harmonic")]["lc"]], "D", color=st.BASELINE, ms=4, mfc="white")
+    for key, col, lab, ls in (("line_given_circle", st.P1, "line | circle", "-"), ("circle_given_line", st.P2, "circle | line", "--")):
+        ax.plot(s1_x, [R[(rv, fam)][key] for rv, _ in s1], "o" + ls, color=col, label=lab); ax.plot(s2_x, [R[(rv, fam)][key] for rv, _ in s2], "s", color=col); ax.plot([released_x], [R[(released[0], fam)][key]], "D", color=col, mfc="white")
+    ax.plot(s1_x, [R[(rv, "C_harmonic")]["line_given_circle"] for rv, _ in s1], "o-", color=st.BASELINE, ms=3, lw=1, label="line | circle, harmonic family"); ax.plot(s2_x, [R[(rv, "C_harmonic")]["line_given_circle"] for rv, _ in s2], "s", color=st.BASELINE, ms=3); ax.plot([released_x], [R[(released[0], "C_harmonic")]["line_given_circle"]], "D", color=st.BASELINE, ms=4, mfc="white")
     ax.set_ylabel("controlled partial Spearman"); ax.set_title("(a) line vs circle in next-key behaviour", loc="left"); ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.3), ncol=3, fontsize=6.2, handletextpad=0.5, columnspacing=1.0)
     ax = axes[1]
     for exx, col, lab in (("D_doc", st.P1, "document conditional"), ("A_win40", st.P2, "window conditional")):
-        y1 = [R[(rv, fam)]["resid"][exx][0] for rv, _ in s1]; p1 = [R[(rv, fam)]["resid"][exx][1] for rv, _ in s1]; y2 = [R[(rv, fam)]["resid"][exx][0] for rv in s2]; p2 = [R[(rv, fam)]["resid"][exx][1] for rv in s2]; yr, pr = R[("main", fam)]["resid"][exx]
-        ax.plot(tok, y1, "-", color=col, label=lab); ax.scatter(tok, y1, s=[22 if p < .05 else 16 for p in p1], color=[col if p < .05 else "white" for p in p1], edgecolors=col, linewidths=0.9, zorder=3)
-        ax.scatter(x2, y2, s=[22 if p < .05 else 16 for p in p2], marker="s", color=[col if p < .05 else "white" for p in p2], edgecolors=col, linewidths=0.9, zorder=3)
-        ax.scatter([xr], [yr], s=26, marker="D", color=col if pr < .05 else "white", edgecolors=col, linewidths=0.9, zorder=3)
+        y1 = [R[(rv, fam)]["residual"][exx]["r"] for rv, _ in s1]; p1 = [R[(rv, fam)]["residual"][exx].get("p") for rv, _ in s1]; y2 = [R[(rv, fam)]["residual"][exx]["r"] for rv, _ in s2]; p2 = [R[(rv, fam)]["residual"][exx].get("p") for rv, _ in s2]; yr = R[(released[0], fam)]["residual"][exx]["r"]; pr = R[(released[0], fam)]["residual"][exx].get("p")
+        ax.plot(s1_x, y1, "-", color=col, label=lab); ax.scatter(s1_x, y1, s=[22 if _significant(p) else 16 for p in p1], color=[col if _significant(p) else "white" for p in p1], edgecolors=col, linewidths=0.9, zorder=3)
+        ax.scatter(s2_x, y2, s=[22 if _significant(p) else 16 for p in p2], marker="s", color=[col if _significant(p) else "white" for p in p2], edgecolors=col, linewidths=0.9, zorder=3)
+        ax.scatter([released_x], [yr], s=26, marker="D", color=col if _significant(pr) else "white", edgecolors=col, linewidths=0.9, zorder=3)
     ax.set_ylabel("residual Spearman (rich theory model)"); ax.set_title("(b) residual correspondence with corpus conditionals", loc="left")
     ax.scatter([], [], s=22, color=st.INK, label="p < .05"); ax.scatter([], [], s=16, color="white", edgecolors=st.INK, label="n.s."); ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.3), ncol=4, fontsize=6.2, handletextpad=0.5, columnspacing=1.0)
     for ax in axes:
-        ax.set_xscale("log"); ax.axhline(0, color=st.MUTED, lw=0.5); ax.set_xlim(0.7, 14000); ax.set_xlabel("stage-1 tokens (B)")
-        ax.axvspan(4001 * 1.02, 4052 * 1.17, color=st.RULE, alpha=0.7, lw=0)
-        ax.text(4052 * 0.93, 0.02, "S2", ha="right", va="bottom", fontsize=5.8, color=st.MUTED, transform=ax.get_xaxis_transform())
-        ax.text(xr, 0.02, "rel.", ha="center", va="bottom", fontsize=5.8, color=st.MUTED, transform=ax.get_xaxis_transform())
+        ax.axhline(0, color=st.MUTED, lw=0.5); ax.set_xlim(-0.5, len(checkpoints) - 0.5); ax.set_xticks(x); ax.set_xticklabels(labels, fontsize=5.3); ax.set_xlabel("checkpoint: S1 token amount / S2 ingredient identity / released", fontsize=6.8)
+        ax.axvline(len(s1) - 0.5, color=st.RULE, lw=0.8); ax.axvline(len(s1) + len(s2) - 0.5, color=st.RULE, lw=0.8)
     save(fig, "fig_trajectory")
 
 # ---------------------------------------------------------------- Fig 8: cross-corpus
 def fig_crosscorpus():
     corpora = [("olmomix_wiki", "OM wiki\n2 sh.\n8.5k"), ("olmomix_dclm", "OM DCLM\n9 sh.\n633"), ("dolmino_dclm", "Dolmino\nDCLM\n1.3k")]
-    if os.path.exists("results/phase5/fingerprint/olmomix_dclm_big_neutral.json") and os.path.exists("results/phase5/fingerprint/wikipedia_thin_olmomix_dclm_big_neutral.json"):
-        npairs = int(json.load(open("results/phase5/fingerprint/olmomix_dclm_big_neutral.json"))["olmo2_1b|E_modulation|A_win40"]["pairs"])
+    if os.path.exists("results/phase5/fingerprint/olmomix_dclm_big_v4_neutral.json") and os.path.exists("results/phase5/fingerprint/wikipedia_thin_olmomix_dclm_big_v4_neutral.json"):
+        npairs = int(json.load(open("results/phase5/fingerprint/olmomix_dclm_big_v4_neutral.json"))["olmo2_1b|E_modulation|A_win40"]["pairs"])
         corpora.insert(2, ("olmomix_dclm_big", f"OM DCLM\n54 sh.\n{npairs / 1000:.1f}k"))
     cells = [("E_modulation", "D_doc", "(a) modulation × document"), ("E_modulation", "A_win40", "(b) modulation × window"), ("C_harmonic", "A_win40", "(c) harmonic × window")]
     fig, axes = plt.subplots(1, 3, figsize=(7.2, 2.5), sharey=True)
+    plotted = []
     for ax, (fam, ex, title) in zip(axes, cells):
         x = 0; ticks = []
         for c, clab in corpora:
-            Jc = json.load(open(f"results/phase5/fingerprint/{c}_neutral.json")); Jb = json.load(open(f"results/phase5/fingerprint/wikipedia_thin_{c}_neutral.json"))
+            Jc = json.load(open(f"results/phase5/fingerprint/{c}_v4_neutral.json"))
+            thin = [json.load(open(f"results/phase5/fingerprint/wikipedia_thin_{c}_v4_neutral.json"))]
+            thin.extend(json.load(open(f"results/phase5/fingerprint/wikipedia_thin_{c}_v4_s{seed}_neutral.json")) for seed in range(1, 5))
             for m in MODELS:
-                v = Jc[f"{m}|{fam}|{ex}"]; w = Jb[f"{m}|{fam}|{ex}"]
-                ax.bar(x, v["dkl"], 0.42, color=MCOL[m], edgecolor="white", lw=0.3); ax.bar(x + 0.42, w["dkl"], 0.42, color=MCOL[m], alpha=0.38, hatch="////", edgecolor="white", lw=0.3)
-                if v["dkl_p"] < .05: ax.text(x, max(v["dkl"], 0) + 0.0008, "*", ha="center", fontsize=6)
-                if w["dkl_p"] < .05: ax.text(x + 0.42, max(w["dkl"], 0) + 0.0008, "*", ha="center", fontsize=6)
+                v = Jc[f"{m}|{fam}|{ex}"]; direct_value = _finite_number(v.get("dkl")); thin_values = [_finite_number(J[f"{m}|{fam}|{ex}"]["dkl"]) for J in thin]
+                if direct_value is None:
+                    raise ValueError(f"non-finite direct value for {c} {m} {fam} {ex}")
+                if any(value is None for value in thin_values):
+                    raise ValueError(f"non-finite thinning value for {c} {m} {fam} {ex}")
+                thin_mean = float(np.mean(thin_values)); thin_sd = float(np.std(thin_values, ddof=1))
+                ax.bar(x, direct_value, 0.42, color=MCOL[m], edgecolor="white", lw=0.3)
+                ax.bar(x + 0.42, thin_mean, 0.42, color=MCOL[m], alpha=0.38, hatch="////", edgecolor="white", lw=0.3)
+                ax.errorbar(x + 0.42, thin_mean, yerr=thin_sd, fmt="none", ecolor=MCOL[m], elinewidth=0.8, capsize=1.8, capthick=0.8, zorder=4)
+                plotted.extend([direct_value, thin_mean - thin_sd, thin_mean + thin_sd])
+                _mark_significance(ax, x, direct_value, v.get("dkl_p"), 0.0008)
                 x += 1
             ticks.append((x - 2.3, clab)); x += 1.8
         ax.set_xticks([t for t, _ in ticks]); ax.set_xticklabels([c for _, c in ticks], fontsize=5.6); ax.axhline(0, color=st.MUTED, lw=0.5); ax.set_title(title, loc="left")
-    axes[0].set_ylim(-0.007, 0.081)
+    _set_zero_anchored_ylim(axes[0], plotted, minimum_span=0.01)
     axes[0].set_ylabel("held-out ΔKL (nats per row)")
     for m in MODELS: axes[0].bar([0], [0], color=MCOL[m], label=MLAB[m])
-    axes[0].bar([0], [0], color=st.BASELINE, alpha=0.38, hatch="////", label="Wikipedia thinned to the same pair mass"); axes[0].legend(fontsize=6.3, loc="upper center", bbox_to_anchor=(1.7, -0.32), ncol=5)
+    axes[0].bar([0], [0], color=st.BASELINE, alpha=0.38, hatch="////", label="Wikipedia thinned: five-seed mean ± SD"); axes[0].legend(fontsize=6.3, loc="upper center", bbox_to_anchor=(1.7, -0.32), ncol=5)
     save(fig, "fig_crosscorpus")
 
 if __name__ == "__main__":

@@ -1,4 +1,9 @@
 #!/bin/bash
+# Historical paper-v1 runner.  The working-tree fingerprint implementation is
+# v4-only and must never overwrite the immutable v3 evidence named below.
+# Reproduce this script only from a separate worktree at tag paper-v1.
+echo "disabled: historical paper-v1 runner; use a separate worktree at tag paper-v1" >&2
+exit 2
 # Manuscript-hardening reruns: finite-sample p (b+1)/(B+1), 5000 relabelings, parallel over cells. Log: results/phase5/harden.log
 cd ~/Documents/Research/pitch_fourier; P=.venv/bin/python; W=results/phase5/cond_wikipedia.npz; M4=olmo2_1b,gemma2_2b,qwen25_3b,olmo2_7b; L=results/phase5/harden.log
 run() { echo "== $(date +%H:%M:%S) $*" >> $L; $P -m phase5.fingerprint "$@" --jobs=20 >> $L 2>&1; }

@@ -1,0 +1,16 @@
+Released OLMo-2-0425-1B vs stage-2 ingredient endpoints
+Date: 2026-08-30
+Command: CUDA_VISIBLE_DEVICES='' .venv/bin/python -m phase5.soup_check
+Inputs: models/OLMo-2-0425-1B and models/olmo2_1b_ckpts/stage2-ingredient{1,2,3}-step23852-tokens51B
+Metric: relative L2 distance ||A-B||/||A|| over 22 sampled tensors
+
+relative distance ing1      : median 1.1181  max 1.3590  (n=22 tensors)
+relative distance ing2      : median 1.1181  max 1.3590  (n=22 tensors)
+relative distance ing3      : median 1.1181  max 1.3590  (n=22 tensors)
+relative distance mean3     : median 1.1172  max 1.3589  (n=22 tensors)
+relative distance ing1-ing2 : median 0.0961  max 0.1930  (n=22 tensors)
+relative distance ing1-ing3 : median 0.0957  max 0.1927  (n=22 tensors)
+
+Interpretation: the three ingredient endpoints are mutually close relative to their
+distance from the released checkpoint, and their arithmetic mean is no closer to the
+released checkpoint. The released model is not the endpoint or a simple three-way soup.

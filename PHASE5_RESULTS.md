@@ -1,5 +1,29 @@
 # PHASE5_RESULTS.md — training-data fingerprint test
 
+**VERDICT (v4 correction, 2026-09-02): CORRECTED HELD-OUT EFFECT IS SMALL AND MODEL-DEPENDENT — training-data
+fingerprint NOT SUPPORTED.** An Opus 5 review of paper-v1 found that the flagship regression's "circle" predictor
+was the chromatic cyclic distance (B1) and that merged target classes were given an arithmetic line centroid (B2);
+the v3 run also standardized predictors globally and derived RNG seeds from Python's salted `hash()`. The corrected
+v4 feature set (true fifths circle + separate chromatic distance, set-valued merged-class line features, fold-local
+scaling, SHA-256 seeds; `V4_CORRECTION_REPORT.md`, `results/phase5/v3_v4_comparison.{csv,md}`) gives, in the
+target-aggregated modulation family under the rich baseline, ΔKL = +0.0035 / +0.0061 / −0.0002 / +0.0033 nats per row
+(OLMo-1B / Gemma / Qwen / OLMo-7B; relabeling p = .034 / .0004 / .402 / .0026; 5.9 / 13.0 / −0.4 / 7.3 % of the
+theory-only KL) for the window conditional and +0.0039 / +0.0031 / −0.0003 / −0.0003 (p = .044 / .022 / .553 / .628)
+for the document conditional; only Gemma's rich-window document-cluster interval excludes zero. The training-row
+target prior sharpens the relabeling test in the three models that already show the effect and does not rescue
+Qwen. Cross-corpus direct gains are heterogeneous (8/0/6/0 of 36 aggregated cells significant for OLMo-Mix wiki /
+9-shard DCLM / Dolmino / 54-shard DCLM) and the 72 DiD specificity cells split 8 significant, four favouring OLMo and
+four opposing (33 positive / 39 negative). The OLMo-2-1B checkpoint residual trajectory has no significant stage-1
+point under the corrected baseline (two of three stage-2 window points are significant); the "first significant at
+294B, stable from 4T" reading is withdrawn. What survives from Phase V: the operator comparison of §2 (unaffected
+by B1/B2) and a modest, model-dependent local-window contribution beyond the corrected baseline in three of four
+models by the relabeling test. Section 10 below gives the corrected numbers; sections 3–6 are the superseded v3
+record and are kept verbatim for the audit trail (every v3 artifact is unchanged on disk).
+
+---
+
+## Superseded v3 verdict (paper-v1, retained for the audit trail)
+
 **VERDICT: CONDITIONAL STATISTICS PREDICT BEHAVIOUR — training-data fingerprint NOT ESTABLISHED (specificity test
 inconclusive). HARDENING (08-30): the contrast is conditional-row vs association construction, NOT directionality — a
 symmetrized conditional from the same counts does equally well; held-out gain survives a training-row target prior
@@ -184,3 +208,45 @@ Neither theory is tested as a factorization claim here.
 phase5/scan_conditional.py, fingerprint.py (--neutral, --rich), operators.py, ckpt_fingerprint.py, ckpt_twins.py,
 curl_ckpts.sh, curl_revs.sh, ckpt_behaviour.sh, fig_*.py, summary_table.py; results/phase5/*.txt, fingerprint/*.json,
 cond_*.npz; figures/phase5/*.png; PHASE5_DESIGN.md, PHASE5_LOG.md, notes/phase5_ntp_vs_karkada.md.
+
+## 10. v4 correction (2026-08-30 → 09-02; results/phase5/fingerprint/*_v4*.json, crosscorpus_compare_v4_*.txt, ckpt_trajectory_v4.txt)
+
+Chronology: Opus review 08-30 → B1/B2 confirmed → first v4 preview run rejected (global scaling, centroid still
+present) → contract frozen, implementation rewritten and tested (`tests/test_phase5_v4.py`, 19 tests incl. the
+C→G / C→D♭ landmarks, fold isolation, seed stability) → independent verifier + reviewer READY on commit a56ad3e →
+full chain `phase5/rerun_v4.sh` 08-31 19:23 – 09-01 01:22 UTC (CPU only) → comparison, cross-corpus and checkpoint
+reports → manuscript rewritten from the v4 artifacts (paper-v2).
+
+Target-aggregated view, modulation family (ΔKL nats/row; p = (b+1)/(B+1), B = 5,000):
+
+| baseline | window (1B / Gemma / Qwen / 7B) | document |
+|---|---|---|
+| base | +.0041 (.015) / +.0053 (.0012) / −.0001 (.334) / +.0038 (.0030); KL₀ .063/.051/.045/.050 | +.0052 (.0076) / +.0041 (.0118) / +.0000 (.303) / +.0007 (.235) |
+| rich | +.0035 (.034) / +.0061 (.0004) / −.0002 (.402) / +.0033 (.0026); KL₀ .059/.047/.042/.046 | +.0039 (.044) / +.0031 (.022) / −.0003 (.553) / −.0003 (.628) |
+| base + target prior | +.0043 (.0002) / +.0037 (.0004) / −.0004 (.674) / +.0033 (.0006) | +.0053 (.0002) / +.0025 (.0004) / −.0002 (.348) / +.0013 (.0082) |
+| rich + target prior | +.0039 (.0004) / +.0045 (.0002) / −.0003 (.608) / +.0030 (.0010) | +.0039 (.0002) / +.0019 (.0010) / −.0004 (.708) / +.0004 (.0446) |
+| doc-cluster 95 % CI, base | [+.0002,+.0056] / [+.0015,+.0068] / [−.0010,+.0005] / [+.0002,+.0050] | all four include 0 |
+| doc-cluster 95 % CI, rich | [−.0009,+.0054] / [+.0016,+.0071] / [−.0010,+.0003] / [−.0006,+.0046] | all four include 0 |
+
+Residual correspondence (non-held-out, rich + source effects): window +0.24 / +0.28 / +0.07 / +0.31 (p .019 / .0006 /
+.236 / .0004); document +0.18 / +0.17 / −0.12 / +0.09, none significant. Harmonic and chord families: no significant
+cell under base or rich (three small Qwen cells, +0.0009…+0.0011, under the target prior). Matched operators
+(window): symmetrized +.0052/+.0071/+.0005/+.0069 (Qwen n.s.), reverse +.0019/+.0065/+.0004/+.0036 (1B, Qwen n.s.),
+same-count PMI −.0017/−.0000/+.0008/−.0022 (null). Templates (B = 2,000): 19/32 leave-one-template-out and 9/32
+single-template cells significant, Qwen null in every aggregate. Spelled view, base: window +.0038/+.0092/+.0010/
++.0096 (p .005/.013/.159/.0008), document +.0037/+.0209/+.0040/+.0066 (p .006/.0008/.024/.022); KL₀ .040–.072.
+Twins: 16 of 108 line-controlled cells at p ≤ .05 (v3: 17), scattered.
+
+Cross-corpus (v4 features, five thinning seeds per corpus, `crosscorpus_compare_v4_aggregated.txt`): significant
+direct cells 8 / 0 / 6 / 0 of 36 (aggregated) and 7 / 3 / 8 / 2 (spelled) for OLMo-Mix wiki / 9-sh DCLM / Dolmino /
+54-sh DCLM; modulation × window (aggregated) +.0038/+.0051/+.0003/+.0035 on OLMo-Mix wiki, ≈0 on 9-sh DCLM,
+Gemma-only on Dolmino, negative in all four models on 54-sh DCLM; largest thinning-seed SD .0061 (aggregated) /
+.0063 (spelled) nats. DiD: 8 of 72 cells p < .05, 4 OLMo-favouring and 4 opposing; 33 positive / 39 negative.
+Specificity is directionless; the fingerprint is neither established nor suggested.
+
+Checkpoints (`ckpt_trajectory_v4.txt`, rich baseline, B = 2,000): line|circle unchanged (−0.24 → +0.19 → +0.27 → +0.34
+→ +0.33 → +0.42/+0.42/+0.44); window residual +.01, +.03, +.03, +.05, +.10, +.22 (p .083), +.10, +.13 across stage 1,
+stage-2 ingredients +.21 (.023) / +.23 (.013) / +.18 (.052), released run +.24 (.018); document residual never
+significant. Twin asymmetry still 4.3 → 2.6 nats. No acquisition threshold is established.
+
+v3 → v4 significance changes over all inherited cells: `results/phase5/v3_v4_comparison.md`.
