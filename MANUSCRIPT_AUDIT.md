@@ -214,6 +214,7 @@ FRAGILE.**
   compressed subsections; further cutting is a venue decision.
 - Appendix A trim (Sonnet): kept; the audit trail is the point of this preprint.
 - Structure (Opus): done after tagging v2.1 — §7 and §8 moved to Appendices E and F, replaced in the main text by a one-page "Two follow-ups, in brief" (§7); Discussion is §8; tag `paper-v2.2`.
+- Reader's cut (`paper-v2.3`, 25 pages): abstract ≈150 words; glance bullets one line each; §2 trimmed; result boxes 4–6 sentences with Tables 1–2 in the main text; §4 hidden-state detail → Appendix G; matched-operator regressor numbers → Appendix F.1; closing takeaways paragraph. Every number retained somewhere in the paper.
 
 ## Prose
 

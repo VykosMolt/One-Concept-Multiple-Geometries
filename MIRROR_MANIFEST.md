@@ -1,6 +1,6 @@
 # Mirror manifest
 
-Working-repository commit: `cdad1d6e168520e1db32af36eec9fddf23994bec` (tag `paper-v2.2`).
+Working-repository commit: `146c5afe4f1e8ae8c7a840a292d5e0d00d94752d` (tag `paper-v2.3`).
 
 Files tracked in the working repository but excluded from this mirror (size in bytes, SHA-256). They are
 derived artifacts: hidden-state tensors extracted from the released models by the scripts in this mirror,

@@ -56,4 +56,4 @@ Qwen/Qwen2.5-3B (bf16), allenai/OLMo-2-1124-7B (bf16, CPU offload) — weights n
 The paper links `github.com/VykosMolt/One-Concept-Multiple-Geometries`, a mirror of this repository built by
 `scripts/build_mirror.sh` (code, docs, results files, figures, paper; model weights, corpora, hidden-state
 tensors and synthetic checkpoints excluded and listed with SHA-256 digests in `MIRROR_MANIFEST.md`).
-The corrected manuscript is tag `paper-v2.2` (round-5 reviews integrated, plain-language rewrite, synthetic and Phase-V sections moved to Appendices E–F); `paper-v2`/`paper-v2.1` are earlier corrected drafts and `paper-v1` (fb3e3e8) the immutable pre-correction snapshot.
+The corrected manuscript is tag `paper-v2.3` (round-5 reviews integrated, reader's cut: 150-word abstract, one-line glance bullets, short result boxes with Tables 1–2, hidden-state detail in Appendix G, closing takeaways; 25 pages); `paper-v2`–`paper-v2.2` are earlier corrected drafts and `paper-v1` (fb3e3e8) the immutable pre-correction snapshot.
